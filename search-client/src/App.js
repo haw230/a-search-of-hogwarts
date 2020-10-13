@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Grid, Input, Checkbox, Button, Icon, Label } from 'semantic-ui-react';
+import { Grid, Input, Checkbox, Button, Icon } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
 import './App.css';
@@ -19,9 +19,17 @@ const checked = new Map(Object.entries({
 
 
 function App() {
-  const CheckBoxBook = (props) => (
-    <Checkbox checked={checklist.current.get(props.book)} onClick={() => update(props.book)} defaultChecked label={props.book} />
-  );
+  const CheckBoxBook = ({ book, rerenderChild }) => {
+    console.log(rerenderChild);
+    const [temp, setTemp] = useState(1);  // trigger rerender
+    return (
+      <Checkbox dfsdf={rerenderChild.toString()} checked={checklist.current.get(book)} onClick={() => {
+        console.log(checklist.current.get(book));
+        update(book);
+        setTemp(temp + 1);
+      }} label={book} />
+    )
+  };
   
   const update = (book) => {
     checklist.current.set(book, !checklist.current.get(book));
@@ -29,20 +37,25 @@ function App() {
   }
 
   const checkAll = () => {
-    for (let key in checklist.current) {
+    for (let [key] of checklist.current) {
       checklist.current.set(key, true);
     }
+    setRerenderchild(1 + rerenderChild);
   }
 
   const checkNone = () => {
-    for (let key in checklist.current) {
+    for (let [key] of checklist.current) {
+      console.log(key);
       checklist.current.set(key, false);
     }
+
+    setRerenderchild(1 + rerenderChild);
   }
   
   const searchTerm = useRef("");
   const [loading, setLoading] = useState(false);
   const [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
+  const [rerenderChild, setRerenderchild] = useState(0);
   const checklist = useRef(checked);
 
   if (loading) {
@@ -79,15 +92,29 @@ function App() {
         </Grid>
         <Grid celled={false} stackable={true}>
           <Grid.Row>
-            <Grid.Column width={4}><CheckBoxBook book={"The Sorcerer's Stone"} /></Grid.Column>
-            <Grid.Column width={4}><Checkbox onClick={() => update("The Chamber of Secrets")} defaultChecked label="The Chamber of Secrets" /></Grid.Column>
-            <Grid.Column width={4}><Checkbox onClick={() => update("The Prisoner of Azkaban")} defaultChecked label="The Prisoner of Azkaban" /></Grid.Column>
-            <Grid.Column width={4}><Checkbox onClick={() => update("The Goblet of Fire")} defaultChecked label="The Goblet of Fire" /></Grid.Column>
+            <Grid.Column width={4}>
+              <CheckBoxBook book={"The Sorcerer's Stone"} rerenderChild={rerenderChild} />
+            </Grid.Column>
+            <Grid.Column width={4}>
+              <CheckBoxBook book={"The Chamber of Secrets"} rerenderChild={rerenderChild} />
+            </Grid.Column>
+            <Grid.Column width={4}>
+              <CheckBoxBook book={"The Prisoner of Azkaban"} rerenderChild={rerenderChild} />
+            </Grid.Column>
+            <Grid.Column width={4}>
+              <CheckBoxBook book={"The Goblet of Fire"} rerenderChild={rerenderChild} />
+            </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={6}><Checkbox onClick={() => update("The Order of the Phoenix")} defaultChecked label="The Order of the Phoenix" /></Grid.Column>
-            <Grid.Column width={5}><Checkbox onClick={() => update("The Half-Blood Prince")} defaultChecked label="The Half-Blood Prince" /></Grid.Column>
-            <Grid.Column width={5}><Checkbox onClick={() => update("The Deathly Hallows")} defaultChecked label="The Deathly Hallows" /></Grid.Column>
+            <Grid.Column width={6}>
+              <CheckBoxBook book={"The Order of the Phoenix"} rerenderChild={rerenderChild} />
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <CheckBoxBook book={"The Half-Blood Prince"} rerenderChild={rerenderChild} />
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <CheckBoxBook book={"The Deathly Hallows"} rerenderChild={rerenderChild} />
+            </Grid.Column>
           </Grid.Row>
         </Grid>
         <div className="button-div">
