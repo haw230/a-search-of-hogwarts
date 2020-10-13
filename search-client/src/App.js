@@ -6,8 +6,8 @@ import './App.css';
 
 
 const placeholders = ["he greeted death...", "the ones we love...", "dark times lie ahead..."];
-const temp = () => (<p className="titles">asdasdsad</p>)
-const CheckArea = () => (
+
+const CheckBoxes = () => (
   <Grid celled={false} stackable={true}>
     <Grid.Row>
       <Grid.Column width={4}><Checkbox defaultChecked label={"The Sorcerer's Stone"}/></Grid.Column>
@@ -28,15 +28,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
 
-  // useEffect(() => {
-  //   if (searchTerm.length < 3) {
-  //     console.log(searchTerm);
-  //     subtitle = "Please try a longer search term.";
-  //   } else {
-  //     subtitle = "Search the full text of your favorite books.";
-  //   }
-  // });
-
   if (loading) {
     if (searchTerm.current.length < 3) {
       setSubtitle("Please try a longer search term.");
@@ -46,6 +37,7 @@ function App() {
     console.log(searchTerm, loading);
     setLoading(false);
   }
+
   console.log(subtitle, searchTerm);
   return (
     <div className="centred">
@@ -67,7 +59,7 @@ function App() {
             <Grid.Column width={2}></Grid.Column>
           </Grid.Row>
         </Grid>
-        <CheckArea />
+        <CheckBoxes />
       </div>
     </div>
   );

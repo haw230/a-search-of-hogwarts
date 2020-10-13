@@ -93,6 +93,10 @@ body {
   font-weight: 350;
 }
 
+.ui.checkbox label:hover {
+  color: #eeba30;
+}
+
 #subtitle {
   color: #FFFFFF;
   font-size: 1.1em;
