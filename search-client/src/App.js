@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Grid, Input, Checkbox, Button, Icon } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
+import axios from 'axios';
 
 import './App.css';
 
@@ -17,6 +18,13 @@ const checked = new Map(Object.entries({
   "The Deathly Hallows": true,
 }));
 
+const getBooks = checklist => {
+  let arr = [];
+  for (let key in checklist) {
+    arr.push(checklist.get(key));
+  }
+  return arr;
+}
 
 function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
@@ -54,18 +62,39 @@ function App() {
   
   const searchTerm = useRef("");
   const [loading, setLoading] = useState(false);
-  const [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
+  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const checklist = useRef(checked);
+
+  useEffect(() => {
+    setSubtitle(subtitle);
+  }, [subtitle]);
 
   if (loading) {
     if (searchTerm.current.length < 3) {
       setSubtitle("Please try a longer search term.");
-    } else {
+      setLoading(false);
+      return;
+    }
+    if (subtitle != "Search the full text of your favorite books.") {
       setSubtitle("Search the full text of your favorite books.");
     }
-    console.log(searchTerm, loading);
-    setLoading(false);
+
+    let books = getBooks(checklist.current);
+    axios.post('http://localhost:1332/api/search', {
+      data: {
+        books,  // checked books
+        searchTerm,  // words to search for
+      }
+    }).then((response) => {
+      console.log(response.data);
+      setLoading(false);
+    })
+      .catch(err => {
+        subtitle = "Error!!!";
+        console.log(err);
+        setLoading(false);
+      });
   }
 
   console.log(checklist);
@@ -79,7 +108,7 @@ function App() {
           <Grid.Row>
             <Grid.Column width={2}></Grid.Column>
             <Grid.Column width={12}>
-              <Input loading={loading} fluid={true} size={"large"} action={{
+              <Input loading={loading} fluid={true} size={"large"} action={loading ? {} : {
                 icon: 'search', onClick: (event, data) => {
                   setLoading(true);
                   console.log(searchTerm);
