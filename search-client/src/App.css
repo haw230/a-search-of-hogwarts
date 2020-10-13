@@ -89,12 +89,16 @@ body {
 
 .ui.checkbox label {
   color: #FFFFFF;
-  font-size: 1.1em;
-  font-weight: 350;
+  font-size: 1.11em;
+  font-weight: 500;
 }
 
 .ui.checkbox label:hover {
   color: #eeba30;
+}
+
+.ui.checkbox label:target {
+  color: #FFFFFF;
 }
 
 #subtitle {
@@ -107,6 +111,9 @@ body {
   width: 200px;
 }
 
+.button-div {
+  padding: 50px;
+}
 
 @font-face {
   font-family: Bluu Next;
