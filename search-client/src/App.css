@@ -71,7 +71,7 @@ body {
 }
 
 .header {
-  padding: 0;
+  padding: 15px;
   margin: 0;
   font-family: Bluu Next,serif;
   font-weight: 700;
@@ -81,11 +81,28 @@ body {
   color: #FFFFFF;
 }
 
-.subtitle {
+.titles {
   color: #FFFFFF;
   font-size: 1.1em;
   font-weight: 350;
 }
+
+.ui.checkbox label {
+  color: #FFFFFF;
+  font-size: 1.1em;
+  font-weight: 350;
+}
+
+#subtitle {
+  color: #FFFFFF;
+  font-size: 1.1em;
+  font-weight: 350;
+}
+
+.search-container {
+  width: 200px;
+}
+
 
 @font-face {
   font-family: Bluu Next;
