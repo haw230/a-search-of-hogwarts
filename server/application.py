@@ -10,11 +10,23 @@ from flask_cors import CORS
 import json
 
 application = Flask(__name__)
-CORS(application)
+# CORS(application)
 books_data = {}  # copy of display text
 search_data = {}  # copy of search text (will preprocess)
 
 STOPWORDS = ['a', 'the', 'an', 'it']
+
+@application.route('/debug', methods=['GET'])
+@cross_origin()
+def debug():
+    data_path = Path('data/')
+    book = "Book 1 - The Philosopher's Stone.txt"
+    with open(data_path / book, encoding="utf8") as f:
+        text = f.read()
+        return {
+            "books_data": str(books_data)[:1000],
+            "text": text[:1000],
+        }
 
 @application.route('/', methods=['GET'])
 @cross_origin()
@@ -90,6 +102,7 @@ def startup():
             books_data[regex.search(book).group(1)] = [paragraph for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]
             search_data[regex.search(book).group(1)] = [paragraph.lower() for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]
 
-if __name__ == '__main__':
-    startup()
+startup()
+
+if __name__ == "__main__":
     application.run()

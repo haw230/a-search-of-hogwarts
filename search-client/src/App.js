@@ -92,7 +92,7 @@ function App() {
     }
 
     axios.post('http://pottersearch-env.eba-wazmbygp.us-east-2.elasticbeanstalk.com/api/search', {
-      header: {
+      headers: {
         "Access-Control-Allow-Origin": "*",
       },
       data: {
@@ -213,7 +213,7 @@ function App() {
                   <b>Yay! You have seen it all</b>
                 </p>
               }
-              hasMore={result[result.length - 1].title === "No Occurences Found"}
+              hasMore={result[result.length - 1].title !== "No Occurences Found"}
             >
               <div id="search-chunk"></div>
               {result.map(paragraph => (
