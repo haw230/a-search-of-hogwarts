@@ -35,10 +35,10 @@ def get_search_results():
         for i in range(len(books_data[book])):
             paragraph = search_data[book][i]
 
-            if all(search_word in paragraph for search_word in search_words):
+            if all([[search_word in paragraph for search_word in search_words]]):
                 prev_paragraph = books_data[book][i - 1] if i != 0 else ""
                 next_paragraph = books_data[book][i + 1] if i != len(books_data[book]) - 1 else ""
-                result.append(f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}")
+                result.append({ "text": f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}", "book": book})
 
             if page == len(result):
                 print(result)
@@ -50,11 +50,6 @@ def get_search_results():
     return {
         "found": result,
     }
-
-@app.route('/api/titles')
-def get_book_titles():
-    regex = re.compile(r'.*\- (.*)\.txt')
-    return json.dumps([regex.search(title).group(1) for title in books_data.keys()])
 
 
 def startup():
@@ -69,12 +64,12 @@ def startup():
     for book in books:
         with open(data_path / book, encoding="utf8") as f:
             text = f.read()
-            books_data[book] = [paragraph for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]
-            search_data[book] = [paragraph.lower() for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]
+            regex = re.compile(r'.*\- (.*)\.txt')
+            books_data[regex.search(book).group(1)] = [paragraph for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]
+            search_data[regex.search(book).group(1)] = [paragraph.lower() for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]
 
 if __name__ == '__main__':
     startup()
-    print(get_book_titles())
     app.debug = True
     app.run(host='localhost', port=1332)
 

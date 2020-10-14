@@ -1,4 +1,3 @@
-/ 
 Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense. 
 Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursley s had a small son called Dudley and in their opinion there was no finer boy anywhere. 
 The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn’t think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t 
@@ -431,7 +430,7 @@ There was silence inside the hut. Only the sea and the whistling wind could be h
 “I’m a what?” gasped Harry. 
 “A wizard, o’ course,” said Hagrid, sitting back down on the sofa, which groaned and sank even lower, “an’ a thumpin’ good’un, I’d say, once yeh’ve been trained up a bit. With a mum an’ dad like yours, what else would yeh be? An’ I reckon it’s abou’ time yeh read yer letter.” 
 Harry stretched out his hand at last to take the yellowish envelope, addressed in emerald green to Mr. H. Potter, The Floor, Hut-on-the-Rock, The Sea. He pulled out the letter and read: 
-o/WITCHCRAFT and WIZARDRY 
+WITCHCRAFT and WIZARDRY 
 Headmaster: ALBUS DUMBLEDORE 
 (Order of Merlin, First Class, Grand Sore., Chf. 
 Warlock, Supreme Mugwump, International Confed. of Wizards) 
@@ -591,7 +590,7 @@ People stared more than ever on the train. Hagrid took up two seats and sat knit
 Harry took the parchment envelope out of his pocket. 
 “Good,” said Hagrid. “There’s a list there of everything yeh need.” 
 Harry unfolded a second piece of paper he hadn’t noticed the night before, and read: 
-o/WITCHCRAFT and WIZARDRY 
+WITCHCRAFT and WIZARDRY 
 First-year students will require: 
 1 . Three sets of plain work robes (black) 
 2. One plain pointed hat (black) for day wear 
@@ -1538,7 +1537,7 @@ A lamp flickered on. It was Hermione Granger, wearing a pink bathrobe and a frow
 Harry couldn’t believe anyone could be so interfering. 
 “Come on,” he said to Ron. He pushed open the portrait of the Fat Lady and climbed through the hole. 
 Hermione wasn’t going to give up that easily. She followed Ron through the portrait hole, hissing at them like an angry goose. 
-“Don’t you care about Gryffindor, do you only care about yourselves, / don’t want Slytherin to win the House Cup, and you’ll lose all the points I got from Professor McGonagall for knowing about Switching Spells.” 
+“Don’t you care about Gryffindor, do you only care about yourselves, I don’t want Slytherin to win the House Cup, and you’ll lose all the points I got from Professor McGonagall for knowing about Switching Spells.” 
 “Go away.” 
 “All right, but I warned you, you just remember what I said when you’re on the train home tomorrow, you’re so — ” 
 But what they were, they didn’t find out. Hermione had turned to the portrait of the Fat Lady to get back inside and found herself facing an empty painting. 
@@ -2955,7 +2954,7 @@ Quirrell smiled. His face wasn’t twitching at all.
 Next to him, who would suspect p-p-poor, st- stuttering P-Professor Quirrell?” 
 Harry couldn’t take it in. This couldn’t be true, it couldn’t. 
 “But Snape tried to kill me!” 
-“No, no, no. / tried to kill you. Your friend Miss Granger accidentally knocked me over as she rushed to set fire to Snape at that Quidditch match. She broke my eye contact with you. Another few seconds and I’d have got you off that broom. I’d have managed it before then if Snape hadn’t been muttering a countercurse, trying to save you.” 
+“No, no, no. I tried to kill you. Your friend Miss Granger accidentally knocked me over as she rushed to set fire to Snape at that Quidditch match. She broke my eye contact with you. Another few seconds and I’d have got you off that broom. I’d have managed it before then if Snape hadn’t been muttering a countercurse, trying to save you.” 
 “Snape was trying to save me?” 
 “Of course,” said Quirrell coolly. “Why do you think he wanted to referee your next match? He was trying to make sure I didn’t do it again. Funny, really ... he needn’t have bothered. I couldn’t do anything with Dumbledore watching. All the other teachers thought Snape was trying to stop Gryffindor from winning, he did make himself unpopular . . . and what a waste of time, when after all that, I’m going to kill you tonight.” 
 Quirrell snapped his fingers. Ropes sprang out of thin air and wrapped themselves tightly around Harry. 

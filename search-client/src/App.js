@@ -66,7 +66,6 @@ function App() {
   const [rerenderChild, setRerenderchild] = useState(0);
   const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
-  let result_cards = useRef([]);
   const checklist = useRef(checked);
 
   useEffect(() => {
@@ -100,11 +99,11 @@ function App() {
       }
     }).then((response) => {
       setLoading(false);
-      setResult(result.concat(response.data.found));
+      setResult(response.data.found);
       setPage(page + 1);
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#search-chunk").offset().top
-      }, 500);
+      }, 1000);
     })
       .catch(err => {
         setSubtitle("Error!!!");
@@ -112,12 +111,10 @@ function App() {
         setLoading(false);
       });
   }
-  for (let i = page * 10 - 10; i < result.length; ++i) {
-    result_cards.current.push(<p>{result[i]}</p>);
-  }
-  console.log(result_cards.current);
   // console.log(checklist);
   // console.log(subtitle, searchTerm);
+  console.log(result);
+
   return (
     <React.Fragment>
       <div id="bg-image">
@@ -184,7 +181,7 @@ function App() {
         </div>
       </div>
       <div>
-        {result_cards.current.length > 0 ? (
+        {result.length > 0 ? (
           <div className="results">
             <InfiniteScroll
               dataLength={result.length}
@@ -201,8 +198,6 @@ function App() {
                 }).then((response) => {
                   // setLoading(false);
                   setResult(result.concat(response.data.found));
-                  console.log("Second");
-                  console.log(page);
                   setPage(page + 1);
                 })
               }}
@@ -220,13 +215,27 @@ function App() {
                   <Grid.Row>
                     <Grid.Column width={2}></Grid.Column>
                     <Grid.Column width={12}>
-                      <Card
+                      {/* <Card
                         fluid
                         color="grey"
                         centered
-                        header='Harry Potter'
-                        description={paragraph}
-                            />
+                        header={paragraph.book}
+                        description={paragraph.text}
+                      >
+                        </Card> */}
+                      
+                      <Card centered fluid>
+                        <Card.Content>
+                          <Card.Header>{paragraph.book}</Card.Header>
+                          <Card.Description>
+                            {paragraph.text.split('\n').map(chunk => (
+                              <React.Fragment><div>{chunk}</div><br></br></React.Fragment>
+                              
+                            ))}
+                          </Card.Description>
+                        </Card.Content>
+                      </Card>
+                      
                     </Grid.Column>
                     <Grid.Column width={2}></Grid.Column>
                   </Grid.Row>
