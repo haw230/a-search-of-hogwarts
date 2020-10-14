@@ -19,6 +19,11 @@ def hello():
     sleep(4)
     return "request.body"
 
+def parse_last_result(result, search_words):
+    res = result[-1]
+    for search_word in search_words:
+        res["text"] = re.sub(fr'(“| |.)?({search_word})(!| |.|”|\?)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", res["text"], flags=re.IGNORECASE)
+
 
 @app.route('/api/search', methods=['GET', 'POST'])
 @cross_origin()
@@ -35,11 +40,11 @@ def get_search_results():
         for i in range(len(books_data[book])):
             paragraph = search_data[book][i]
 
-            if all([[search_word in paragraph for search_word in search_words]]):
+            if all(True if any(search_word == word for word in paragraph.split()) else False for search_word in search_words):
                 prev_paragraph = books_data[book][i - 1] if i != 0 else ""
                 next_paragraph = books_data[book][i + 1] if i != len(books_data[book]) - 1 else ""
                 result.append({ "text": f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}", "book": book})
-
+                parse_last_result(result, search_words)
             if page == len(result):
                 print(result)
                 return json.dumps({

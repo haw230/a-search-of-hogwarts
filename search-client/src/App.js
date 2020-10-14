@@ -229,7 +229,7 @@ function App() {
                           <Card.Header>{paragraph.book}</Card.Header>
                           <Card.Description>
                             {paragraph.text.split('\n').map(chunk => (
-                              <React.Fragment><div>{chunk}</div><br></br></React.Fragment>
+                              <React.Fragment><div dangerouslySetInnerHTML={{ __html: chunk }} /><br></br></React.Fragment>
                               
                             ))}
                           </Card.Description>
