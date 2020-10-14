@@ -4,7 +4,6 @@ import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
 
-import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
 const placeholders = ["he greeted death...", "the ones we love...", "dark times lie ahead..."];
