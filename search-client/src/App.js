@@ -91,7 +91,7 @@ function App() {
       setSubtitle("Search the full text of your favorite books.");
     }
 
-    axios.post('http://127.0.0.1:5000/api/search', {
+    axios.post('http://pottersearch-env.eba-wazmbygp.us-east-2.elasticbeanstalk.com/api/search', {
       header: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -193,7 +193,10 @@ function App() {
                 console.log(1234);
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('http://127.0.0.1:5000/api/search', {
+                axios.post('http://pottersearch-env.eba-wazmbygp.us-east-2.elasticbeanstalk.com/api/search', {
+                  header: {
+                    "Access-Control-Allow-Origin": "*",
+                  },
                   data: {
                     books,  // checked books
                     search,  // words to search for
@@ -224,7 +227,6 @@ function App() {
                           <Card.Description>
                             {paragraph.text.split('\n').map(chunk => (
                               <React.Fragment><div dangerouslySetInnerHTML={{ __html: chunk }} /><br></br></React.Fragment>
-                              
                             ))}
                           </Card.Description>
                         </Card.Content>
