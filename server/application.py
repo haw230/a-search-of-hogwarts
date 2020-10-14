@@ -5,15 +5,18 @@ import re
 import json
 from time import sleep
 from flask_cors import cross_origin
+from flask_cors import CORS
+
 import json
 
-app = Flask(__name__)
+application = Flask(__name__)
+CORS(application)
 books_data = {}  # copy of display text
 search_data = {}  # copy of search text (will preprocess)
 
 STOPWORDS = ['a', 'the', 'an', 'it']
 
-@app.route('/', methods=['GET'])
+@application.route('/', methods=['GET'])
 @cross_origin()
 def hello():
     sleep(4)
@@ -24,8 +27,20 @@ def parse_last_result(result, search_words):
     for search_word in search_words:
         res["text"] = re.sub(fr'(“| |.)?({search_word})(!| |.|”|\?)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", res["text"], flags=re.IGNORECASE)
 
+def is_match(paragraph, search_words):
+    set_paragraph = set(paragraph.split())
+    for search_word in search_words:
+        try:
+            for word in set_paragraph:
+                regex = re.compile(fr'(“| |.)?({search_word})(!| |.|”|\?)')
+                if regex.search(word):
+                    raise FileNotFoundError
+            return False
+        except FileNotFoundError:
+            pass
+    return True
 
-@app.route('/api/search', methods=['GET', 'POST'])
+@application.route('/api/search', methods=['GET', 'POST'])
 @cross_origin()
 def get_search_results():
     data = request.json["data"]
@@ -40,25 +55,27 @@ def get_search_results():
         for i in range(len(books_data[book])):
             paragraph = search_data[book][i]
 
-            if all(True if any(search_word == word for word in paragraph.split()) else False for search_word in search_words):
+            if is_match(paragraph, search_words):
                 prev_paragraph = books_data[book][i - 1] if i != 0 else ""
                 next_paragraph = books_data[book][i + 1] if i != len(books_data[book]) - 1 else ""
                 result.append({ "text": f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}", "book": book})
                 parse_last_result(result, search_words)
             if page == len(result):
-                print(result)
                 return json.dumps({
                     "found": result[-10:],
                 })
 
-    print(result)
-    return {
-        "found": result,
-    }
+    if len(result) == 0:
+        return {
+            "found": [{"text": "", "book": "No Occurences Found"}],
+        }
+    return json.dumps({
+        "found": result[-10:],
+    })
 
 
 def startup():
-    books = [ "Book 1 - The Philosopher's Stone.txt",
+    books = ["Book 1 - The Philosopher's Stone.txt",
             'Book 2 - The Chamber of Secrets.txt',
             'Book 3 - The Prisoner of Azkaban.txt',
             'Book 4 - The Goblet of Fire.txt',
@@ -75,40 +92,4 @@ def startup():
 
 if __name__ == '__main__':
     startup()
-    app.debug = True
-    app.run(host='localhost', port=1332)
-
-# from flask import Flask
-
-# # print a nice greeting.
-# def say_hello(username = "World"):
-#     return '<p>Hello %s!</p>\n' % username
-
-# # some bits of text for the page.
-# header_text = '''
-#     <html>\n<head> <title>EB Flask Test</title> </head>\n<body>'''
-# instructions = '''
-#     <p><em>Hint</em>: This is a RESTful web service! Append a username
-#     to the URL (for example: <code>/Thelonious</code>) to say hello to
-#     someone specific.</p>\n'''
-# home_link = '<p><a href="/">Back</a></p>\n'
-# footer_text = '</body>\n</html>'
-
-# # EB looks for an 'application' callable by default.
-# application = Flask(__name__)
-
-# # add a rule for the index page.
-# application.add_url_rule('/', 'index', (lambda: header_text +
-#     say_hello() + instructions + footer_text))
-
-# # add a rule when the page is accessed with a name appended to the site
-# # URL.
-# application.add_url_rule('/<username>', 'hello', (lambda username:
-#     header_text + say_hello(username) + home_link + footer_text))
-
-# # run the app.
-# if __name__ == "__main__":
-#     # Setting debug to True enables debug output. This line should be
-#     # removed before deploying a production app.
-#     application.debug = True
-#     application.run()
+    application.run()

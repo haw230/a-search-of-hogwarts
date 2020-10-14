@@ -91,13 +91,17 @@ function App() {
       setSubtitle("Search the full text of your favorite books.");
     }
 
-    axios.post('http://localhost:1332/api/search', {
+    axios.post('http://127.0.0.1:5000/api/search', {
+      header: {
+        "Access-Control-Allow-Origin": "*",
+      },
       data: {
         books,  // checked books
         search,  // words to search for
         page,  // pagination
       }
     }).then((response) => {
+      console.log(response);
       setLoading(false);
       setResult(response.data.found);
       setPage(page + 1);
@@ -189,14 +193,13 @@ function App() {
                 console.log(1234);
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('http://localhost:1332/api/search', {
+                axios.post('http://127.0.0.1:5000/api/search', {
                   data: {
                     books,  // checked books
                     search,  // words to search for
                     page,  // pagination
                   }
                 }).then((response) => {
-                  // setLoading(false);
                   setResult(result.concat(response.data.found));
                   setPage(page + 1);
                 })
@@ -207,7 +210,7 @@ function App() {
                   <b>Yay! You have seen it all</b>
                 </p>
               }
-              hasMore={true}
+              hasMore={result[result.length - 1].title === "No Occurences Found"}
             >
               <div id="search-chunk"></div>
               {result.map(paragraph => (
@@ -215,15 +218,6 @@ function App() {
                   <Grid.Row>
                     <Grid.Column width={2}></Grid.Column>
                     <Grid.Column width={12}>
-                      {/* <Card
-                        fluid
-                        color="grey"
-                        centered
-                        header={paragraph.book}
-                        description={paragraph.text}
-                      >
-                        </Card> */}
-                      
                       <Card centered fluid>
                         <Card.Content>
                           <Card.Header>{paragraph.book}</Card.Header>
