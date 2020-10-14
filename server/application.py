@@ -38,13 +38,13 @@ def get_search_results():
             if all(search_word in paragraph for search_word in search_words):
                 prev_paragraph = books_data[book][i - 1] if i != 0 else ""
                 next_paragraph = books_data[book][i + 1] if i != len(books_data[book]) - 1 else ""
-                result.append(f"{prev_paragraph}\n{books_data[book][i]}\n{next_paragraph}")
+                result.append(f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}")
 
             if page == len(result):
                 print(result)
-                return {
+                return json.dumps({
                     "found": result[-10:],
-                }
+                })
 
     print(result)
     return {
@@ -58,8 +58,15 @@ def get_book_titles():
 
 
 def startup():
+    books = [ "Book 1 - The Philosopher's Stone.txt",
+            'Book 2 - The Chamber of Secrets.txt',
+            'Book 3 - The Prisoner of Azkaban.txt',
+            'Book 4 - The Goblet of Fire.txt',
+            'Book 5 - The Order of the Phoenix.txt',
+            'Book 6 - The Half Blood Prince.txt',
+            'Book 7 - The Deathly Hallows.txt',]
     data_path = Path('data/')
-    for book in os.listdir(data_path):
+    for book in books:
         with open(data_path / book, encoding="utf8") as f:
             text = f.read()
             books_data[book] = [paragraph for paragraph in text.split('\n') if paragraph and 'Page | ' not in paragraph and not paragraph.isupper()]

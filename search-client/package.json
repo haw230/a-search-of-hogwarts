@@ -9,6 +9,7 @@
     "bootstrap": "^4.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-infinite-scroll-component": "^5.1.0",
     "react-scripts": "3.4.3",
     "react-scroll-parallax": "^2.3.4"
   },

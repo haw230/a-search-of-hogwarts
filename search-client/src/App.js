@@ -1,8 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Grid, Input, Checkbox, Button, Icon } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css';
+import { Grid, Input, Checkbox, Button, Icon, Card } from 'semantic-ui-react';
 import axios from 'axios';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import * as $ from 'jquery';
 
+import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
 const placeholders = ["he greeted death...", "the ones we love...", "dark times lie ahead..."];
@@ -75,7 +77,7 @@ function App() {
     let books = getBooks(checklist.current);
     let search = searchTerm.current;
 
-    if (books.every(book => book == false)) {
+    if (books.every(book => book === false)) {
       setSubtitle("Please select at least one book.");
       setLoading(false);
       return;
@@ -86,7 +88,7 @@ function App() {
       return;
     }
 
-    if (subtitle != "Search the full text of your favorite books.") {
+    if (subtitle !== "Search the full text of your favorite books.") {
       setSubtitle("Search the full text of your favorite books.");
     }
 
@@ -99,8 +101,10 @@ function App() {
     }).then((response) => {
       setLoading(false);
       setResult(result.concat(response.data.found));
-
       setPage(page + 1);
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#search-chunk").offset().top
+      }, 500);
     })
       .catch(err => {
         setSubtitle("Error!!!");
@@ -128,7 +132,9 @@ function App() {
                   {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
-                      // console.log(searchTerm);
+                      if (page !== 1) {
+                        setPage(1);
+                      }
                     }
                   }
                   }
@@ -177,13 +183,60 @@ function App() {
             </div>
         </div>
       </div>
-      {result_cards.current.length > 0 ? (
-        <div className="results">
-          {result_cards.current}
-        </div>
-      )
-    : null}
-      
+      <div>
+        {result_cards.current.length > 0 ? (
+          <div className="results">
+            <InfiniteScroll
+              dataLength={result.length}
+              next={() => {
+                console.log(1234);
+                let books = getBooks(checklist.current);
+                let search = searchTerm.current;
+                axios.post('http://localhost:1332/api/search', {
+                  data: {
+                    books,  // checked books
+                    search,  // words to search for
+                    page,  // pagination
+                  }
+                }).then((response) => {
+                  // setLoading(false);
+                  setResult(result.concat(response.data.found));
+                  console.log("Second");
+                  console.log(page);
+                  setPage(page + 1);
+                })
+              }}
+              loader={<h4>Loading...</h4>}
+              endMessage={
+                <p style={{ textAlign: 'center' }}>
+                  <b>Yay! You have seen it all</b>
+                </p>
+              }
+              hasMore={true}
+            >
+              <div id="search-chunk"></div>
+              {result.map(paragraph => (
+                <Grid celled={false}>
+                  <Grid.Row>
+                    <Grid.Column width={2}></Grid.Column>
+                    <Grid.Column width={12}>
+                      <Card
+                        fluid
+                        color="grey"
+                        centered
+                        header='Harry Potter'
+                        description={paragraph}
+                            />
+                    </Grid.Column>
+                    <Grid.Column width={2}></Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              ))}
+            </InfiniteScroll>
+          </div>
+        )
+      : null}
+    </div>
     </React.Fragment>
   );
 };
