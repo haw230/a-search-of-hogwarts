@@ -190,7 +190,6 @@ function App() {
             <InfiniteScroll
               dataLength={result.length}
               next={() => {
-                console.log(1234);
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
                 axios.post('https://backend-292602.wm.r.appspot.com/api/search', {

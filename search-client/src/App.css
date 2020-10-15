@@ -29,6 +29,7 @@
   #subtitle {
     font-size: 1em !important;
   }
+
 }
 
 .bg-box {
@@ -60,7 +61,7 @@
 
 .results {
   position: relative;
-  padding-top: 770px;
+  padding-top: calc(100vh + 30px);
   background: #222222;
   z-index: -1;
 }
@@ -110,13 +111,6 @@
 
 .search-container {
   width: 200px;
-}
-
-#content {
-  margin-top: 700px;
-  background: #ddd;
-  position: relative;
-  z-index: 1;
 }
 
 .button-div {
