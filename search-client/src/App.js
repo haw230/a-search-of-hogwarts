@@ -7,7 +7,7 @@ import * as $ from 'jquery';
 import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
-const placeholders = ["he greeted death...", "the ones we love...", "dark times lie ahead..."];
+const placeholders = ["he greeted death...", "the ones we love...", "dark times lie ahead...", "always..."];
 
 const checked = new Map(Object.entries({
   "The Sorcerer's Stone": true,
@@ -152,7 +152,7 @@ function App() {
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
                 <Grid.Column width={12}>
-                  <Input loading={loading} fluid={true} size={"large"} action={loading ? {} : 
+                <Input loading={loading} fluid={true} size={"large"} action={loading ? {} :
                   {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
@@ -162,9 +162,21 @@ function App() {
                       }
                     }
                   }
-                  }
-                    onChange={(event, data) => searchTerm.current = data.value}
-                    placeholder='Search...' />
+                }
+                  onChange={(event, data) => {
+                    searchTerm.current = data.value
+                  }}
+                  onKeyPress={event => {
+                    if (event.key != 'Enter') {
+                      return;
+                    }
+                    setLoading(true);
+                    setOccurenceLoading(true);
+                    if (page !== 1) {
+                      setPage(1);
+                    }
+                  }}
+                  placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
                 <Grid.Column width={2}></Grid.Column>
               </Grid.Row>
