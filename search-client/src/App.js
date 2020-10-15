@@ -7,7 +7,7 @@ import * as $ from 'jquery';
 import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
-const placeholders = ["he greeted death...", "the ones we love...", "dark times lie ahead...", "always...", "uranus...", "what is right..."];
+const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
 
 const checked = new Map(Object.entries({
   "The Sorcerer's Stone": true,
@@ -29,11 +29,9 @@ const getBooks = checklist => {
 
 function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
-    // console.log(rerenderChild);
     const [temp, setTemp] = useState(1);  // trigger rerender
     return (
       <Checkbox dfsdf={rerenderChild.toString()} checked={checklist.current.get(book)} onClick={() => {
-        // console.log(checklist.current.get(book));
         update(book);
         setTemp(temp + 1);
       }} label={book} />
@@ -70,7 +68,7 @@ function App() {
   const [occurence_loading, setOccurenceLoading] = useState(false)
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
-  console.log(occurence_data);
+
   useEffect(() => {
     setSubtitle(subtitle);
   }, [subtitle]);
@@ -95,7 +93,7 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('https://backend-292602.wm.r.appspot.com/api/count', {
+      axios.post('http://localhost:5001/api/count', {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -103,7 +101,6 @@ function App() {
           search,  // words to search for
         }
       }).then((response) => {
-        console.log(response.data.occurences);
         setOccurenceLoading(false);
         setOccurenceData(response.data);
       })
@@ -114,7 +111,7 @@ function App() {
         });
     }
 
-    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+    axios.post('http://localhost:5001/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -124,7 +121,6 @@ function App() {
         page,  // pagination
       }
     }).then((response) => {
-      console.log(response);
       setLoading(false);
       setResult(response.data.found);
       setPage(page + 1);
@@ -140,7 +136,6 @@ function App() {
   }
   // console.log(checklist);
   // console.log(subtitle, searchTerm);
-  console.log(result);
 
   return (
     <React.Fragment>
@@ -230,7 +225,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+                axios.post('http://localhost:5001/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },

@@ -39,6 +39,7 @@ def parse_last_result(result, search_words):
     for search_word in search_words:
         res["text"] = re.sub(fr'(\-|\n|“| |\.)({search_word})(\-|\n|!| |\.|”|\?|,)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", f" {res['text']}", flags=re.IGNORECASE)[1:]
 
+
 def is_match(paragraph, search_words):
     set_paragraph = paragraph.split()
     for search_word in search_words:
@@ -56,7 +57,7 @@ def cleanse(string):
     temp = string
     for r in TO_REPLACE:
         temp = temp.replace(r, f"{r}?")
-    return temp.lower()
+    return temp.lower().replace('\'', '’')
 
 @application.route('/api/search', methods=['GET', 'POST'])
 @cross_origin()
