@@ -233,12 +233,8 @@ function App() {
                 })
               }}
               loader={<h4>Loading...</h4>}
-              endMessage={
-                <p style={{ textAlign: 'center' }}>
-                  <b>Yay! You have seen it all</b>
-                </p>
-              }
-              hasMore={result[result.length - 1].book !== "No Occurences Found" && result[result.length - 1].book !== "No More Occurences Found"}
+
+              hasMore={result[result.length - 1].book !== "No Occurences Found" && result[result.length - 1].book !== "No More Occurences Found" && result[result.length - 1].book !== "Try a more specific search!"}
             >
               <Modal
                 onClose={() => setOpen(false)}

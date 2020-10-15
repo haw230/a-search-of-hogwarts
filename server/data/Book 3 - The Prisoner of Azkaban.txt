@@ -1224,7 +1224,7 @@ Harry shivered, then looked around, hoping no one had noticed. Many people had t
 Harry felt a lurch of fear. He wasn’t ready. How could you make a dementor less frightening? But he didn’t want to ask for more time; everyone else was nodding and rolling up their sleeves. 
 “Neville, we’re going to back away,” said Professor Lupin. “Let you have a clear field, all right? I’ll call the next person forward. ... Everyone back, now, so Neville can get a clear shot — ” 
 They all retreated, backed against the walls, leaving Neville alone beside the wardrobe. He looked pale and frightened, but he had pushed up the sleeves of his robes and was holding his wand ready. 
-“On the count of three, Neville,” said Professor Lupin, who was pointing his own wand at the handle of the wardrobe. “One — two — three — now\” 
+“On the count of three, Neville,” said Professor Lupin, who was pointing his own wand at the handle of the wardrobe. “One — two — three — now,” 
 A jet of sparks shot from the end of Professor Lupin’s wand and hit the doorknob. The wardrobe burst open. Hook-nosed and menacing, Professor Snape stepped out, his eyes flashing at Neville. 
 Neville backed away, his wand up, mouthing wordlessly. Snape was bearing down upon him, reaching inside his robes. 
 “R — r — riddikulusV’ squeaked Neville. 
@@ -1292,7 +1292,7 @@ Harry returned to the Gryffindor common room one evening after training, cold an
 “Excellent,” said Fred, who had followed Harry through the portrait hole. “I need to visit Zonko’s. I’m nearly out of Stink Pellets.” 
 Harry threw himself into a chair beside Ron, his high spirits ebbing away. Hermione seemed to read his mind. 
 “Harry, I’m sure you’ll be able to go next time,” she said. “They’re bound to catch Black soon. He’s been sighted once already” 
-“Black’s not fool enough to try anything in Hogsmeade,” said Ron. “Ask McGonagall if you can go this time, Harry. The next one might not be for ages “Ron\” said Hermione. “Harry’s supposed to stay in school — ” 
+“Black’s not fool enough to try anything in Hogsmeade,” said Ron. “Ask McGonagall if you can go this time, Harry. The next one might not be for ages “Ron,” said Hermione. “Harry’s supposed to stay in school — ” 
 “He can’t be the only third year left behind,” said Ron. “Ask McGonagall, go on, Harry — ” 
 “Yeah, I think I will,” said Harry, making up his mind. 
 Hermione opened her mouth to argue, but at that moment Crookshanks leapt lightly onto her lap. A large, dead spider was dangling from his mouth. 
@@ -1568,7 +1568,7 @@ Harry walked slowly to his seat and sat down. Snape looked around at the class.
 Harry watched him flick through the textbook, to the very back chapter, which he must know they hadn’t covered. 
 “ — werewolves,” said Snape. 
 “But, sir,” said Hermione, seemingly unable to restrain herself, “we’re not supposed to do werewolves yet, we’re due to start hinkypunks — ” 
-“Miss Granger,” said Snape in a voice of deadly calm, “I was under the impression that I am teaching this lesson, not you. And I am telling you all to turn to page 394.” He glanced around again. “All of you! Now\” 
+“Miss Granger,” said Snape in a voice of deadly calm, “I was under the impression that I am teaching this lesson, not you. And I am telling you all to turn to page 394.” He glanced around again. “All of you! Now,” 
 With many bitter sidelong looks and some sullen muttering, the class opened their books. 
 “Which of you can tell me how we distinguish between the werewolf and the true wolf?” said Snape. 
 Everyone sat in motionless silence; everyone except Hermione, whose hand, as it so often did, had shot straight into the air. 
@@ -1588,7 +1588,7 @@ Harry and Hermione left the room with the rest of the class, who waited until th
 “Snape ’s never been like this with any of our other Defense Against the Dark Arts teachers, even if he did want the job,” Harry said to Hermione. “Why’s he got it in for Lupin? D’you think this is all because of the boggart?” 
 “I don’t know,” said Hermione pensively. “But I really hope Professor Lupin gets better soon. ...” 
 Ron caught up with them five minutes later, in a towering rage. 
-“D’you know what that — ” (he called Snape something that made Hermione say “Ron\”) “ — is making me do? I’ve got to scrub out the bedpans in the hospital wing. Without magid” He was breathing deeply, his fists clenched. “Why couldn’t Black have hidden in Snape’s office, eh? He could have finished him off for us!” 
+“D’you know what that — ” (he called Snape something that made Hermione say “Ron,”) “ — is making me do? I’ve got to scrub out the bedpans in the hospital wing. Without magid” He was breathing deeply, his fists clenched. “Why couldn’t Black have hidden in Snape’s office, eh? He could have finished him off for us!” 
 Harry woke extremely early the next morning; so early that it was still dark. For a moment he thought the roaring of the wind had woken him. Then he felt a cold breeze on the back of his neck and sat bolt upright — Peeves the Poltergeist had been floating next to him, blowing hard in his ear. 
 “What did you do that for?” said Harry furiously. 
 Peeves puffed out his cheeks, blew hard, and zoomed backward out of the room, cackling. 
@@ -1629,12 +1629,12 @@ Harry looked wildly around. Cedric Diggory was pelting up the field, and a tiny 
 But something odd was happening. An eerie silence was falling across the stadium. The wind, though as strong as ever, was forgetting to roar. It was as though someone had turned off the sound, as though Harry had gone suddenly deaf — what was going on? And then a horribly familiar wave of cold swept over him, inside him, just as he became aware of something moving on the field below. . . . 
 Before he’d had time to think, Harry had taken his eyes off the Snitch and looked down. 
 At least a hundred dementors, their hidden faces pointing up at him, were standing beneath him. It was as though freezing water were rising in his chest, cutting at his insides. And then he heard it again. ... Someone was screaming, screaming inside his head ... a woman . . . 
-“Not Harry, not Harry, please not Harry\” 
+“Not Harry, not Harry, please not Harry,” 
 “ Stand aside, you silly girl ... stand aside, now. ...” 
 “ Not Harry, please no, take me, kill me instead — ” 
 Numbing, swirling white mist was filling Harry’s brain. . . . What was he doing? Why was he flying? He needed to help her. ... She was going to die. ... She was going to be murdered. ... 
 He was falling, falling through the icy mist. 
-“Not Harry\ Please ... have mercy ... have mercy. ...” 
+“Not Harry, Please ... have mercy ... have mercy. ...” 
 A shrill voice was laughing, the woman was screaming, and Harry knew no more. 
 “Lucky the ground was so soft.” 
 “I thought he was dead for sure.” 
@@ -1790,7 +1790,7 @@ Then, quite suddenly, as though following orders, he rolled up the map, stuffed 
 What did he have to do? He pulled out the map again and saw, to his astonishment, that a new ink figure had appeared upon it, labeled Harry Potter. This figure was standing exactly where the real Harry was standing, about halfway down the third-floor corridor. Harry watched carefully. His little ink self appeared to be tapping the witch with his minute wand. Harry quickly took out his real wand and tapped the statue. Nothing happened. He looked back at the map. The tiniest speech bubble had appeared next to his figure. The word inside said, “ Dissendium.” 
 “ Dissendiurrd” Harry whispered, tapping the stone witch again. 
 At once, the statue’s hump opened wide enough to admit a fairly thin person. Harry glanced quickly up and down the corridor, then tucked the map away again, hoisted himself into the hole headfirst, and pushed himself forward. 
-He slid a considerable way down what felt like a stone slide, then landed on cold, damp earth. He stood up, looking around. It was pitch dark. He held up his wand, muttered, “Lumos\” and saw that he was in a very narrow, low, earthy passageway. He raised the map, tapped it with the tip of his wand, and muttered, “Mischief managed!” The map went blank at once. He folded it carefully, tucked it inside his robes, then, heart beating fast, both excited and apprehensive, he set off. 
+He slid a considerable way down what felt like a stone slide, then landed on cold, damp earth. He stood up, looking around. It was pitch dark. He held up his wand, muttered, “Lumos,” and saw that he was in a very narrow, low, earthy passageway. He raised the map, tapped it with the tip of his wand, and muttered, “Mischief managed!” The map went blank at once. He folded it carefully, tucked it inside his robes, then, heart beating fast, both excited and apprehensive, he set off. 
 The passage twisted and turned, more like the burrow of a giant rabbit than anything else. Harry hurried along it, stumbling now and then on the uneven floor, holding his wand out in front of him. 
 It took ages, but Harry had the thought of Honeydukes to sustain him. After what felt like an hour, the passage began to rise. Panting, Harry sped up, his face hot, his feet very cold. 
 Ten minutes later, he came to the foot of some worn stone steps, which rose out of sight above him. 
@@ -1807,7 +1807,7 @@ Harry squeezed himself through a crowd of sixth years and saw a sign hanging in 
 “How about these?” said Ron, shoving ajar of Cockroach Clusters under Hermione ’s nose. 
 “Definitely not,” said Harry. 
 Ron nearly dropped the jar. 
-“Harry\” squealed Hermione. “What are you doing here? How — how did you — ?” 
+“Harry,” squealed Hermione. “What are you doing here? How — how did you — ?” 
 “Wow!” said Ron, looking very impressed, “you’ve learned to Apparate!” 
 “ ’Course I haven’t,” said Harry. He dropped his voice so that none of the sixth years could hear him and told them all about the Marauder’s Map. 
 “How come Fred and George never gave it to me!” said Ron, outraged. “I’m their brother!” 
@@ -1843,7 +1843,7 @@ Harry drank deeply. It was the most delicious thing he’d ever tasted and seeme
 A sudden breeze ruffled his hair. The door of the Three Broomsticks had opened again. Harry looked over the rim of his tankard and choked. 
 Professors McGonagall and Flitwick had just entered the pub with a flurry of snowflakes, shortly followed by Hagrid, who was deep in conversation with a portly man in a lime-green bowler hat and a pinstriped cloak — Cornelius Fudge, Minister of Magic. 
 In an instant, Ron and Hermione had both placed hands on the top of Harry’s head and forced him off his stool and under the table. Dripping with butterbeer and crouching out of sight, Harry clutched his empty tankard and watched the teachers’ and Fudge’s feet move toward the bar, pause, then turn and walk right toward him. 
-Somewhere above him, Hermione whispered, “Mobiliarbus\” 
+Somewhere above him, Hermione whispered, “Mobiliarbus,” 
 The Christmas tree beside their table rose a few inches off the ground, drifted sideways, and landed with a soft thump right in front of their table, hiding them from view. Staring through the dense lower branches, Harry saw four sets of chair legs move back from the table right beside theirs, then heard the grunts and sighs of the teachers and minister as they sat down. 
 Next he saw another pair of feet, wearing sparkly turquoise high heels, and heard a woman’s voice. 
 “A small gillywater — ” 
@@ -2049,7 +2049,7 @@ Harry frowned at Ron.
 “What ’re you two laughing about?” 
 Hermione had just come in, wearing her dressing gown and carrying Crookshanks, who was looking very grumpy, with a string of tinsel tied around his neck. 
 “Don’t bring him in here!” said Ron, hurriedly snatching Scabbers from the depths of his bed and stowing him in his pajama pocket. But Hermione wasn’t listening. She dropped Crookshanks onto Seamus’s empty bed and stared, open-mouthed, at the Firebolt. 
-“Oh, Harry\ Who sent you that?” 
+“Oh, Harry, Who sent you that?” 
 “No idea,” said Harry. “There wasn’t a card or anything with it.” 
 To his great surprise, Hermione did not appear either excited or intrigued by the news. On the contrary, her face fell, and she bit her lip. 
 “What’s the matter with you?” said Ron. 
@@ -2186,8 +2186,8 @@ Something whooshed suddenly out of the end of his wand; it looked like a wisp of
 “Yes,” Harry said, gripping his wand very tightly, and moving into the middle of the deserted classroom. He tried to keep his mind on flying, but something else kept intruding. . . . Any second now, he might hear his mother again . . . but he shouldn’t think that, or he would hear her again, and he didn’t want to ... or did he? Lupin grasped the lid of the packing case and pulled. 
 A dementor rose slowly from the box, its hooded face turned toward Harry, one glistening, scabbed hand gripping its cloak. The lamps around the classroom flickered and went out. The dementor stepped from the box and started to sweep silently toward Harry, drawing a deep, rattling breath. A wave of piercing cold broke over him — “Expecto patronurrd” Harry yelled. “Expecto patronum). Expecto — ” 
 But the classroom and the dementor were dissolving. 
-. . . Harry was falling again through thick white fog, and his mother’s voice was louder than ever, echoing inside his head — “ Not Harry\ Not Harry\ Please — I’ll do anything — ” 
-“Stand aside. Stand aside, girl\” 
+. . . Harry was falling again through thick white fog, and his mother’s voice was louder than ever, echoing inside his head — “ Not Harry, Not Harry, Please — I’ll do anything — ” 
+“Stand aside. Stand aside, girl,” 
 “Harry!” 
 Harry jerked back to life. He was lying flat on his back on the floor. The classroom lamps were alight again. He didn’t have to ask what had happened. 
 “Sorry,” he muttered, sitting up and feeling cold sweat trickling down behind his glasses. 
@@ -2203,7 +2203,7 @@ Harry thought hard and decided his feelings when Gryffindor had won the House Ch
 “Ready?” said Lupin, gripping the box lid. 
 “Ready,” said Harry, trying hard to fill his head with happy thoughts about Gryffindor winning, and not dark thoughts about what was going to happen when the box opened. 
 “Go!” said Lupin, pulling off the lid. The room went icily cold and dark once more. The dementor glided forward, drawing its breath; one rotting hand was extending toward Harry — “Expecto patronum).” Harry yelled. “Expecto patronuml Expecto pat — ” 
-White fog obscured his senses . . . big, blurred shapes were moving around him ... then came a new voice, a man’s voice, shouting, panicking — “Lily, take Harry and go\ It’s him\ Go! Run\ I’ll hold him off~ The sounds of someone stumbling from a room — a door bursting open — a cackle of high-pitched laughter — “Harry! Harry ... wake up. ...” 
+White fog obscured his senses . . . big, blurred shapes were moving around him ... then came a new voice, a man’s voice, shouting, panicking — “Lily, take Harry and go, It’s him, Go! Run, I’ll hold him off~ The sounds of someone stumbling from a room — a door bursting open — a cackle of high-pitched laughter — “Harry! Harry ... wake up. ...” 
 Lupin was tapping Harry hard on the face. This time it was a minute before Harry understood why he was lying on a dusty classroom floor. 
 “I heard my dad,” Harry mumbled. “That’s the first time I’ve ever heard him — he tried to take on Voldemort himself, to give my mum time to run for it. 
 Harry suddenly realized that there were tears on his face mingling with the sweat. He bent his face as low as possible, wiping them off on his robes, pretending to do up his shoelace, so that Lupin wouldn’t see. 
@@ -2318,7 +2318,7 @@ Personally, Harry was sure that Crookshanks had eaten Scabbers, and when he trie
 “Okay, side with Ron, I knew you would!” she said shrilly. “First the Firebolt, now Scabbers, everything’s my fault, isn’t it! Just leave me alone, Harry, I’ve got a lot of work to do!” 
 Ron had taken the loss of his rat very hard indeed. 
 “Come on, Ron, you were always saying how boring Scabbers was,” said Fred bracingly “And he’s been off-color for ages, he was wasting away. It was probably better for him to snuff it quickly — one swallow — he probably didn’t feel a thing.” 
-“Fred\” said Ginny indignantly. 
+“Fred,” said Ginny indignantly. 
 “All he did was eat and sleep, Ron, you said it yourself,” said George. 
 “He bit Goyle for us once!” Ron said miserably. “Remember, Harry?” 
 “Yeah, that’s true,” said Harry. 
@@ -2344,7 +2344,7 @@ Ron, an expression of ecstasy on his face, mounted the broom and zoomed off into
 Harry shouldered the Firebolt and he and Ron walked out of the shadowy stadium, discussing the Firebolt’s superbly smooth action, its phenomenal acceleration, and its pinpoint turning. They were halfway toward the castle when Harry, glancing to his left, saw something that made his heart turn over — a pair of eyes, gleaming out of the darkness. 
 Harry stopped dead, his heart banging against his ribs. 
 “What’s the matter?” said Ron. 
-Harry pointed. Ron pulled out his wand and muttered, “Lumos\” 
+Harry pointed. Ron pulled out his wand and muttered, “Lumos,” 
 A beam of light fell across the grass, hit the bottom of a tree, and illuminated its branches; there, crouching among the budding leaves, was Crookshanks. 
 “Get out of here!” Ron roared, and he stooped down and seized a stone lying on the grass, but before he could do anything else, Crookshanks had vanished with one swish of his long ginger tail. 
 “See?” Ron said furiously, chucking the stone down again. “She’s still letting him wander about wherever he wants — probably washing down Scabbers with a couple of birds now. ...” 
@@ -2748,7 +2748,7 @@ Professor Trelawney rustled past.
 Both Harry and Hermione burst out laughing. 
 “Now, really!” said Professor Trelawney as everyone’s heads turned in their direction. Parvati and Lavender were looking scandalized. “You are disturbing the clairvoyant vibrations!” She approached their table and peered into their crystal ball. Harry felt his heart sinking. He was sure he knew what was coming — “There is something here!” Professor Trelawney whispered, lowering her face to the ball, so that it was reflected twice in her huge glasses. “Something moving . . . but what is it?” 
 Harry was prepared to bet everything he owned, including his Firebolt, that it wasn’t good news, whatever it was. And sure enough — “My dear ... ,” Professor Trelawney breathed, gazing up at Harry. “It is here, plainer than ever before ... my dear, stalking toward you, growing ever closer ... the Gr — ” 
-“Oh, for goodness’ sake!” said Hermione loudly. “Not that ridiculous Grim again\” 
+“Oh, for goodness’ sake!” said Hermione loudly. “Not that ridiculous Grim again,” 
 Professor Trelawney raised her enormous eyes to Hermione ’s face. Parvati whispered something to Lavender, and they both glared at Hermione too. Professor Trelawney stood up, surveying Hermione with unmistakable anger. 
 “I am sorry to say that from the moment you have arrived in this class, my dear, it has been apparent that you do not have what the noble art of Divination requires. Indeed, I don’t remember ever meeting a student whose mind was so hopelessly mundane.” 
 There was a moment’s silence. Then — “Fine!” said Hermione suddenly, getting up and cramming Unfogging the Future back into her bag. “Fine!” she repeated, swinging the bag over her shoulder and almost knocking Ron off his chair. “I give up! I’m leaving!” 
@@ -2847,7 +2847,7 @@ They scattered as the Firebolt zoomed toward them; Angelina’s way was clear.
 “SHE SCORES! SHE SCORES! Gryffindor leads by eighty points to twenty!” 
 Harry, who had almost pelted headlong into the stands, skidded to a halt in midair, reversed, and zoomed back into the middle of the field. 
 And then he saw something to make his heart stand still. Malfoy was diving, a look of triumph on his face — there, a few feet above the grass below, was a tiny, golden glimmer — Harry urged the Firebolt downward, but Malfoy was miles ahead — “Go! Go! Go!” Harry urged his broom. He was gaining on Malfoy — Harry flattened himself to the broom handle as Bole sent a Bludger at him — he was at Malfoy’s ankles — he was level — Harry threw himself forward, took both hands off his broom. He knocked Malfoy’s arm out of the way and He pulled out of his dive, his hand in the air, and the stadium exploded. Harry soared above the crowd, an odd ringing in his ears. The tiny golden ball was held tight in his fist, beating its wings hopelessly against his fingers. 
-Then Wood was speeding toward him, half-blinded by tears; he seized Harry around the neck and sobbed unrestrainedly into his shoulder. Harry felt two large thumps as Fred and George hit them; then Angelina’s, Alicia’s, and Katie’s voices, “We’ve won the Cup\ We’ve won the Cup\” Tangled together in a many-armed hug, the Gryffindor team sank, yelling hoarsely, back to earth. 
+Then Wood was speeding toward him, half-blinded by tears; he seized Harry around the neck and sobbed unrestrainedly into his shoulder. Harry felt two large thumps as Fred and George hit them; then Angelina’s, Alicia’s, and Katie’s voices, “We’ve won the Cup, We’ve won the Cup,” Tangled together in a many-armed hug, the Gryffindor team sank, yelling hoarsely, back to earth. 
 Wave upon wave of crimson supporters was pouring over the barriers onto the field. Hands were raining down on their backs. Harry had a confused impression of noise and bodies pressing in on him. Then he, and the rest of the team, were hoisted onto the shoulders of the crowd. Thrust into the light, he saw Hagrid, plastered with crimson rosettes — “Yeh beat ’em, Harry, yeh beat ’em! Wait till I tell Buckbeak!” There was Percy, jumping up and down like a maniac, all dignity forgotten. Professor McGonagall was sobbing harder even than Wood, wiping her eyes with an enormous Gryffindor flag; and there, fighting their way toward Harry, were Ron and Hermione. Words failed them. They simply beamed as Harry was borne toward the stands, where Dumbledore stood waiting with the enormous Quidditch Cup. 
 If only there had been a dementor around. ... As a sobbing Wood passed Harry the Cup, as he lifted it into the air, Harry felt he could have produced the world’s best Patronus. 
 Harry’s euphoria at finally winning the Quidditch Cup lasted at least a week. Even the weather seemed to be celebrating; as June approached, the days became cloudless and sultry, and all anybody felt like doing was strolling onto the grounds and flopping down on the grass with several pints of iced pumpkin juice, perhaps playing a casual game of Gobstones or watching the giant squid propel itself dreamily across the surface of the lake. 
@@ -2941,7 +2941,7 @@ Harry sat there, staring at her.
 Professor Trelawney looked thoroughly startled. 
 “The Dark Lord? He-Who-Must-Not-Be-Named? My dear boy, that’s hardly something to joke about. ... Rise again, indeed — ” 
 “But you just said it! You said the Dark Lord — ” 
-“I think you must have dozed off too, dear!” said Professor Trelawney. “I would certainly not presume to predict anything quite as far-fetched as that\” 
+“I think you must have dozed off too, dear!” said Professor Trelawney. “I would certainly not presume to predict anything quite as far-fetched as that,” 
 Harry climbed back down the ladder and the spiral staircase, wondering ... had he just heard Professor Trelawney make a real prediction? Or had that been her idea of an impressive end to the test? Five minutes later he was dashing past the security trolls outside the entrance to Gryffindor Tower, Professor Trelawney’s words still resounding in his head. People were striding past him in the opposite direction, laughing and joking, heading for the grounds and a bit of long-awaited freedom; by the time he had reached the portrait hole and entered the common room, it was almost deserted. Over in the corner, however, sat Ron and Hermione. 
 “Professor Trelawney,” Harry panted, “just told me — ” 
 But he stopped abruptly at the sight of their faces. 
@@ -3037,7 +3037,7 @@ But Harry had just seen — slinking toward them, his body low to the ground, wi
 “Crookshanks!” Hermione moaned. “No, go away, Crookshanks! Go away!” 
 But the cat was getting nearer — “Scabbers — NO!” 
 Too late — the rat had slipped between Ron’s clutching fingers, hit the ground, and scampered away. In one bound, Crookshanks sprang after him, and before Harry or Hermione could stop him, Ron had thrown the Invisibility Cloak off himself and pelted away into the darkness. 
-“Ron\” Hermione moaned. 
+“Ron,” Hermione moaned. 
 She and Harry looked at each other, then followed at a sprint; it was impossible to run full out under the cloak; they pulled it off and it streamed behind them like a banner as they hurtled after Ron; they could hear his feet thundering along ahead and his shouts at Crookshanks. 
 “Get away from him — get away — Scabbers, come here — ” 
 There was a loud thud. 
@@ -3048,7 +3048,7 @@ Hermione panted. “Dumbledore — the Minister — they’ll be coming back out
 But before they could cover themselves again, before they could even catch their breath, they heard the soft pounding of gigantic paws. ... Something was bounding toward them, quiet as a shadow — an enormous, pale-eyed, jet-black dog. 
 Harry reached for his wand, but too late — the dog had made an enormous leap and the front paws hit him on the chest; he keeled over backward in a whirl of hair; he felt its hot breath, saw inch-long teeth — But the force of its leap had carried it too far; it rolled off him. Dazed, feeling as though his ribs were broken, Harry tried to stand up; he could hear it growling as it skidded around for a new attack. 
 Ron was on his feet. As the dog sprang back toward them he pushed Harry aside; the dog’s jaws fastened instead around Ron’s outstretched arm. Harry lunged forward, he seized a handful of the brute’s hair, but it was dragging Ron away as easily as though he were a rag doll — Then, out of nowhere, something hit Harry so hard across the face he was knocked off his feet again. He heard Hermione shriek with pain and fall too. 
-Harry groped for his wand, blinking blood out of his eyes — “Lumos\” he whispered. 
+Harry groped for his wand, blinking blood out of his eyes — “Lumos,” he whispered. 
 The wandlight showed him the trunk of a thick tree; they had chased Scabbers into the shadow of the Whomping Willow and its branches were creaking as though in a high wind, whipping backward and forward to stop them going nearer. 
 And there, at the base of the trunk, was the dog, dragging Ron backward into a large gap in the roots — Ron was fighting furiously, but his head and torso were slipping out of sight — “Ron!” Harry shouted, trying to follow, but a heavy branch whipped lethally through the air and he was forced backward again. 
 All they could see now was one of Ron’s legs, which he had hooked around a root in an effort to stop the dog from pulling him farther underground — but a horrible crack cut the air like a gunshot; Ron’s leg had broken, and a moment later, his foot vanished from sight. 
@@ -3281,7 +3281,7 @@ Before he knew what he was doing, Harry had crossed the room in three strides an
 “Don’t ask me to fathom the way a werewolf’s mind works,” hissed Snape. “Get out of the way, Potter.” 
 “YOU’RE PATHETIC!” Harry yelled. “JUST BECAUSE Snape shrieked, looking madder than ever. “Like father, like son, Potter! I have just saved your neck; you should be thanking me on bended knee! You would have been well served if he’d killed you! You’d have died like your father, too arrogant to believe you might be mistaken in Black — now get out of the way, or I will make you. GET OUT OF THE WAY, POTTER!” 
 Harry made up his mind in a split second. Before Snape could take even one step toward him, he had raised his wand. 
-“ Expelliarmus\” he yelled — except that his wasn’t the only voice that shouted. There was a blast that made the door rattle on its hinges; Snape was lifted off his feet and slammed into the wall, then slid down it to the floor, a trickle of blood oozing from under his hair. He had been knocked out. 
+“ Expelliarmus,” he yelled — except that his wasn’t the only voice that shouted. There was a blast that made the door rattle on its hinges; Snape was lifted off his feet and slammed into the wall, then slid down it to the floor, a trickle of blood oozing from under his hair. He had been knocked out. 
 Harry looked around. Both Ron and Hermione had tried to disarm Snape at exactly the same moment. Snape ’s wand soared in a high arc and landed on the bed next to Crookshanks. 
 “You shouldn’t have done that,” said Black, looking at Harry. “You should have left him to me. ...” 
 Harry avoided Black’s eyes. He wasn’t sure, even now, that he’d done the right thing. 
@@ -3394,7 +3394,7 @@ Black kicked out and Pettigrew recoiled.
 “You wouldn’t ... you won’t... ,” gasped Pettigrew. And he scrambled around to Ron. 
 “Ron ... haven’t I been a good friend ... a good pet? You won’t let them kill me, Ron, will you ... you’re on my side, aren’t you?” 
 But Ron was staring at Pettigrew with the utmost revulsion. 
-“I let you sleep in my bed\” he said. 
+“I let you sleep in my bed,” he said. 
 “Kind boy ... kind master ...” Pettigrew crawled toward Ron, “you won’t let them do it. ... I was your rat. ... I was a good pet. ...” 
 “If you made a better rat than a human, it’s not much to boast about, Peter,” said Black harshly. Ron, going still paler with pain, wrenched his broken leg out of Pettigrew’s reach. Pettigrew turned on his knees, staggered forward, and seized the hem of Hermione’s robes. 
 “Sweet girl ... clever girl ... you — you won’t let them. ... Help me. ...” 
@@ -3671,7 +3671,7 @@ Harry threw all his weight onto the rope, but Buckbeak had dug in his front feet
 “Well, let’s get this over with,” said the reedy voice of the Committee member from inside Hagrid’s cabin. “Hagrid, perhaps it will be better if you stay inside — ” 
 “No, I — I wan’ ter be with him. ... I don’ wan’ him ter be alone — ” 
 Footsteps echoed from within the cabin. 
-“Buckbeak, move\” Harry hissed. 
+“Buckbeak, move,” Harry hissed. 
 Harry tugged harder on the rope around Buckbeak’s neck. The hippogriff began to walk, rustling its wings irritably. They were still ten feet away from the forest, in plain view of Hagrid’s back door. 
 “One moment, please, Macnair,” came Dumbledore’s voice. “You need to sign too.” The footsteps stopped. 
 Harry heaved on the rope. Buckbeak snapped his beak and walked a little faster. 
@@ -3686,7 +3686,7 @@ Silence . . . then — “Where is it?” said the reedy voice of the Committee 
 “How extraordinary,” said Dumbledore. There was a note of amusement in his voice. 
 “Beaky!” said Hagrid huskily. 
 There was a swishing noise, and the thud of an axe. The executioner seemed to have swung it into the fence in anger. And then came the howling, and this time they could hear Hagrid ’s words through his sobs. 
-“Gone! Gone! Bless his little beak, he’s gone\ Musta pulled himself free! Beaky, yeh clever boy!” 
+“Gone! Gone! Bless his little beak, he’s gone, Musta pulled himself free! Beaky, yeh clever boy!” 
 Buckbeak started to strain against the rope, trying to get back to Hagrid. Harry and Hermione tightened their grip and dug their heels into the forest floor to stop him. 
 “Someone untied him!” the executioner was snarling. “We should search the grounds, the forest — ” 
 “Macnair, if Buckbeak has indeed been stolen, do you really think the thief will have led him away on foot?” said Dumbledore, still sounding amused. “Search the skies, if you will. ... Hagrid, I could do with a cup of tea. Or a large brandy.” 
@@ -3838,7 +3838,7 @@ They slipped through the doorway behind them and down a tightly spiraling stone 
 "... only hope Dumbledore ’s not going to make difficulties,” Snape was saying. “The Kiss will be performed immediately?” 
 “As soon as Macnair returns with the dementors. This whole Black affair has been highly embarrassing. I can’t tell you how much I’m looking forward to informing the Daily Prophet that we’ve got him at last. ...I daresay they’ll want to interview you, Snape ... and once young Harry’s back in his right mind, I expect he’ll want to tell the Prophet exactly how you saved him. ...” 
 Harry clenched his teeth. He caught a glimpse of Snape’s smirk as he and Fudge passed Harry and Hermione’s hiding place. Their footsteps died away. Harry and Hermione waited a few moments to make sure they’d really gone, then started to run in the opposite direction. Down one staircase, then another, along a new corridor — then they heard a cackling ahead. 
-“Peeves\” Harry muttered, grabbing Hermione’s wrist. “In here!” 
+“Peeves,” Harry muttered, grabbing Hermione’s wrist. “In here!” 
 They tore into a deserted classroom to their left just in time. Peeves seemed to be bouncing along the corridor in boisterous good spirits, laughing his head off. 
 “Oh, he’s horrible,” whispered Hermione, her ear to the door. “I bet he’s all excited because the dementors are going to finish off Sirius. ...” She checked her watch. “Three minutes, Harry!” 
 They waited until Peeves ’s gloating voice had faded into the distance, then slid back out of the room and broke into a run again. 

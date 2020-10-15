@@ -24,8 +24,8 @@ def debug():
     with open(data_path / book, encoding="utf8") as f:
         text = f.read()
         return {
-            "books_data": str(books_data)[:1000],
-            "text": text[:1000],
+            "books_data": str(books_data)[:2000],
+            "text": text[:2000],
         }
 
 @application.route('/', methods=['GET'])
@@ -37,13 +37,13 @@ def hello():
 def parse_last_result(result, search_words):
     res = result[-1]
     for search_word in search_words:
-        res["text"] = re.sub(fr'(“| |\.)?({search_word})(!| |\.|”|\?)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", res["text"], flags=re.IGNORECASE)
+        res["text"] = re.sub(fr'(\n|“| |\.)({search_word})(\n|!| |\.|”|\?|,)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", f" {res['text']}", flags=re.IGNORECASE)[1:]
 
 def is_match(paragraph, search_words):
     set_paragraph = paragraph.split()
     for search_word in search_words:
         try:
-            regex = re.compile(fr'(“| |\.)({search_word})(!| |\.|”|\?)', flags=re.IGNORECASE)
+            regex = re.compile(fr'(\n|“| |\.)({search_word})(\n|!| |\.|”|\?|,)', flags=re.IGNORECASE)
             if regex.search(f" {paragraph}"):
                 raise FileNotFoundError
             return False
@@ -56,12 +56,14 @@ def is_match(paragraph, search_words):
 def get_search_results():
     data = request.json["data"]
     search_words = [word.lower() for word in data["search"].split() if word not in STOPWORDS]
-    if search_words == "":
+    if not search_words:
         return {
             "found": [{"text": "", "book": "Try a more specific search!"}],
         }
     checked = data["books"]
-    page = int(data["page"]) * 10
+    page = int(data["page"]) * 20
+    to_skip = (int(data["page"]) - 1) * 20
+    count = 0
     result = []
     for book, check in zip(books_data.keys(), checked):
         if not check:
@@ -70,25 +72,30 @@ def get_search_results():
             paragraph = search_data[book][i]
 
             if is_match(paragraph, search_words):
-                prev_paragraph = books_data[book][i - 1] if i != 0 else ""
-                next_paragraph = books_data[book][i + 1] if i != len(books_data[book]) - 1 else ""
-                result.append({ "text": f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}", "book": book})
-                parse_last_result(result, search_words)
-            if page == len(result):
-                return json.dumps({
-                    "found": result[-10:],
-                })
+                if count >= to_skip:
+                    prev_paragraph = books_data[book][i - 1] if i != 0 else ""
+                    next_paragraph = books_data[book][i + 1] if i != len(books_data[book]) - 1 else ""
+                    result.append({ "text": f"{prev_paragraph}\n\n{books_data[book][i]}\n\n{next_paragraph}", "book": book})
+                    parse_last_result(result, search_words)
+                else:
+                    count += 1
 
-    if len(result) == 0 and page == 10:
+            if len(result) == 20:
+                return json.dumps({
+                    "found": result,
+                })
+ 
+    if len(result) == 0 and page == 20:  # Empty and first page
         return {
             "found": [{"text": "", "book": "No Occurences Found"}],
         }
-    if page > len(result):
+    if page > len(result):  # Found some but not to fill update entire page
+        print(result)
         return {
             "found": result + [{"text": "", "book": "No More Occurences Found"}],
         }
     return json.dumps({
-        "found": result[-10:],
+        "found": result,
     })
 
 

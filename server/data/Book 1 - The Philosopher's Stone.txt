@@ -241,7 +241,7 @@ Uncle Vernon ripped open the bill, snorted in disgust, and flipped over the post
 “Marge’s ill,” he informed Aunt Petunia. “Ate a funny whelk ...” 
 “Dad!” said Dudley suddenly. “Dad, Harry’s got something!” 
 Harry was on the point of unfolding his letter, which was written on the same heavy parchment as the envelope, when it was jerked sharply out of his hand by Uncle Vernon. 
-“That’s mine\” said Harry, trying to snatch it back. 
+“That’s mine,” said Harry, trying to snatch it back. 
 “Who’d be writing to you?” sneered Uncle Vernon, shaking the letter open with one hand and glancing at it. His face went from red to green faster than a set of traffic lights. And it didn’t stop there. Within seconds it was the grayish white of old porridge. 
 “P-P-Petunia!” he gasped. 
 Dudley tried to grab the letter to read it, but Uncle Vernon held it high out of his reach. Aunt Petunia took it curiously and read the first line. For a moment it looked as though she might faint. She clutched her throat and made a choking noise. 
@@ -278,7 +278,7 @@ With a strangled cry, Uncle Vernon leapt from his seat and ran down the hall, Ha
 “Go to your cupboard — I mean, your bedroom,” he wheezed at Harry. “Dudley — go — just go.” 
 Harry walked round and round his new room. Someone knew he had moved out of his cupboard and they seemed to know he hadn’t received his first letter. Surely that meant they’d try again? And this time he’d make sure they didn’t fail. He had a plan. 
 The repaired alarm clock rang at six o’clock the next morning. Harry turned it off quickly and dressed silently. He mustn’t wake the Dursleys. He stole downstairs without turning on any of the lights. 
-He was going to wait for the postman on the corner of Privet Drive and get the letters for number four first. His heart hammered as he crept across the dark hall toward the front door — Harry leapt into the air; he’d trodden on something big and squashy on the doormat — something alive\ Lights clicked on upstairs and to his horror Harry realized that the big, squashy something had been his uncle’s face. Uncle Vernon had been lying at the foot of the front door in a sleeping bag, clearly making sure that Harry didn’t do exactly what he’d been trying to do. He shouted at Harry for about half an hour and then told him to go and make a cup of tea. Harry shuffled miserably off into the kitchen and by the time he got back, the mail had arrived, right into Uncle Vernon’s lap. Harry could see three letters addressed in green ink. 
+He was going to wait for the postman on the corner of Privet Drive and get the letters for number four first. His heart hammered as he crept across the dark hall toward the front door — Harry leapt into the air; he’d trodden on something big and squashy on the doormat — something alive, Lights clicked on upstairs and to his horror Harry realized that the big, squashy something had been his uncle’s face. Uncle Vernon had been lying at the foot of the front door in a sleeping bag, clearly making sure that Harry didn’t do exactly what he’d been trying to do. He shouted at Harry for about half an hour and then told him to go and make a cup of tea. Harry shuffled miserably off into the kitchen and by the time he got back, the mail had arrived, right into Uncle Vernon’s lap. Harry could see three letters addressed in green ink. 
 “I want — ” he began, but Uncle Vernon was tearing the letters into pieces before his eyes. 
 Uncle Vernon didn’t go to work that day. He stayed at home and nailed up the mail slot. 
 “See,” he explained to Aunt Petunia through a mouthful of nails, “if they can’t deliver them they’ll just give up.” 
@@ -401,7 +401,7 @@ Hagrid grunted.
 “A Muggle,” said Hagrid, “it’s what we call nonmagic folk like them. An’ it’s your bad luck you grew up in a family o’ the biggest Muggles I ever laid eyes on.” 
 “We swore when we took him in we’d put a stop to that rubbish,” said Uncle Vernon, “swore we’d stamp it out of him! Wizard indeed!” 
 “You knew?” said Harry. “You knew I’m a — a wizard?” 
-“Knew!” shrieked Aunt Petunia suddenly. “Knew\ Of course we knew! How could you not be, my dratted sister being what she was? Oh, she got a letter just like that and disappeared off to that — that school — and came home every vacation with her pockets full of frog spawn, turning teacups into rats. I was the only one who saw her for what she was — a freak! But for my mother and father, oh no, it was Lily this and Lily that, they were proud of having a witch in the family!” 
+“Knew!” shrieked Aunt Petunia suddenly. “Knew, Of course we knew! How could you not be, my dratted sister being what she was? Oh, she got a letter just like that and disappeared off to that — that school — and came home every vacation with her pockets full of frog spawn, turning teacups into rats. I was the only one who saw her for what she was — a freak! But for my mother and father, oh no, it was Lily this and Lily that, they were proud of having a witch in the family!” 
 She stopped to draw a deep breath and then went ranting on. It seemed she had been wanting to say all this for years. 
 “Then she met that Potter at school and they left and got married and had you, and of course I knew you’d be just the same, just as strange, just as — as — abnormal — and then, if you please, she went and got herself blown up and we got landed with you!” 
 Harry had gone very white. As soon as he found his voice he said, “Blown up? You told me they died in a car crash!” 
@@ -829,7 +829,7 @@ A whistle sounded.
 “Hurry up!” their mother said, and the three boys clambered onto the train. They leaned out of the window for her to kiss them good-bye, and their younger sister began to cry. 
 “Don’t, Ginny, we’ll send you loads of owls.” 
 “Well send you a Hogwarts toilet seat.” 
-“ Georg e\” 
+“ Georg e,” 
 “Only joking, Mom.” 
 The train began to move. Harry saw the boys’ mother waving and their sister, half laughing, half crying, running to keep up with the train until it gathered too much speed, then she fell back and waved. 
 Harry watched the girl and her mother disappear as the train rounded the corner. Houses flashed past the window. Harry felt a great leap of excitement. He didn’t know what he was going to — but it had to be better than what he was leaving behind. 
@@ -866,7 +866,7 @@ Harry didn’t think there was anything wrong with not being able to afford an o
 "... and until Hagrid told me, I didn’t know anything about being a wizard or about my parents or Voldemort — ” 
 Ron gasped. 
 “What?” said Harry. 
-“ You said You-Know-Who’s name\” said Ron, sounding both shocked and impressed. “I’d have thought you, of all people — ” 
+“ You said You-Know-Who’s name,” said Ron, sounding both shocked and impressed. “I’d have thought you, of all people — ” 
 “I’m not trying to be brave or anything, saying the name,” said Harry, “I just never knew you shouldn’t. See what I mean? I’ve got loads to learn. ... I bet,” he added, voicing for the first time something that had been worrying him a lot lately, “I bet I’m the worst in the class.” 
 “You won’t be. There’s loads of people who come from Muggle families and they learn quick enough.” 
 While they had been talking, the train had carried them out of London. Now they were speeding past fields full of cows and sheep. They were quiet for a time, watching the fields and lanes flick past. 
@@ -1028,7 +1028,7 @@ Maybe they had to try and get a rabbit out of it, Harry thought wildly, that see
 You can keep your bowlers black, Your top hats sleek and tall, For I’m the Hogwarts Sorting Hat And I can cap them all. 
 There’s nothing hidden in your head The Sorting Hat can’t see, So try me on and I will tell you Where you ought to be. 
 You might belong in Gryffindor, Where dwell the brave at heart, Their daring, nerve, and chivalry Set Gryffindors apart; You might belong in Hufflepuff, Where they are just and loyal, Those patient Hufflepuffs are true And unafraid of toil; Or yet in wise old Ravenclaw, If you’ve a ready mind, Where those of wit and learning, Will always find their kind; Or perhaps in Slytherin You’ll make your real friends, Those cunning folk use any means To achieve their ends. 
-So put me on! Don’t be afraid l\ And don’t get in a flap\ You’re in safe hands (though I have none) For I’m a Thinking Cap\” 
+So put me on! Don’t be afraid l, And don’t get in a flap, You’re in safe hands (though I have none) For I’m a Thinking Cap,” 
 The whole hall burst into applause as the hat finished its song. It bowed to each of the four tables and then became quite still again. 
 “So we’ve just got to try on the hat!” Ron whispered to Harry. “I’ll kill Fred, he was going on about wrestling a troll.” 
 Harry smiled weakly. Yes, trying on the hat was a lot better than having to do a spell, but he did wish they could have tried it on without everyone watching. The hat seemed to be asking rather a lot; Harry didn’t feel brave or quick-witted or any of it at the moment. If only the hat had mentioned a House for people who felt a bit queasy, that would have been the one for him. 
@@ -1397,7 +1397,7 @@ Peeves cackled.
 “STUDENTS OUT OF BED!” Peeves bellowed, Ducking under Peeves, they ran for their lives, right to the end of the corridor where they slammed into a door — and it was locked. 
 “This is it!” Ron moaned, as they pushed helplessly at the door, “We’re done for! This is the end!” 
 They could hear footsteps, Filch running as fast as he could toward Peeves ’s shouts. 
-“Oh, move over,” Hermione snarled. She grabbed Harry’s wand, tapped the lock, and whispered, “Alohomora\” 
+“Oh, move over,” Hermione snarled. She grabbed Harry’s wand, tapped the lock, and whispered, “Alohomora,” 
 The lock clicked and the door swung open — they piled through it, shut it quickly, and pressed their ears against it, listening. 
 “Which way did they go, Peeves?” Filch was saying. “Quick, tell me.” 
 “Say ‘please.’ ” 
@@ -1546,7 +1546,7 @@ Hermione Granger was shrinking against the wall opposite, looking as if she was 
 “Confuse it!” Harry said desperately to Ron, and, seizing a tap, he threw it as hard as he could against the wall. 
 The troll stopped a few feet from Hermione. It lumbered around, blinking stupidly, to see what had made the noise. Its mean little eyes saw Harry. It hesitated, then made for him instead, lifting its club as it went. 
 “Oy, pea-brain!” yelled Ron from the other side of the chamber, and he threw a metal pipe at it. The troll didn’t even seem to notice the pipe hitting its shoulder, but it heard the yell and paused again, turning its ugly snout toward Ron instead, giving Harry time to run around it. 
-“Come on, run, run\” Harry yelled at Hermione, trying to pull her toward the door, but she couldn’t move, she was still flat against the wall, her mouth open with terror. 
+“Come on, run, run,” Harry yelled at Hermione, trying to pull her toward the door, but she couldn’t move, she was still flat against the wall, her mouth open with terror. 
 The shouting and the echoes seemed to be driving the troll berserk. It roared again and started toward Ron, who was nearest and had no way to escape. 
 Harry then did something that was both very brave and very stupid: He took a great running jump and managed to fasten his arms around the troll’s neck from behind. The troll couldn’t feel Harry hanging there, but even a troll will notice if you stick a long bit of wood up its nose, and Harry’s wand had still been in his hand when he’d jumped — it had gone straight up one of the troll’s nostrils. 
 Howling with pain, the troll twisted and flailed its club, with Harry clinging on for dear life; any second, the troll was going to rip him off or catch him a terrible blow with the club. 
@@ -1771,7 +1771,7 @@ A second, very small parcel contained a note.
 We received your message and enclose your Christmas present. From Uncle Vernon and Aunt Petunia. Taped to the note was a fifty-pence piece. 
 “That’s friendly,” said Harry. 
 Ron was fascinated by the fifty pence. 
-“ Weird\ ” he said, “What a shape! This is money?” 
+“ Weird, ” he said, “What a shape! This is money?” 
 “You can keep it,” said Harry, laughing at how pleased Ron was. “Hagrid and my aunt and uncle — so who sent these?” 
 “I think I know who that one’s from,” said Ron, turning a bit pink and pointing to a very lumpy parcel. “My mom. I told her you didn’t expect any presents and — oh, no,” he groaned, “she’s made you a Weasley sweater.” 
 Harry had torn open the parcel to find a thick, hand- knitted sweater in emerald green and a large box of homemade fudge. 
@@ -1952,14 +1952,14 @@ Neville’s lips twitched in a weak smile as he unwrapped the frog.
 As Neville walked away, Harry looked at the Famous Wizard card. 
 “Dumbledore again,” he said, “He was the first one I ever — ” 
 He gasped. He stared at the back of the card. Then he looked up at Ron and Hermione. 
-“I’ve found him\” he whispered. “I’ve found Flamel! I told you I’d read the name somewhere before, I read it on the train coming here — listen to this: ‘Dumbledore is particularly famous for his defeat of the Dark wizard Grindelwald in 1945, for the discovery of the twelve uses of dragon’s blood, and his work on alchemy with his partner, Nicolas Flamel’V’ Hermione jumped to her feet. She hadn’t looked so excited since they’d gotten back the marks for their very first piece of homework. 
+“I’ve found him,” he whispered. “I’ve found Flamel! I told you I’d read the name somewhere before, I read it on the train coming here — listen to this: ‘Dumbledore is particularly famous for his defeat of the Dark wizard Grindelwald in 1945, for the discovery of the twelve uses of dragon’s blood, and his work on alchemy with his partner, Nicolas Flamel’V’ Hermione jumped to her feet. She hadn’t looked so excited since they’d gotten back the marks for their very first piece of homework. 
 “Stay there!” she said, and she sprinted up the stairs to the girls’ dormitories. Harry and Ron barely had time to exchange mystified looks before she was dashing back, an enormous old book in her arms. 
 “I never thought to look in here!” she whispered excitedly. “I got this out of the library weeks ago for a bit of light reading.” 
 “Light?” said Ron, but Hermione told him to be quiet until she’d looked something up, and started flicking frantically through the pages, muttering to herself. 
 At last she found what she was looking for. 
 “I knew it! I knew it!” 
 “Are we allowed to speak yet?” said Ron grumpily. Hermione ignored him. 
-“Nicolas Flamel,” she whispered dramatically, “is the only known maker of the Sorcerer’s Stone\” 
+“Nicolas Flamel,” she whispered dramatically, “is the only known maker of the Sorcerer’s Stone,” 
 This didn’t have quite the effect she’d expected. 
 “The what?” said Harry and Ron. 
 “Oh, honestly , don’t you two read? Look — read that, there.” 
@@ -2048,7 +2048,7 @@ Harry, who was looking up “Dittany” in One Thousand Magical Herbs and Fungi,
 Hagrid shuffled into view, hiding something behind his back. He looked very out of place in his moleskin overcoat. 
 “Jus’ lookin’,” he said, in a shifty voice that got their interest at once. “An’ what’re you lot up ter?” He looked suddenly suspicious. “Yer not still lookin’ fer Nicolas Flamel, are yeh?” 
 “Oh, we found out who he is ages ago,” said Ron impressively. “And we know what that dog’s guarding, it’s a Sorcerer’s St — ” 
-“Shhhh\” Hagrid looked around quickly to see if anyone was listening. “Don’ go shoutin’ about it, what’s the matter with yeh?” 
+“Shhhh,” Hagrid looked around quickly to see if anyone was listening. “Don’ go shoutin’ about it, what’s the matter with yeh?” 
 “There are a few things we wanted to ask you, as a matter of fact,” said Harry, “about what’s guarding the Stone apart from Fluffy — ” 
 “SHHHH!” said Hagrid again. “Listen — come an’ see me later, I’m not promisin’ I’ll tell yeh anythin’, mind, but don’ go rabbitin’ about it in here, students aren’ s’pposed ter know. They’ll think I’ve told yeh — ” 
 “See you later, then,” said Harry. 
@@ -2350,7 +2350,7 @@ Harry couldn’t sit down. He paced up and down in front of the fire. He was sti
 “Stop saying the name!” said Ron in a terrified whisper, as if he thought Voldemort could hear them. 
 Harry wasn’t listening. 
 “Firenze saved me, but he shouldn’t have done so. ... Bane was furious ... he was talking about interfering with what the planets say is going to happen. ... They must show that Voldemort’s coming back. ... Bane thinks Firenze should have let Voldemort kill me. ... I suppose that’s written in the stars as well.” 
-“Will you stop saying the name\” Ron hissed. 
+“Will you stop saying the name,” Ron hissed. 
 “So all I’ve got to wait for now is Snape to steal the Stone,” Harry went on feverishly, “then Voldemort will be able to come and finish me off. ... Well, I suppose Bane 11 be happy.” 
 Hermione looked very frightened, but she had a word of comfort. 
 “Harry, everyone says Dumbledore’s the only one You-Know-Who was ever afraid of. With Dumbledore around, You-Know-Who won’t touch you. Anyway, who says the centaurs are right? It sounds like fortune-telling to me, and Professor McGonagall says that’s a very imprecise branch of magic.” 
@@ -2366,7 +2366,7 @@ Their very last exam was History of Magic. One hour of answering questions about
 Hermione always liked to go through their exam papers afterward, but Ron said this made him feel ill, so they wandered down to the lake and flopped under a tree. The Weasley twins and Lee Jordan were tickling the tentacles of a giant squid, which was basking in the warm shallows. 
 “No more studying,” Ron sighed happily, stretching out on the grass. “You could look more cheerful, Harry, we’ve got a week before we find out how badly we’ve done, there’s no need to worry yet.” 
 Harry was rubbing his forehead. 
-“I wish I knew what this means\” he burst out angrily. “My scar keeps hurting — it’s happened before, but never as often as this.” 
+“I wish I knew what this means,” he burst out angrily. “My scar keeps hurting — it’s happened before, but never as often as this.” 
 “Go to Madam Pomfrey,” Hermione suggested. 
 “I’m not ill,” said Harry. “I think it’s a warning ... it means danger’s coming. ...” 
 Ron couldn’t get worked up, it was too hot. 
@@ -2534,7 +2534,7 @@ Ron followed right away. He landed, sprawled next to Harry.
 The distant music stopped. There was a loud bark from the dog, but Hermione had already jumped. She landed on Harry’s other side. 
 “We must be miles under the school,” she said. 
 “Lucky this plant thing’s here, really,” said Ron. 
-“Lucky\” shrieked Hermione. “Look at you both!” 
+“Lucky,” shrieked Hermione. “Look at you both!” 
 She leapt up and struggled toward a damp wall. She had to struggle because the moment she had landed, the plant had started to twist snakelike tendrils around her ankles. As for Harry and Ron, their legs had already been bound tightly in long creepers without their noticing. 
 Hermione had managed to free herself before the plant got a firm grip on her. Now she watched in horror as the two boys fought to pull the plant off them, but the more they strained against it, the tighter and faster the plant wound around them. 
 “Stop moving!” Hermione ordered them. “I know what this is — it’s Devil’s Snare!” 
@@ -2561,7 +2561,7 @@ He took a deep breath, covered his face with his arms, and sprinted across the r
 The other two followed him. They tugged and heaved at the door, but it wouldn’t budge, not even when Hermione tried her Alohomora Charm. 
 “Now what?” said Ron. 
 “These birds ... they can’t be here just for decoration,” said Hermione. 
-They watched the birds soaring overhead, glittering — glittering? “They’re not birds!” Harry said suddenly. “They’re keys\ Winged keys — look carefully. So that must mean ...” he looked around the chamber while the other two squinted up at the flock of keys. "... yes — look! Broomsticks! We’ve got to catch the key to the door!” 
+They watched the birds soaring overhead, glittering — glittering? “They’re not birds!” Harry said suddenly. “They’re keys, Winged keys — look carefully. So that must mean ...” he looked around the chamber while the other two squinted up at the flock of keys. "... yes — look! Broomsticks! We’ve got to catch the key to the door!” 
 “But there are hundreds of them!” 
 Ron examined the lock on the door. 
 “We’re looking for a big, old-fashioned one — probably silver, like the handle.” 
@@ -2655,7 +2655,7 @@ Harry took a deep breath and picked up the smallest bottle. He turned to face th
 It was indeed as though ice was flooding his body. He put the bottle down and walked forward; he braced himself, saw the black flames licking his body, but couldn’t feel them — for a moment he could see nothing but dark fire — then he was on the other side, in the last chamber. 
 There was already someone there — but it wasn’t Snape. It wasn’t even Voldemort. 
 It was Quirrell. 
-“You\” gasped Harry. 
+“You,” gasped Harry. 
 Quirrell smiled. His face wasn’t twitching at all. 
 “Me,” he said calmly. “I wondered whether I’d be meeting you here, Potter.” 
 “But I thought — Snape — ” 
