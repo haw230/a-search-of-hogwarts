@@ -91,7 +91,7 @@ function App() {
       setSubtitle("Search the full text of your favorite books.");
     }
 
-    axios.post('http://pottersearch-env.eba-wazmbygp.us-east-2.elasticbeanstalk.com/api/search', {
+    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -193,7 +193,7 @@ function App() {
                 console.log(1234);
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('http://pottersearch-env.eba-wazmbygp.us-east-2.elasticbeanstalk.com/api/search', {
+                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
