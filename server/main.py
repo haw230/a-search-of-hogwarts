@@ -6,7 +6,7 @@ import json
 from time import sleep
 from flask_cors import cross_origin
 from flask_cors import CORS
-
+from collections import defaultdict
 import json
 
 application = Flask(__name__)
@@ -56,10 +56,13 @@ def is_match(paragraph, search_words):
 @cross_origin()
 def get_search_results():
     data = request.json["data"]
-    search_words = [word for word in data["search"].split() if word not in STOPWORDS]
+    search_words = [word.lower() for word in data["search"].split() if word not in STOPWORDS]
+    if search_words == "":
+        return {
+            "found": [{"text": "", "book": "Try a more specific search!"}],
+        }
     checked = data["books"]
     page = int(data["page"]) * 10
-
     result = []
     for book, check in zip(books_data.keys(), checked):
         if not check:
@@ -84,6 +87,24 @@ def get_search_results():
     return json.dumps({
         "found": result[-10:],
     })
+
+
+@application.route('/api/count', methods=['GET', 'POST'])
+@cross_origin()
+def get_counts():
+    data = request.json["data"]
+    search_words = [word.lower() for word in data["search"].split() if word not in STOPWORDS]
+    counts = {}
+
+    result = []
+    for book in books_data.keys():
+        counts[book] = 0
+        for i in range(len(books_data[book])):
+            paragraph = search_data[book][i]
+
+            if is_match(paragraph, search_words):
+                counts[book] += 1
+    return counts
 
 
 def startup():

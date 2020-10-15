@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Grid, Input, Checkbox, Button, Icon, Card } from 'semantic-ui-react';
+import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Image } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
@@ -66,6 +66,9 @@ function App() {
   const [rerenderChild, setRerenderchild] = useState(0);
   const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
+  const [open, setOpen] = useState(false)
+  const [occurence_loading, setOccurenceLoading] = useState(false)
+  const [occurence_data, setOccurenceData] = useState({});
   const checklist = useRef(checked);
 
   useEffect(() => {
@@ -91,7 +94,29 @@ function App() {
       setSubtitle("Search the full text of your favorite books.");
     }
 
-    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+    if (setOccurenceLoading) {
+      axios.post('http://127.0.0.1:5000/api/count', {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+        data: {
+          books,  // checked books
+          search,  // words to search for
+          page,  // pagination
+        }
+      }).then((response) => {
+        console.log(response);
+        setOccurenceLoading(false);
+        setOccurenceData(response.data.found);
+      })
+        .catch(err => {
+          setSubtitle("Error!!!");
+          console.log(err);
+          setLoading(false);
+        });
+    }
+
+    axios.post('http://127.0.0.1:5000/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -133,6 +158,7 @@ function App() {
                   {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
+                      setOccurenceLoading(true);
                       if (page !== 1) {
                         setPage(1);
                       }
@@ -187,12 +213,14 @@ function App() {
       <div>
         {result.length > 0 ? (
           <div className="results">
+            <div id="search-chunk"></div>
             <InfiniteScroll
+              style={{z_index: -10, overflow: "visible"}}
               dataLength={result.length}
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+                axios.post('http://127.0.0.1:5000/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
@@ -212,9 +240,36 @@ function App() {
                   <b>Yay! You have seen it all</b>
                 </p>
               }
-              hasMore={result[result.length - 1].title !== "No Occurences Found"}
+              hasMore={result[result.length - 1].book !== "No Occurences Found"}
             >
-              <div id="search-chunk"></div>
+              <Modal
+                onClose={() => setOpen(false)}
+                onOpen={() => setOpen(true)}
+                open={open}
+                trigger={<div>
+                  <Grid>
+                    <Grid.Column textAlign="center">
+                      <Button className="centred" style={{backgroundColor: 'white'}}  loading={occurence_loading}>
+                      <Icon name='list alternate' /> Show All Occurences 
+
+                      </Button>
+                    </Grid.Column>
+                  </Grid>
+                </div>}
+              >
+                <Modal.Header>Select a Photo</Modal.Header>
+                <Modal.Content>
+                  <Modal.Description>
+                    <Header>All Occurences By Book</Header>
+                    {occurence_data}
+                  </Modal.Description>
+                </Modal.Content>
+                <Modal.Actions>
+                  <Button color='black' onClick={() => setOpen(false)}>
+                    Exit
+                  </Button>
+                </Modal.Actions>
+              </Modal>
               {result.map(paragraph => (
                 <Grid celled={false}>
                   <Grid.Row>
@@ -230,7 +285,6 @@ function App() {
                           </Card.Description>
                         </Card.Content>
                       </Card>
-                      
                     </Grid.Column>
                     <Grid.Column width={2}></Grid.Column>
                   </Grid.Row>

@@ -42,6 +42,7 @@
   max-width: calc(100% - 20px);
   width: 980px;
   height: 400px;
+  max-height: calc(100vh - 10px);
   background: #222222;
   background: rgba(34, 34, 34, 0.75);
   z-index: 1;
@@ -60,10 +61,15 @@
 }
 
 .results {
+  overflow: hidden;
   position: relative;
   padding-top: calc(100vh + 30px);
-  background: #222222;
-  z-index: -1;
+  /* background: #222222; */
+  /* z-index: auto; */
+}
+
+body {
+  background-color: #222222;
 }
 
 .card {
@@ -111,6 +117,10 @@
 
 .search-container {
   width: 200px;
+}
+
+#search-chunk {
+  z-index: 10;
 }
 
 .button-div {
