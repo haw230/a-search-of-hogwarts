@@ -93,7 +93,7 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('http://localhost:5001/api/count', {
+      axios.post('https://backend-292602.wm.r.appspot.com/api/count', {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -111,7 +111,7 @@ function App() {
         });
     }
 
-    axios.post('http://localhost:5001/api/search', {
+    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -225,7 +225,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('http://localhost:5001/api/search', {
+                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
