@@ -6,13 +6,13 @@ import json
 from time import sleep
 from flask_cors import cross_origin
 from flask_cors import CORS
-from collections import defaultdict
+from collections import OrderedDict
 import json
 
 application = Flask(__name__)
 # CORS(application)
-books_data = {}  # copy of display text
-search_data = {}  # copy of search text (will preprocess)
+books_data = OrderedDict()  # copy of display text
+search_data = OrderedDict()  # copy of search text (will preprocess)
 
 STOPWORDS = ['a', 'the', 'an', 'it']
 
@@ -37,16 +37,15 @@ def hello():
 def parse_last_result(result, search_words):
     res = result[-1]
     for search_word in search_words:
-        res["text"] = re.sub(fr'(“| |.)?({search_word})(!| |.|”|\?)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", res["text"], flags=re.IGNORECASE)
+        res["text"] = re.sub(fr'(“| |\.)?({search_word})(!| |\.|”|\?)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", res["text"], flags=re.IGNORECASE)
 
 def is_match(paragraph, search_words):
-    set_paragraph = set(paragraph.split())
+    set_paragraph = paragraph.split()
     for search_word in search_words:
         try:
-            for word in set_paragraph:
-                regex = re.compile(fr'(“| |.)?({search_word})(!| |.|”|\?)')
-                if regex.search(word):
-                    raise FileNotFoundError
+            regex = re.compile(fr'(“| |\.)({search_word})(!| |\.|”|\?)', flags=re.IGNORECASE)
+            if regex.search(f" {paragraph}"):
+                raise FileNotFoundError
             return False
         except FileNotFoundError:
             pass
@@ -80,9 +79,13 @@ def get_search_results():
                     "found": result[-10:],
                 })
 
-    if len(result) == 0:
+    if len(result) == 0 and page == 10:
         return {
             "found": [{"text": "", "book": "No Occurences Found"}],
+        }
+    if page > len(result):
+        return {
+            "found": result + [{"text": "", "book": "No More Occurences Found"}],
         }
     return json.dumps({
         "found": result[-10:],
@@ -94,17 +97,18 @@ def get_search_results():
 def get_counts():
     data = request.json["data"]
     search_words = [word.lower() for word in data["search"].split() if word not in STOPWORDS]
-    counts = {}
+    counts = []
 
     result = []
     for book in books_data.keys():
-        counts[book] = 0
+        book_count = {book: 0}
         for i in range(len(books_data[book])):
             paragraph = search_data[book][i]
 
             if is_match(paragraph, search_words):
-                counts[book] += 1
-    return counts
+                book_count[book] += 1
+        result.append(book_count)
+    return {"occurences": result, "search": data["search"]}
 
 
 def startup():
@@ -126,4 +130,4 @@ def startup():
 startup()
 
 if __name__ == "__main__":
-    application.run()
+    application.run(debug=True, host='localhost', port=5001)

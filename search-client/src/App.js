@@ -68,9 +68,9 @@ function App() {
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false)
   const [occurence_loading, setOccurenceLoading] = useState(false)
-  const [occurence_data, setOccurenceData] = useState({});
+  const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
-
+  console.log(occurence_data);
   useEffect(() => {
     setSubtitle(subtitle);
   }, [subtitle]);
@@ -95,28 +95,26 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('http://127.0.0.1:5000/api/count', {
+      axios.post('http://localhost:5001/api/count', {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
         data: {
-          books,  // checked books
           search,  // words to search for
-          page,  // pagination
         }
       }).then((response) => {
-        console.log(response);
+        console.log(response.data.occurences);
         setOccurenceLoading(false);
-        setOccurenceData(response.data.found);
+        setOccurenceData(response.data);
       })
         .catch(err => {
-          setSubtitle("Error!!!");
+          setSubtitle("Error for Occurences");
           console.log(err);
           setLoading(false);
         });
     }
 
-    axios.post('http://127.0.0.1:5000/api/search', {
+    axios.post('http://localhost:5001/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -220,7 +218,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('http://127.0.0.1:5000/api/search', {
+                axios.post('http://localhost:5001/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
@@ -240,7 +238,7 @@ function App() {
                   <b>Yay! You have seen it all</b>
                 </p>
               }
-              hasMore={result[result.length - 1].book !== "No Occurences Found"}
+              hasMore={result[result.length - 1].book !== "No Occurences Found" && result[result.length - 1].book !== "No More Occurences Found"}
             >
               <Modal
                 onClose={() => setOpen(false)}
@@ -257,11 +255,12 @@ function App() {
                   </Grid>
                 </div>}
               >
-                <Modal.Header>Select a Photo</Modal.Header>
                 <Modal.Content>
                   <Modal.Description>
-                    <Header>All Occurences By Book</Header>
-                    {occurence_data}
+                    <Header>All Occurences By Book (Search Term: "{occurence_data.search}")</Header>
+                    {occurence_data.occurences.map(book => (
+                      <p><b>{Object.keys(book)[0]}:</b> {Object.values(book)[0]}</p>
+                    ))}
                   </Modal.Description>
                 </Modal.Content>
                 <Modal.Actions>
