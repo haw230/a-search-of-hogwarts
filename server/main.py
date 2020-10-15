@@ -37,13 +37,13 @@ def hello():
 def parse_last_result(result, search_words):
     res = result[-1]
     for search_word in search_words:
-        res["text"] = re.sub(fr'(\n|“| |\.)({search_word})(\n|!| |\.|”|\?|,)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", f" {res['text']}", flags=re.IGNORECASE)[1:]
+        res["text"] = re.sub(fr'(\-|\n|“| |\.)({search_word})(\-|\n|!| |\.|”|\?|,)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", f" {res['text']}", flags=re.IGNORECASE)[1:]
 
 def is_match(paragraph, search_words):
     set_paragraph = paragraph.split()
     for search_word in search_words:
         try:
-            regex = re.compile(fr'(\n|“| |\.)({search_word})(\n|!| |\.|”|\?|,)', flags=re.IGNORECASE)
+            regex = re.compile(fr'(\-|\n|“| |\.)({search_word})(\-|\n|!| |\.|”|\?|,)', flags=re.IGNORECASE)
             if regex.search(f" {paragraph}"):
                 raise FileNotFoundError
             return False
@@ -51,12 +51,19 @@ def is_match(paragraph, search_words):
             pass
     return True
 
+def cleanse(string):
+    TO_REPLACE = [',', '\'', '\"', '.', '?', '!', '-']
+    temp = string
+    for r in TO_REPLACE:
+        temp = temp.replace(r, f"{r}?")
+    return temp.lower()
+
 @application.route('/api/search', methods=['GET', 'POST'])
 @cross_origin()
 def get_search_results():
     data = request.json["data"]
-    search_words = [word.lower() for word in data["search"].split() if word not in STOPWORDS]
-    if not search_words:
+    search_words = [cleanse(word) for word in data["search"].split() if word.lower() not in STOPWORDS]
+    if not search_words or not all(search_words):
         return {
             "found": [{"text": "", "book": "Try a more specific search!"}],
         }
@@ -90,7 +97,6 @@ def get_search_results():
             "found": [{"text": "", "book": "No Occurences Found"}],
         }
     if page > len(result):  # Found some but not to fill update entire page
-        print(result)
         return {
             "found": result + [{"text": "", "book": "No More Occurences Found"}],
         }
