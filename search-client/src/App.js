@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Image } from 'semantic-ui-react';
+import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
@@ -162,7 +162,7 @@ function App() {
                     searchTerm.current = data.value
                   }}
                   onKeyPress={event => {
-                    if (event.key != 'Enter') {
+                    if (event.key !== 'Enter') {
                       return;
                     }
                     setLoading(true);
