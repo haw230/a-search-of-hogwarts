@@ -9,9 +9,54 @@
   }
 
   #subtitle {
-    font-size: 1em !important;
+    font-size: 1.2em !important;
   }
 
+}
+
+@media (max-height: 600px) {
+  .header {
+    font-size: 2em !important;
+  }
+
+  #subtitle {
+    font-size: 0.7em !important;
+  }
+
+  .those-buttons {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+@media (max-height: 480px) and (max-width: 690px) {
+  .grid-thing {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+.those-buttons {
+  background-color: 'white';
+}
+
+@media (max-width: 376px) {
+  .header {
+    font-size: 2em !important;
+  }
+
+  Button {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .titles {
+    font-size: 0.8em !important;
+  }
+
+  #subtitle {
+    font-size: 0.7em !important;
+  }
 }
 
 .bg-box {

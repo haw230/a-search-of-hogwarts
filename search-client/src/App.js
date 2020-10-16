@@ -93,7 +93,7 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('https://stephanwu.tech/api/count', {
+      axios.post('https://backend-292602.wm.r.appspot.com/api/count', {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -111,7 +111,7 @@ function App() {
         });
     }
 
-    axios.post('https://stephanwu.tech/api/search', {
+    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -176,7 +176,7 @@ function App() {
                 <Grid.Column width={2}></Grid.Column>
               </Grid.Row>
             </Grid>
-            <Grid celled={false} stackable={true}>
+            <Grid className="grid-thing" celled={false} stackable={true}>
               <Grid.Row>
                 <Grid.Column width={4}>
                   <CheckBoxBook book={"The Sorcerer's Stone"} rerenderChild={rerenderChild} />
@@ -204,11 +204,11 @@ function App() {
               </Grid.Row>
             </Grid>
             <div className="button-div">
-              <Button style={{backgroundColor: 'white'}} onClick={checkAll}>
+              <Button className="those-buttons" style={{backgroundColor: 'white'}} onClick={checkAll}>
                 <Icon name='plus square outline' />
                 Check All
               </Button>
-              <Button style={{backgroundColor: 'white'}} onClick={checkNone}>
+              <Button className="those-buttons" style={{backgroundColor: 'white'}} onClick={checkNone}>
                 <Icon name='minus square outline' />
                 Uncheck All
               </Button>
@@ -225,7 +225,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('https://stephanwu.tech/api/search', {
+                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
