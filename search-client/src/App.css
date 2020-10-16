@@ -73,7 +73,7 @@
   background: #222222;
   background: rgba(34, 34, 34, 0.75);
   z-index: 1;
-  -webkit-transform: translateZ(0);
+  /* -webkit-transform: translateZ(0); */
 }
 
 #bg-image {
