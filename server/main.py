@@ -3,14 +3,11 @@ import os
 from pathlib import Path
 import re
 import json
-from time import sleep
 from flask_cors import cross_origin
-from flask_cors import CORS
 from collections import OrderedDict
-import json
 
 application = Flask(__name__)
-# CORS(application)
+
 books_data = OrderedDict()  # copy of display text
 search_data = OrderedDict()  # copy of search text (will preprocess)
 
@@ -31,7 +28,6 @@ def debug():
 @application.route('/', methods=['GET'])
 @cross_origin()
 def hello():
-    sleep(4)
     return "Portfolio website is coming soon!"
 
 def parse_last_result(result, search_words):
