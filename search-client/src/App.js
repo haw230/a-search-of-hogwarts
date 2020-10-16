@@ -93,7 +93,7 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('https://backend-292602.wm.r.appspot.com/api/count', {
+      axios.post('https://stephanwu.tech/api/count', {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -111,7 +111,7 @@ function App() {
         });
     }
 
-    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+    axios.post('https://stephanwu.tech/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -128,9 +128,21 @@ function App() {
         scrollTop: $("#search-chunk").offset().top
       }, 1000);
     })
-      .catch(err => {
-        setSubtitle("Error!!!");
-        console.log(err);
+      .catch(error => {
+        // setSubtitle("Error!!!");
+        if (error.response) {
+          // Request made and server responded
+          setSubtitle(JSON.stringify(error.response.data));
+          // setSubtitle(JSON.stringify(error.response.status));
+          // setSubtitle(JSON.stringify(error.response.headers));
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.log(error.request)
+          setSubtitle(JSON.stringify(error.request));
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          setSubtitle(JSON.stringify('Error', error.message));
+        }
         setLoading(false);
       });
   }
@@ -225,7 +237,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+                axios.post('https://stephanwu.tech/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },

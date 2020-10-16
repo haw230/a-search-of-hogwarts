@@ -73,7 +73,6 @@
   background: #222222;
   background: rgba(34, 34, 34, 0.75);
   z-index: 1;
-  /* -webkit-transform: translateZ(0); */
 }
 
 #bg-image {
@@ -83,7 +82,6 @@
   height: 100%;
   background-size: cover !important;
   position: absolute;
-  /* -webkit-transform: translateZ(0); */
   background: url('./img/site_background2.jpg') no-repeat center center;
 }
 
