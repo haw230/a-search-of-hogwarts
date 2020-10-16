@@ -8,3 +8,4 @@ rm package.json
 rm package-lock.json
 rm -rf public
 rm -rf src
+rm README.md
