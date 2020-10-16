@@ -32,7 +32,7 @@ def debug():
 @cross_origin()
 def hello():
     sleep(4)
-    return "request.body"
+    return "Portfolio website is coming soon!"
 
 def parse_last_result(result, search_words):
     res = result[-1]

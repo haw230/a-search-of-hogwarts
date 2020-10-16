@@ -93,7 +93,7 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('https://backend-292602.wm.r.appspot.com/api/count', {
+      axios.post('https://stephanwu.tech/api/count', {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -111,7 +111,7 @@ function App() {
         });
     }
 
-    axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+    axios.post('https://stephanwu.tech/api/search', {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -225,7 +225,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('https://backend-292602.wm.r.appspot.com/api/search', {
+                axios.post('https://stephanwu.tech/api/search', {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
