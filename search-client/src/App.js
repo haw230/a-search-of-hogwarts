@@ -151,6 +151,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <p>Search the full text of your favorite Harry Potter books.</p>
       <div id="bg-image">
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
