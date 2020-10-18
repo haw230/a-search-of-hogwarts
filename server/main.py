@@ -33,14 +33,14 @@ def hello():
 def parse_last_result(result, search_words):
     res = result[-1]
     for search_word in search_words:
-        res["text"] = re.sub(fr'(\-|\n|“| |\.)({search_word})(\-|\n|!| |\.|”|\?|,)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", f" {res['text']}", flags=re.IGNORECASE)[1:]
+        res["text"] = re.sub(fr'(\-|\n|“| |\.)({search_word})(’s|\-|\n|!| |\.|”|\?|,)', lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}", f" {res['text']}", flags=re.IGNORECASE)[1:]
 
 
 def is_match(paragraph, search_words):
     set_paragraph = paragraph.split()
     for search_word in search_words:
         try:
-            regex = re.compile(fr'(\-|\n|“| |\.)({search_word})(\-|\n|!| |\.|”|\?|,)', flags=re.IGNORECASE)
+            regex = re.compile(fr'(\-|\n|“| |\.)({search_word})(’s|\-|\n|!| |\.|”|\?|,)', flags=re.IGNORECASE)
             if regex.search(f" {paragraph}"):
                 raise FileNotFoundError
             return False
