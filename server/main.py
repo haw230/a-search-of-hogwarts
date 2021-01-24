@@ -1,3 +1,7 @@
+import sys
+
+sys.path.insert(0, "/home/1100h19/a-search-of-hogwarts/server")
+
 from flask import Flask, request
 import os
 from pathlib import Path
@@ -7,6 +11,7 @@ from flask_cors import cross_origin
 from collections import OrderedDict
 
 application = Flask(__name__)
+app = application
 
 books_data = OrderedDict()  # copy of display text
 search_data = OrderedDict()  # copy of search text (will preprocess)
@@ -16,7 +21,7 @@ STOPWORDS = ['a', 'the', 'an', 'it']
 @application.route('/debug', methods=['GET'])
 @cross_origin()
 def debug():
-    data_path = Path('data/')
+    data_path = Path('/home/1100h19/a-search-of-hogwarts/server/data/')
     book = "Book 1 - The Philosopher's Stone.txt"
     with open(data_path / book, encoding="utf8") as f:
         text = f.read()
@@ -129,7 +134,7 @@ def startup():
             'Book 5 - The Order of the Phoenix.txt',
             'Book 6 - The Half Blood Prince.txt',
             'Book 7 - The Deathly Hallows.txt',]
-    data_path = Path('data/')
+    data_path = Path('/home/1100h19/a-search-of-hogwarts/server/data')
     for book in books:
         with open(data_path / book, encoding="utf8") as f:
             text = f.read()
