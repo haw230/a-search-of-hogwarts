@@ -8,7 +8,7 @@ import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
 const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
-
+const API = "https://1100h19.pythonanywhere.com"
 const checked = new Map(Object.entries({
   "The Sorcerer's Stone": true,
   "The Chamber of Secrets": true,
@@ -93,7 +93,7 @@ function App() {
     }
 
     if (setOccurenceLoading) {
-      axios.post('https://stephanwu.tech/api/count', {
+      axios.post(`${API}/api/count`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -111,7 +111,7 @@ function App() {
         });
     }
 
-    axios.post('https://stephanwu.tech/api/search', {
+    axios.post(`${API}/api/search`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
