@@ -146,8 +146,6 @@ function App() {
         setLoading(false);
       });
   }
-  // console.log(checklist);
-  // console.log(subtitle, searchTerm);
 
   return (
     <React.Fragment>
@@ -238,7 +236,7 @@ function App() {
               next={() => {
                 let books = getBooks(checklist.current);
                 let search = searchTerm.current;
-                axios.post('https://stephanwu.tech/api/search', {
+                axios.post(`${API}/api/search`, {
                   header: {
                     "Access-Control-Allow-Origin": "*",
                   },
