@@ -60,7 +60,7 @@ function App() {
   
   const searchTerm = useRef("");
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
+  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books. Also, get your vaccine!");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
@@ -182,7 +182,7 @@ function App() {
                       setPage(1);
                     }
                   }}
-                  placeholder={"Get your vaccine!" /* placeholders[Math.floor(Math.random() * placeholders.length)] */} />
+                  placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
                 <Grid.Column width={2}></Grid.Column>
               </Grid.Row>
