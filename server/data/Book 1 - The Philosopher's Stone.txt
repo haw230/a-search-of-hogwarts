@@ -218,7 +218,7 @@ This was why Harry spent as much time as possible out of the house, wandering ar
 One day in July, Aunt Petunia took Dudley to London to buy his Smeltings uniform, leaving Harry at Mrs. Figg’s. Mrs. Figg wasn’t as bad as usual. It turned out she’d broken her leg tripping over one of her cats, and she didn’t seem quite as fond of them as before. She let Harry watch television and gave him a bit of chocolate cake that tasted as though she’d had it for several years. 
 That evening, Dudley paraded around the living room for the family in his brand-new uniform. Smeltings boys wore maroon tailcoats, orange knickerbockers, and flat straw hats called boaters. They also carried knobbly sticks, used for hitting each other while the teachers weren’t looking. This was supposed to be good training for later life. 
 As he looked at Dudley in his new knickerbockers, Uncle Vernon said gruffly that it was the proudest moment of his life. Aunt Petunia burst into tears and said she couldn’t believe it was her Ickle Dudleykins, he looked so handsome and grown-up. Harry didn’t trust himself to speak. He thought two of his ribs might already have cracked from trying not to laugh. 
-k k k There was a horrible smell in the kitchen the next morning when Harry went in for breakfast. It seemed to be coming from a large metal tub in the sink. He went to have a look. The tub was full of what looked like dirty rags swimming in gray water. 
+There was a horrible smell in the kitchen the next morning when Harry went in for breakfast. It seemed to be coming from a large metal tub in the sink. He went to have a look. The tub was full of what looked like dirty rags swimming in gray water. 
 “What’s this?” he asked Aunt Petunia. Her lips tightened as they always did if he dared to ask a question. 
 “Your new school uniform,” she said. 
 Harry looked in the bowl again. 
@@ -288,7 +288,7 @@ On Friday, no less than twelve letters arrived for Harry. As they couldn’t go 
 Uncle Vernon stayed at home again. After burning all the letters, he got out a hammer and nails and boarded up the cracks around the front and back doors so no one could go out. He hummed “Tiptoe Through the Tulips” as he worked, and jumped at small noises. 
 On Saturday, things began to get out of hand. Twenty-four letters to Harry found their way into the house, rolled up and hidden inside each of the two dozen eggs that their very confused milkman had handed Aunt Petunia through the living room window. While Uncle Vernon made furious telephone calls to the post office and the dairy trying to find someone to complain to, Aunt Petunia shredded the letters in her food processor. 
 “Who on earth wants to talk to you this badly?” Dudley asked Harry in amazement. 
-•k k k On Sunday morning, Uncle Vernon sat down at the breakfast table looking tired and rather ill, but happy. 
+On Sunday morning, Uncle Vernon sat down at the breakfast table looking tired and rather ill, but happy. 
 “No post on Sundays,” he reminded them cheerfully as he spread marmalade on his newspapers, “no damn letters today — ” 
 Something came whizzing down the kitchen chimney as he spoke and caught him sharply on the back of the head. Next moment, thirty or forty letters came pelting out of the fireplace like bullets. The Dursleys ducked, but Harry leapt into the air trying to catch one — “Out! OUT!” 
 Uncle Vernon seized Harry around the waist and threw him into the hall. When Aunt Petunia and Dudley had run out with their arms over their faces, Uncle Vernon slammed the door shut. They could hear the letters still streaming into the room, bouncing off the walls and floor. 
@@ -2008,7 +2008,7 @@ The stands erupted; it had to be a record, no one could ever remember the Snitch
 Harry jumped off his broom, a foot from the ground. He couldn’t believe it. He’d done it — the game was over; it had barely lasted five minutes. As Gryffindors came spilling onto the field, he saw Snape land nearby, white-faced and tight-lipped — then Harry felt a hand on his shoulder and looked up into Dumbledore’s smiling face. 
 “Well done,” said Dumbledore quietly, so that only Harry could hear. “Nice to see you haven’t been brooding about that mirror . . . been keeping busy . . . excellent ...” 
 Snape spat bitterly on the ground. 
-Jc Jc Jc Harry left the locker room alone some time later, to take his Nimbus Two Thousand back to the broomshed. He couldn’t ever remember feeling happier. He’d really done something to be proud of now — no one could say he was just a famous name any more. The evening air had never smelled so sweet. He walked over the damp grass, reliving the last hour in his head, which was a happy blur: Gryffindors running to lift him onto their shoulders; Ron and Hermione in the distance, jumping up and down, Ron cheering through a heavy nosebleed. 
+Harry left the locker room alone some time later, to take his Nimbus Two Thousand back to the broomshed. He couldn’t ever remember feeling happier. He’d really done something to be proud of now — no one could say he was just a famous name any more. The evening air had never smelled so sweet. He walked over the damp grass, reliving the last hour in his head, which was a happy blur: Gryffindors running to lift him onto their shoulders; Ron and Hermione in the distance, jumping up and down, Ron cheering through a heavy nosebleed. 
 Harry had reached the shed. He leaned against the wooden door and looked up at Hogwarts, with its windows glowing red in the setting sun. Gryffindor in the lead. He’d done it, he’d shown Snape. ... 
 And speaking of Snape . . . 
 A hooded figure came swiftly down the front steps of the castle. Clearly not wanting to be seen, it walked as fast as possible toward the forbidden forest. Harry’s victory faded from his mind as he watched. He recognized the figure’s prowling walk. Snape, sneaking into the forest while everyone else was at dinner — what was going on? Harry jumped back on his Nimbus Two Thousand and took off. Gliding silently over the castle he saw Snape enter the forest at a run. He followed. 
@@ -2027,7 +2027,7 @@ An owl hooted loudly, and Harry nearly fell out of the tree. He steadied himself
 “B-but I d-d-don’t — ” 
 “Very well,” Snape cut in. “Well have another little chat soon, when you’ve had time to think things over and decided where your loyalties lie.” 
 He threw his cloak over his head and strode out of the clearing. It was almost dark now, but Harry could see Quirrell, standing quite still as though he was petrified. 
-Jc Jc Jc “Harry, where have you been?” Hermione squeaked. 
+“Harry, where have you been?” Hermione squeaked. 
 “We won! You won! We won!” shouted Ron, thumping Harry on the back. “And I gave Malfoy a black eye, and Neville tried to take on Crabbe and Goyle single- handed! He’s still out cold but Madam Pomfrey says he’ll be all right — talk about showing Slytherin! Everyone’s waiting for you in the common room, we’re having a party, Fred and George stole some cakes and stuff from the kitchens.” 
 “Never mind that now,” said Harry breathlessly. “Let’s find an empty room, you wait ’til you hear this. ...” 
 He made sure Peeves wasn’t inside before shutting the door behind them, then he told them what he’d seen and heard. 
@@ -2812,7 +2812,7 @@ It was one of those rare occasions when the true story is even more strange and 
 “Yeah, Dumbledore’s off his rocker, all right,” said Ron proudly. “Listen, you’ve got to be up for the end- of-year feast tomorrow. The points are all in and Slytherin won, of course — you missed the last Quidditch match, we were steamrollered by Ravenclaw without you — but the food’ll be good.” 
 At that moment, Madam Pomfrey bustled over. 
 “You’ve had nearly fifteen minutes, now OUT,” she said firmly. 
-•k k k After a good night’s sleep, Harry felt nearly back to normal. 
+After a good night’s sleep, Harry felt nearly back to normal. 
 “I want to go to the feast,” he told Madam Pomfrey as she straightened his many candy boxes. “I can, can’t “Professor Dumbledore says you are to be allowed to go,” she said sniffily, as though in her opinion Professor Dumbledore didn’t realize how risky feasts could be. “And you have another visitor.” 
 “Oh, good,” said Harry. “Who is it?” 
 Hagrid sidled through the door as he spoke. As usual when he was indoors, Hagrid looked too big to be allowed. He sat down next to Harry, took one look at him, and burst into tears. 
