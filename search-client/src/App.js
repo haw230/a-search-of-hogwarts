@@ -182,7 +182,7 @@ function App() {
                       setPage(1);
                     }
                   }}
-                  placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
+                  placeholder={"Get your vaccine!" /* placeholders[Math.floor(Math.random() * placeholders.length)] */} />
                 </Grid.Column>
                 <Grid.Column width={2}></Grid.Column>
               </Grid.Row>
