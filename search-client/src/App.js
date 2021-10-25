@@ -60,7 +60,7 @@ function App() {
   
   const searchTerm = useRef("");
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books. Also, get your vaccine!");
+  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
