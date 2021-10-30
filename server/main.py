@@ -2,11 +2,9 @@ import sys
 
 sys.path.insert(0, "/home/1100h19/a-search-of-hogwarts/server")
 
-from constants import STOPWORDS, PUNCTUATION, BOOKS, DATA_PATH_STR
+from constants import STOPWORDS, PUNCTUATION, BOOKS, DATA_PATH
 from flask import Flask, request
-from pathlib import Path
 import re
-import json
 from flask_cors import cross_origin
 from collections import OrderedDict
 
@@ -21,6 +19,13 @@ search_data = OrderedDict()  # text that will be searched
 def hello():
     return "Server is up and running!"
 
+
+def template_regex(string: str) -> str:
+    """
+    Wrap given string around with the regex for searching logic.
+    """
+    return fr'(\-|\n|“| |\.)({string})(’s|\-|\n|!| |\.|”|\?|,)'
+
 def bold_text(result, search_words):
     """
     Insert <b> tags to bold matched words (on the UI)
@@ -28,29 +33,29 @@ def bold_text(result, search_words):
     res = result[-1]
     for search_word in search_words:
         res["text"] = re.sub(
-            fr'(\-|\n|“| |\.)({search_word})(’s|\-|\n|!| |\.|”|\?|,)',
+            template_regex(search_word),
             lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}",
             f" {res['text']}", flags=re.IGNORECASE
         )[1:]
 
 
-def is_match(paragraph, search_words):
+def is_match(paragraph: str, search_words: str) -> bool:
+    """
+    A paragraph is a match if all words in search_words are contained
+    in the paragraph.
+    """
     for search_word in search_words:
-        try:
-            regex = re.compile(
-                fr'(\-|\n|“| |\.)({search_word})(’s|\-|\n|!| |\.|”|\?|,)',
-                flags=re.IGNORECASE
-            )
-            if regex.search(f" {paragraph}"):
-                raise FileNotFoundError
+        regex = re.compile(
+            template_regex(search_word),
+            flags=re.IGNORECASE
+        )
+        if not regex.search(f" {paragraph}"):
             return False
-        except FileNotFoundError:
-            pass
     return True
 
 def cleanse(string):
     """
-    This function does two things
+    This function does two things:
     1. Add '?' behind each punctuation symbol. This makes the symbol optional during the regex search later on.
     2. Replace regular single quotes with fancy single quotes (since fancy quotes are used in the raw data).
     """
@@ -78,7 +83,7 @@ def get_search_results():
     to_skip = (int(data["page"]) - 1) * 20
     count = 0
     result = []
-    for book, check in zip(BOOKS, checked):
+    for book, check in zip(books_data.keys(), checked):
         if not check:  # skip books
             continue
         for i in range(len(books_data[book])):
@@ -124,7 +129,7 @@ def get_counts():
     ]
 
     result = []
-    for book in BOOKS:
+    for book in books_data.keys():
         book_count = { book: 0 }
         for i in range(len(books_data[book])):
             paragraph = search_data[book][i]
@@ -143,7 +148,7 @@ def startup():
     """
     Loads the books into memory
     """
-    data_path = Path(DATA_PATH_STR)
+    data_path = DATA_PATH
     for book in BOOKS:
         with open(data_path / book, encoding="utf8") as f:
             text = f.read()

@@ -377,7 +377,7 @@ Pigwidgeon zoomed happily around his cage, hooting shrilly. Harry knew Ron too w
 “Where’s Crookshanks?” Harry asked Hermione now. 
 “Out in the garden, I expect,” she said. “He likes chasing gnomes. He’s never seen any before.” 
 “Percy’s enjoying work, then?” said Harry, sitting down on one of the beds and watching the Chudley Cannons zooming in and out of the posters on the ceiling. 
-“Enjoying it?” said Ron darkly. “I don’t reckon he’d come home if Dad didn’t make him. He’s obsessed. Just don’t get him onto the subject of his boss. According to Mr. Crouch ... as I was saying to Mr. Crouch . . . Mr. Crouch is of the opinion . . . Mr. Crouch was telling me ... They 11 be announcing their engagement any day now.” 
+“Enjoying it?” said Ron darkly. “I don’t reckon he’d come home if Dad didn’t make him. He’s obsessed. Just don’t get him onto the subject of his boss. According to Mr. Crouch ... as I was saying to Mr. Crouch . . . Mr. Crouch is of the opinion . . . Mr. Crouch was telling me ... They'll be announcing their engagement any day now.” 
 “Have you had a good summer, Harry?” said Hermione. “Did you get our food parcels and everything?” 
 “Yeah, thanks a lot,” said Harry. “They saved my life, those cakes.” 
 “And have you heard from — ?” Ron began, but at a look from Hermione he fell silent. Harry knew Ron had been about to ask about Sirius. Ron and Hermione had been so deeply involved in helping Sirius escape from the Ministry of Magic that they were almost as concerned about Harry’s godfather as he was. However, discussing him in front of Ginny was a bad idea. Nobody but themselves and Professor Dumbledore knew about how Sirius had escaped, or believed in his innocence. 
@@ -508,7 +508,7 @@ Everybody said hi back except Fred and George, who merely nodded. They had never
 “Merlin’s beard,” said Amos Diggory, his eyes widening. “Harry? Harry Potter?” 
 “Er — yeah,” said Harry. 
 Harry was used to people looking curiously at him when they met him, used to the way their eyes moved at once to the lightning scar on his forehead, but it always made him feel uncomfortable. 
-“Ced’s talked about you, of course,” said Amos Diggory. “Told us all about playing against you last year. ... I said to him, I said — Ced, that’ll be something to tell your grandchildren, that will. ... You beat Harry Potterl” 
+“Ced’s talked about you, of course,” said Amos Diggory. “Told us all about playing against you last year. ... I said to him, I said — Ced, that’ll be something to tell your grandchildren, that will. ... You beat Harry Potter!” 
 Harry couldn’t think of any reply to this, so he remained silent. Fred and George were both scowling again. Cedric looked slightly embarrassed. 
 “Harry fell off his broom, Dad,” he muttered. “I told you ... it was an accident. ...” 
 “Yes, but you didn’t fall off, did you?” roared Amos genially, slapping his son on his back. “Always modest, our Ced, always the gentleman ... but the best man won, I’m sure Harry’d say the same, wouldn’t you, eh? One falls off his broom, one stays on, you don’t need to be a genius to tell which one’s the better flier!” 
@@ -1380,7 +1380,7 @@ Professor McGonagall now placed a three-legged stool on the ground before the fi
 They shared a wish, a hope, a dream, They hatched a daring plan To educate young sorcerers Thus Hogwarts School began. 
 Now each of these four founders Formed their own house, for each Did value different virtues In the ones they had to teach. 
 By Gryffindor, the bravest were Prized far beyond the rest; For Ravenclaw, the cleverest Would always be the best; For Hufflepuff, hard workers were Most worthy of admission; And power-hungry Slytherin Loved those of great ambition. 
-While still alive they did divide Their favorites from the throng, Yet how to pick the worthy ones When they were dead and gone? Twas Gryffindor who found the way, He whipped me off his head The founders put some brains in me So I could choose instead! Now slip me snug about your ears, I’ve never yet been wrong, 111 have a look inside your mind And tell where you belong! The Great Hall rang with applause as the Sorting Hat finished. 
+While still alive they did divide Their favorites from the throng, Yet how to pick the worthy ones When they were dead and gone? Twas Gryffindor who found the way, He whipped me off his head The founders put some brains in me So I could choose instead! Now slip me snug about your ears, I’ve never yet been wrong, I’ll have a look inside your mind And tell where you belong! The Great Hall rang with applause as the Sorting Hat finished. 
 “That’s not the song it sang when it Sorted us,” said Harry, clapping along with everyone else. 
 “Sings a different one every year,” said Ron. “It’s got to be a pretty boring life, hasn’t it, being a hat? I suppose it spends all year making up the next one.” 
 Professor McGonagall was now unrolling a large scroll of parchment. 
@@ -1874,7 +1874,7 @@ Hagrid ’s smile faded off his face.
 The Gryffindors roared with laughter. Malfoy flushed with anger, but apparently the memory of Moody’s punishment was still sufficiently painful to stop him from retorting. Harry, Ron, and Hermione returned to the castle at the end of the lesson in high spirits; seeing Hagrid put down Malfoy was particularly satisfying, especially because Malfoy had done his very best to get Hagrid sacked the previous year. 
 When they arrived in the entrance hall, they found themselves unable to proceed owing to the large crowd of students congregated there, all milling around a large sign that had been erected at the foot of the marble staircase. Ron, the tallest of the three, stood on tiptoe to see over the heads in front of them and read the sign aloud to the other two: The delegations from Beauxbatons and Durmstrang will be arriving at 6 o’clock on Friday the 30th of October. Lessons will end half an hour early — “Brilliant!” said Harry. “It’s Potions last thing on Friday! Snape won’t have time to poison us all!” 
 Students will return their bags and books to their dormitories and assemble in front of the castle to greet our guests before the Welcoming Feast. 
-“Only a week away!” said Ernie Macmillan of Hufflepuff, emerging from the crowd, his eyes gleaming. “I wonder if Cedric knows? Think 111 go and tell him. ...” 
+“Only a week away!” said Ernie Macmillan of Hufflepuff, emerging from the crowd, his eyes gleaming. “I wonder if Cedric knows? Think I’ll go and tell him. ...” 
 “Cedric?” said Ron blankly as Ernie hurried off. 
 “Diggory,” said Harry. “He must be entering the tournament.” 
 “That idiot, Hogwarts champion?” said Ron as they pushed their way through the chattering crowd toward the staircase. 
@@ -3005,7 +3005,7 @@ He nudged Ron and pointed to the painting just behind Hermione. It showed a giga
 “Changed the name, have you?” said Ron, frowning at her. “What are we now, then, the House-Elf Liberation Front? I’m not barging into that kitchen and trying to make them stop work, I’m not doing it — ” 
 ‘Tm not asking you to!” Hermione said impatiently. “I came down here just now, to talk to them all, and I found — oh come on, Harry, I want to show you!” 
 She seized his arm again, pulled him in front of the picture of the giant fruit bowl, stretched out her forefinger, and tickled the huge green pear. It began to squirm, chuckling, and suddenly turned into a large green door handle. Hermione seized it, pulled the door open, and pushed Harry hard in the back, forcing him inside. 
-He had one brief glimpse of an enormous, high- ceilinged room, large as the Great Hall above it, with mounds of glittering brass pots and pans heaped around the stone walls, and a great brick fireplace at the other end, when something small hurtled toward him from the middle of the room, squealing, “Harry Potter, sir! Harry Potteri” 
+He had one brief glimpse of an enormous, high- ceilinged room, large as the Great Hall above it, with mounds of glittering brass pots and pans heaped around the stone walls, and a great brick fireplace at the other end, when something small hurtled toward him from the middle of the room, squealing, “Harry Potter, sir! Harry Potter!” 
 Next second all the wind had been knocked out of him as the squealing elf hit him hard in the midriff, hugging him so tightly he thought his ribs would break. 
 “D-Dobby?” Harry gasped. 
 “It is Dobby, sir, it is!” squealed the voice from somewhere around his navel. “Dobby has been hoping and hoping to see Harry Potter, sir, and Harry Potter has come to see him, sir!” 
@@ -3123,7 +3123,7 @@ Harry had never known so many people to put their names down to stay at Hogwarts
 “Lasso one?” Ron suggested. “Got any idea who you’re going to try?” 
 Harry didn’t answer. He knew perfectly well whom he’d like to ask, but working up the nerve was something else. ... Cho was a year older than he was; she was very pretty; she was a very good Quidditch player, and she was also very popular. 
 Ron seemed to know what was going on inside Harry’s head. 
-“Listen, you’re not going to have any trouble. You’re a champion. You’ve just beaten a Hungarian Horntail. I bet they 11 be queuing up to go with you.” 
+“Listen, you’re not going to have any trouble. You’re a champion. You’ve just beaten a Hungarian Horntail. I bet they'll be queuing up to go with you.” 
 In tribute to their recently repaired friendship, Ron had kept the bitterness in his voice to a bare minimum. Moreover, to Harry’s amazement, he turned out to be quite right. 
 A curly-haired third-year Hufflepuff girl to whom Harry had never spoken in his life asked him to go to the ball with her the very next day. Harry was so taken aback he said no before he’d even stopped to consider the matter. The girl walked off looking rather hurt, and Harry had to endure Dean’s, Seamus’s, and Ron’s taunts about her all through History of Magic. The following day, two more girls asked him, a second year and (to his horror) a fifth year who looked as though she might knock him out if he refused. 
 “She was quite good-looking,” said Ron fairly, after he’d stopped laughing. 
@@ -4485,7 +4485,7 @@ Ludo Bagman was standing in the middle of the field with Krum and Fleur. Harry a
 No one spoke for a moment. Then — “Maze,” grunted Krum. 
 “That’s right!” said Bagman. “A maze. The third task’s really very straightforward. The Triwizard Cup will be placed in the center of the maze. The first champion to touch it will receive full marks.” 
 “We seemply ’ave to get through the maze?” said Fleur. 
-“There will be obstacles,” said Bagman happily, bouncing on the balls of his feet. “Hagrid is providing a number of creatures . . . then there will be spells that must be broken ... all that sort of thing, you know. Now, the champions who are leading on points will get a head start into the maze.” Bagman grinned at Harry and Cedric. “Then Mr. Krum will enter ... then Miss Delacour. But you 11 all be in with a fighting chance, depending how well you get past the obstacles. Should be fun, eh?” 
+“There will be obstacles,” said Bagman happily, bouncing on the balls of his feet. “Hagrid is providing a number of creatures . . . then there will be spells that must be broken ... all that sort of thing, you know. Now, the champions who are leading on points will get a head start into the maze.” Bagman grinned at Harry and Cedric. “Then Mr. Krum will enter ... then Miss Delacour. But you’ll all be in with a fighting chance, depending how well you get past the obstacles. Should be fun, eh?” 
 Harry, who knew only too well the kind of creatures that Hagrid was likely to provide for an event like this, thought it was unlikely to be any fun at all. However, he nodded politely like the other champions. 
 “Very well ... if you haven’t got any questions, we’ll go back up to the castle, shall we, it’s a bit chilly. ...” 
 Bagman hurried alongside Harry as they began to wend their way out of the growing maze. Harry had the feeling that Bagman was going to start offering to help him again, but just then, Krum tapped Harry on the shoulder. 
@@ -5026,7 +5026,7 @@ Breakfast was a very noisy affair at the Gryffindor table on the morning of the 
 “It’s about me, isn’t it?” said Harry. 
 “No,” said Ron, in an entirely unconvincing tone. 
 But before Harry could demand to see the paper, Draco Malfoy shouted across the Great Hall from the Slytherin table. 
-“Hey, Potter! Potteri How’s your head? You feeling all right? Sure you’re not going to go berserk on us?” 
+“Hey, Potter! Potter! How’s your head? You feeling all right? Sure you’re not going to go berserk on us?” 
 Malfoy was holding a copy of the Daily Prophet too. Slytherins up and down the table were sniggering, twisting in their seats to see Harry’s reaction. 
 “Let me see it,” Harry said to Ron. “Give it here.” 
 Very reluctantly, Ron handed over the newspaper. Harry turned it over and found himself staring at his own picture, beneath the banner headline: The boy who defeated He-Who-Must-Not-Be-Named is unstable and possibly dangerous, writes Rita Skeeter, Special Correspondent. Alarming evidence has recently come to light about Harry Potter’s strange behavior, which casts doubts upon his suitability to compete in a demanding competition like the Triwizard Tournament, or even to attend Hogwarts School. 
@@ -5149,7 +5149,7 @@ He paused at a junction of two paths and looked around for some sign of Fleur. H
 The cup was somewhere close by, and it sounded as though Fleur was no longer in the running. He’d got this far, hadn’t he? What if he actually managed to win? Fleetingly, and for the first time since he’d found himself champion, he saw again that image of himself, raising the Triwizard Cup in front of the rest of the school. ... 
 He met nothing for ten minutes, but kept running into dead ends. Twice he took the same wrong turning. Finally, he found a new route and started to jog along it, his wandlight waving, making his shadow flicker and distort on the hedge walls. Then he rounded another corner and found himself facing a Blast-Ended Skrewt. 
 Cedric was right — it was enormous. Ten feet long, it looked more like a giant scorpion than anything. Its long sting was curled over its back. Its thick armor glinted in the light from Harry’s wand, which he pointed at it. 
-“Stupefy'.” 
+“Stupefy.” 
 The spell hit the skrewt’s armor and rebounded; Harry ducked just in time, but could smell burning hair; it had singed the top of his head. The skrewt issued a blast of fire from its end and flew forward toward him. 
 “ Impedimenta ” Harry yelled. The spell hit the skrewt’s armor again and ricocheted off; Harry staggered back a few paces and fell over. a IMPEDIMENT A,” 
 The skrewt was inches from him when it froze — he had managed to hit it on its fleshy, shell-less underside. Panting, Harry pushed himself away from it and ran, hard, in the opposite direction — the Impediment Curse was not permanent; the skrewt would be regaining the use of its legs at any moment. 
@@ -5950,7 +5950,7 @@ Hermione pulled a small sealed glass jar out of her bag.
 “You’re kidding,” said Ron. “You haven’t ... she’s not “Oh yes she is,” said Hermione happily, brandishing the jar at them. 
 Inside were a few twigs and leaves and one large, fat beetle. 
 “That’s never — you’re kidding — ” Ron whispered, lifting the jar to his eyes. 
-“No, I’m not,” said Hermione, beaming. “I caught her on the windowsill in the hospital wing. Look very closely, and you 11 notice the markings around her antennae are exactly like those foul glasses she wears.” 
+“No, I’m not,” said Hermione, beaming. “I caught her on the windowsill in the hospital wing. Look very closely, and you’ll notice the markings around her antennae are exactly like those foul glasses she wears.” 
 Harry looked and saw that she was quite right. He also remembered something. 
 “There was a beetle on the statue the night we heard Hagrid telling Madame Maxime about his mum!” 
 “Exactly,” said Hermione. “And Viktor pulled a beetle out of my hair after we’d had our conversation by the lake. And unless I’m very much mistaken, Rita was perched on the windowsill of the Divination class the day your scar hurt. She’s been buzzing around for stories all year.” 

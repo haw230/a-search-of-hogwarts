@@ -204,7 +204,7 @@ Dudley’s hands jerked upward to cover his mouth. With his parents’ and Harry
 “More?” laughed Harry. “More than the two that attacked us, you mean? Of course there are, there are hundreds, maybe thousands by this time, seeing as they feed off fear and despair — ” 
 “All right, all right,” blustered Vernon Dursley. 
 “You’ve made your point — ” 
-“I hope so,” said Harry, “because once I’m seventeen, all of them — Death Eaters, dementors, maybe even Inferi — which means dead bodies enchanted by a Dark wizard — will be able to find you and will certainly attack you. And if you remember the last time you tried to outrun wizards, I think you 11 agree you need help.” 
+“I hope so,” said Harry, “because once I’m seventeen, all of them — Death Eaters, dementors, maybe even Inferi — which means dead bodies enchanted by a Dark wizard — will be able to find you and will certainly attack you. And if you remember the last time you tried to outrun wizards, I think you’ll agree you need help.” 
 There was a brief silence in which the distant echo of Hagrid smashing down a wooden front door seemed to reverberate through the intervening years. Aunt Petunia was looking at Uncle Vernon; Dudley was staring at Harry. Finally Uncle Vernon blurted out, “But what about my work? What about Dudley’s school? I don’t suppose those things matter to a bunch of layabout wizards — ” 
 “Don’t you understand?” shouted Harry. “They will torture and kill you like they did my parents !” 
 “Dad,” said Dudley in a loud voice, “Dad — I’m going with these Order people.” 
@@ -290,7 +290,7 @@ The darkness seemed to be rippling, the air itself quivering. Then, one by one, 
 Wrenching open the back door, Harry hurtled into their midst. There was a general cry of greeting as Hermione flung her arms around him, Ron clapped him on the back, and Hagrid said, “All righ’, Harry? Ready fer the off?” 
 “Definitely,” said Harry, beaming around at them all. “But I wasn’t expecting this many of you!” 
 “Change of plan,” growled Mad-Eye, who was holding two enormous, bulging sacks, and whose magical eye was spinning from darkening sky to house to garden with dizzying rapidity. “Let’s get undercover before we talk you through it.” 
-haired; Mr. Weasley, kind-faced, balding, his spectacles a little awry; Mad-Eye, battle-worn, one- legged, his bright blue magical eye whizzing in its socket; Tonks, whose short hair was her favorite shade of bright pink; Lupin, grayer, more lined; Fleur, slender and beautiful, with her long silvery blonde hair; Kingsley, bald, black, broad-shouldered; Hagrid, with his wild hair and beard, standing hunchbacked to avoid hitting his head on the ceiling; and Mundungus Fletcher, small, dirty, and hangdog, with his droopy basset hound’s eyes and matted hair. Harry’s heart seemed to expand and glow at the sight: He felt incredibly fond of all of them, even Mundungus, whom he had tried to strangle the last time they had met. 
+Harry led them all back into the kitchen where, laughing and chattering, they settled on chairs, sat themselves upon Aunt Petunia’s gleaming work surfaces, or leaned up against her spotless appliances; Ron, long and lanky; Hermione, her bushy hair tied back in a long plait; Fred and George, grinning identically longhaired; Bill, badly scarred and longhaired; Mr. Weasley, kind-faced, balding, his spectacles a little awry; Mad-Eye, battle-worn, one- legged, his bright blue magical eye whizzing in its socket; Tonks, whose short hair was her favorite shade of bright pink; Lupin, grayer, more lined; Fleur, slender and beautiful, with her long silvery blonde hair; Kingsley, bald, black, broad-shouldered; Hagrid, with his wild hair and beard, standing hunchbacked to avoid hitting his head on the ceiling; and Mundungus Fletcher, small, dirty, and hangdog, with his droopy basset hound’s eyes and matted hair. Harry’s heart seemed to expand and glow at the sight: He felt incredibly fond of all of them, even Mundungus, whom he had tried to strangle the last time they had met. 
 “Kingsley, I thought you were looking after the Muggle Prime Minister?” he called across the room. 
 “He can get along without me for one night,” said Kingsley. “You’re more important.” 
 “Harry, guess what?” said Tonks from her perch on top of the washing machine, and she wiggled her left hand at him; a ring glittered there. 
@@ -2188,7 +2188,7 @@ Harry had the impression that Mr. Weasley’s anger was no less because of the b
 “Sorry?” he said. 
 “Don’t pretend, Runcorn,” said Mr. Weasley fiercely. “You tracked down the wizard who faked his family tree, didn’t you?” 
 “I — so what if I did?” said Harry. 
-“So Dirk Cresswell is ten times the wizard you are,” said Mr. Weasley quietly, as the lift sank ever lower. “And if he survives Azkaban, you 11 have to answer to him, not to mention his wife, his sons, and his friends “Arthur,” Harry interrupted, “you know you’re being tracked, don’t you?” 
+“So Dirk Cresswell is ten times the wizard you are,” said Mr. Weasley quietly, as the lift sank ever lower. “And if he survives Azkaban, you’ll have to answer to him, not to mention his wife, his sons, and his friends “Arthur,” Harry interrupted, “you know you’re being tracked, don’t you?” 
 “Is that a threat, Runcorn?” said Mr. Weasley loudly. 
 “No,” said Harry, “it’s a fact! They’re watching your every move — ” 
 The lift doors opened. They had reached the Atrium. Mr. Weasley gave Harry a scathing look and swept from the lift. Harry stood there, shaken. He wished he was impersonating somebody other than Runcorn. ... The lift doors clanged shut. 
@@ -3373,7 +3373,7 @@ All three of them returned to the tent when darkness fell, and Harry took first 
 Trouble is, I missed the last one. ...” 
 He drummed lightly on the top of the radio with his wand, muttering random words under his breath. He threw Hermione many covert glances, plainly fearing an angry outburst, but for all the notice she took of him he might not have been there. For ten minutes or so Ron tapped and muttered, Hermione turned the pages of her book, and Harry continued to practice with the blackthorn wand. 
 Finally Hermione climbed down from her bunk. Ron ceased his tapping at once. 
-“If it’s annoying you, 111 stop!” he told Hermione nervously. 
+“If it’s annoying you, I’ll stop!” he told Hermione nervously. 
 Hermione did not deign to respond, but approached Harry. 
 “We need to talk,” she said. 
 He looked at the book still clutched in her hand. It was The Life and Lies of Albus Dumbledore. 
@@ -4206,7 +4206,7 @@ He looked around and saw Harry standing there.
 “How are they protected?” asked Harry. 
 “Fidelius Charm. Dad’s Secret-Keeper. And we’ve done it on this cottage too; I’m Secret-Keeper here. None of us can go to work, but that’s hardly the most important thing now. Once Ollivander and Griphook are well enough, we’ll move them to Muriel’s too. There isn’t much room here, but she’s got plenty. Griphook’s legs are on the mend, Fleur’s given him Skele-Gro; we could probably move them in an hour or — “No,” Harry said, and Bill looked startled. “I need both of them here. I need to talk to them. It’s important.” 
 He heard the authority in his own voice, the conviction, the sense of purpose that had come to him as he dug Dobby’s grave. All of their faces were turned toward him, looking puzzled. 
-“I’m going to wash,” Harry told Bill, looking down at his hands, still covered in mud and Dobby’s blood. “Then 111 need to see them, straightaway.” 
+“I’m going to wash,” Harry told Bill, looking down at his hands, still covered in mud and Dobby’s blood. “Then I’ll need to see them, straightaway.” 
 He walked into the little kitchen, to the basin beneath a window overlooking the sea. Dawn was breaking over the horizon, shell pink and faintly gold, as he washed, again following the train of thought that had come to him in the dark garden. ... 
 Dobby would never be able to tell them who had sent him to the cellar, but Harry knew what he had seen. 
 A piercing blue eye had looked out of the mirror fragment, and then help had come. Help will always be given at Hog warts to those who ask for it Harry dried his hands, impervious to the beauty of the scene outside the window and to the murmuring of the others in the sitting room. He looked out over the ocean and felt closer, this dawn, than ever before, closer to the heart of it all. 
