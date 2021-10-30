@@ -1,6 +1,6 @@
 import sys
 
-sys.path.insert(0, "/home/1100h19/a-search-of-hogwarts/server")
+sys.path.insert(0, "/home/1100h19/a-search-of-hogwarts")
 
 from server.constants import STOPWORDS, PUNCTUATION, BOOKS, DATA_PATH
 from flask import Flask, request
