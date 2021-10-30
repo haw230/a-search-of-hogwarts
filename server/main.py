@@ -1,18 +1,22 @@
 import sys
+import re
+from typing import List, Dict
 
 sys.path.insert(0, "/home/1100h19/a-search-of-hogwarts")
 
 from server.constants import STOPWORDS, PUNCTUATION, BOOKS, DATA_PATH
+
 from flask import Flask, request
-import re
 from flask_cors import cross_origin
 from collections import OrderedDict
+
 
 application = Flask(__name__)
 app = application
 
 books_data = OrderedDict()  # text that will be displayed to user
 search_data = OrderedDict()  # text that will be searched
+
 
 @application.route('/', methods=['GET'])
 @cross_origin()
@@ -26,16 +30,17 @@ def template_regex(string: str) -> str:
     """
     return fr'(\-|\n|“| |\.)({string})(’s|\-|\n|!| |\.|”|\?|,)'
 
-def bold_text(result, search_words):
+
+def bold_text(result: List[str], search_words: List[str]) -> None:
     """
     Insert <b> tags to bold matched words (on the UI)
     """
-    res = result[-1]
+    recent_match = result[-1]
     for search_word in search_words:
-        res["text"] = re.sub(
+        recent_match["text"] = re.sub(
             template_regex(search_word),
             lambda x: f"{x.group(1)}<b>{x.group(2)}</b>{x.group(3)}",
-            f" {res['text']}", flags=re.IGNORECASE
+            f" {recent_match['text']}", flags=re.IGNORECASE
         )[1:]
 
 
@@ -53,7 +58,8 @@ def is_match(paragraph: str, search_words: str) -> bool:
             return False
     return True
 
-def cleanse(string):
+
+def cleanse(string: str) -> str:
     """
     This function does two things:
     1. Add '?' behind each punctuation symbol. This makes the symbol optional during the regex search later on.
@@ -63,9 +69,10 @@ def cleanse(string):
         string = string.replace(punctuation, f"{punctuation}?")
     return string.replace('\'', '’')
 
-@application.route('/api/search', methods=['GET', 'POST'])
+
+@application.route('/api/search', methods=['POST'])
 @cross_origin()
-def get_search_results():
+def get_search_results() -> Dict[str, str]:
     """
     Return matching paragraph as well as the paragraph before and after it (if either exists).
 
@@ -114,9 +121,9 @@ def get_search_results():
         }
 
 
-@application.route('/api/count', methods=['GET', 'POST'])
+@application.route('/api/count', methods=['POST'])
 @cross_origin()
-def get_counts():
+def get_counts() -> Dict[str, str]:
     """
     Counts how often words appear in each book.
 
@@ -144,7 +151,7 @@ def get_counts():
     }
 
 
-def startup():
+def startup() -> None:
     """
     Loads the books into memory
     """
@@ -160,7 +167,9 @@ def startup():
                 paragraph.lower() for paragraph in text.split('\n')
             ]
 
+
 startup()
+
 
 if __name__ == "__main__":
     application.run(debug=True, host='localhost', port=5001)
