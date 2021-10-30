@@ -2,7 +2,7 @@ import sys
 
 sys.path.insert(0, "/home/1100h19/a-search-of-hogwarts/server")
 
-from constants import STOPWORDS, PUNCTUATION, BOOKS, DATA_PATH
+from server.constants import STOPWORDS, PUNCTUATION, BOOKS, DATA_PATH
 from flask import Flask, request
 import re
 from flask_cors import cross_origin
