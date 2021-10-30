@@ -14,8 +14,8 @@ from collections import OrderedDict
 application = Flask(__name__)
 app = application
 
-books_data = OrderedDict()  # text that will be displayed to user
-search_data = OrderedDict()  # text that will be searched
+books_data: Dict[str, List[str]] = OrderedDict()  # text that will be displayed to user
+search_data: Dict[str, List[str]] = OrderedDict()  # text that will be searched
 
 
 @application.route('/', methods=['GET'])
@@ -44,7 +44,7 @@ def bold_text(result: List[str], search_words: List[str]) -> None:
         )[1:]
 
 
-def is_match(paragraph: str, search_words: str) -> bool:
+def is_match(paragraph: str, search_words: List[str]) -> bool:
     """
     A paragraph is a match if all words in search_words are contained
     in the paragraph.
@@ -86,10 +86,16 @@ def get_search_results() -> Dict[str, str]:
         return {
             "found": [{"text": "", "book": "Try a more specific search!"}],
         }
+
     checked = data["books"]
+    if len(checked) != 7:
+        return {
+            "found": [{"text": "", "book": "Make sure you have an array of seven booleans!"}],
+        }
+
     to_skip = (int(data["page"]) - 1) * 20
     count = 0
-    result = []
+    result: List[Dict[str, str]] = []
     for book, check in zip(books_data.keys(), checked):
         if not check:  # skip books
             continue
@@ -130,14 +136,14 @@ def get_counts() -> Dict[str, str]:
     :param search (str): search term
     """
     data = request.json["data"]
-    search_words = [
+    search_words: List[str] = [
         word.lower() for word in data["search"].split()
         if word not in STOPWORDS
     ]
 
-    result = []
+    result: List[dict] = []
     for book in books_data.keys():
-        book_count = { book: 0 }
+        book_count: Dict[str, int] = { book: 0 }
         for i in range(len(books_data[book])):
             paragraph = search_data[book][i]
 
