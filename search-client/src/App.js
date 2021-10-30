@@ -8,7 +8,7 @@ import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
 const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
-const API = "https://1100h19.pythonanywhere.com"
+const API = "http://localhost:5001/"
 const checked = new Map(Object.entries({
   "The Sorcerer's Stone": true,
   "The Chamber of Secrets": true,
