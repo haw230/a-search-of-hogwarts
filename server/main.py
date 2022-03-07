@@ -81,6 +81,8 @@ def get_search_results() -> Dict[str, str]:
     :param page (str): page number for infinite scsroll
     """
     data = request.json["data"]
+    with open(DATA_PATH / "analysis.txt", "a") as f:
+        f.write(data["search"] + "\n")
     search_words = [cleanse(word) for word in data["search"].split() if word.lower() not in STOPWORDS]
     if not search_words or not all(search_words):
         return {
@@ -161,9 +163,8 @@ def startup() -> None:
     """
     Loads the books into memory
     """
-    data_path = DATA_PATH
     for book in BOOKS:
-        with open(data_path / book, encoding="utf8") as f:
+        with open(DATA_PATH / book, encoding="utf8") as f:
             text = f.read()
             regex = re.compile(r'.*\- (.*)\.txt')
             books_data[regex.search(book).group(1)] = [
