@@ -73,78 +73,80 @@ function App() {
     setSubtitle(subtitle);
   }, [subtitle]);
 
-  if (loading) {
-    let books = getBooks(checklist.current);
-    let search = searchTerm.current;
+  const submit = () => {
+    if (loading) {
+      let books = getBooks(checklist.current);
+      let search = searchTerm.current;
 
-    if (books.every(book => book === false)) {
-      setSubtitle("Please select at least one book.");
-      setLoading(false);
-      return;
-    }
-    if (searchTerm.current.length < 3) {
-      setSubtitle("Please try a longer search term.");
-      setLoading(false);
-      return;
-    }
+      if (books.every(book => book === false)) {
+        setSubtitle("Please select at least one book.");
+        setLoading(false);
+        return;
+      }
+      if (searchTerm.current.length < 3) {
+        setSubtitle("Please try a longer search term.");
+        setLoading(false);
+        return;
+      }
 
-    if (subtitle !== "Search the full text of your favorite books.") {
-      setSubtitle("Search the full text of your favorite books.");
-    }
+      if (subtitle !== "Search the full text of your favorite books.") {
+        setSubtitle("Search the full text of your favorite books.");
+      }
 
-    if (setOccurenceLoading) {
-      axios.post(`${API}/api/count`, {
+      if (setOccurenceLoading) {
+        axios.post(`${API}/api/count`, {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+          data: {
+            search,  // words to search for
+          }
+        }).then((response) => {
+          setOccurenceLoading(false);
+          setOccurenceData(response.data);
+        })
+          .catch(err => {
+            setSubtitle("Error for Occurences");
+            console.log(err);
+            setLoading(false);
+          });
+      }
+
+      axios.post(`${API}/api/search`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
         data: {
+          books,  // checked books
           search,  // words to search for
+          page,  // pagination
         }
       }).then((response) => {
-        setOccurenceLoading(false);
-        setOccurenceData(response.data);
+        setLoading(false);
+        setResult(response.data.found);
+        setPage(page + 1);
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#search-chunk").offset().top
+        }, 1000);
       })
-        .catch(err => {
-          setSubtitle("Error for Occurences");
-          console.log(err);
+        .catch(error => {
+          // setSubtitle("Error!!!");
+          if (error.response) {
+            // Request made and server responded
+            setSubtitle(JSON.stringify(error.response.data));
+            // setSubtitle(JSON.stringify(error.response.status));
+            // setSubtitle(JSON.stringify(error.response.headers));
+          } else if (error.request) {
+            // The request was made but no response was received
+            console.log(error.request)
+            setSubtitle(JSON.stringify(error.request));
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            setSubtitle(JSON.stringify('Error', error.message));
+          }
           setLoading(false);
         });
     }
-
-    axios.post(`${API}/api/search`, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-      data: {
-        books,  // checked books
-        search,  // words to search for
-        page,  // pagination
-      }
-    }).then((response) => {
-      setLoading(false);
-      setResult(response.data.found);
-      setPage(page + 1);
-      $([document.documentElement, document.body]).animate({
-        scrollTop: $("#search-chunk").offset().top
-      }, 1000);
-    })
-      .catch(error => {
-        // setSubtitle("Error!!!");
-        if (error.response) {
-          // Request made and server responded
-          setSubtitle(JSON.stringify(error.response.data));
-          // setSubtitle(JSON.stringify(error.response.status));
-          // setSubtitle(JSON.stringify(error.response.headers));
-        } else if (error.request) {
-          // The request was made but no response was received
-          console.log(error.request)
-          setSubtitle(JSON.stringify(error.request));
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          setSubtitle(JSON.stringify('Error', error.message));
-        }
-        setLoading(false);
-      });
   }
 
   return (
@@ -163,6 +165,7 @@ function App() {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
                       setOccurenceLoading(true);
+                      submit();
                       if (page !== 1) {
                         setPage(1);
                       }
@@ -178,6 +181,7 @@ function App() {
                     }
                     setLoading(true);
                     setOccurenceLoading(true);
+                    submit();
                     if (page !== 1) {
                       setPage(1);
                     }
