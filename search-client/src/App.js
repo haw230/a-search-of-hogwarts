@@ -182,7 +182,7 @@ function App() {
                       setPage(1);
                     }
                   }}
-                  placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
+                  placeholder={"Please support Potter Search on patreon! (https://www.patreon.com/potter_search)"} />
                 </Grid.Column>
                 <Grid.Column width={2}></Grid.Column>
               </Grid.Row>
