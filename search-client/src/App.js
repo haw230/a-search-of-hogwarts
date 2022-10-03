@@ -60,7 +60,7 @@ function App() {
   
   const searchTerm = useRef("");
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
+  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books. Please support Potter Search on patreon! (https://www.patreon.com/potter_search)");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
@@ -186,7 +186,7 @@ function App() {
                       setPage(1);
                     }
                   }}
-                  placeholder={"Please support Potter Search on patreon! (https://www.patreon.com/potter_search)"} />
+                  placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
                 <Grid.Column width={2}></Grid.Column>
               </Grid.Row>
