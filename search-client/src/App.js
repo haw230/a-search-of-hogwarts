@@ -60,7 +60,7 @@ function App() {
   
   const searchTerm = useRef("");
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books. Please support Potter Search on patreon! (https://www.patreon.com/potter_search)");
+  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
@@ -155,7 +155,7 @@ function App() {
       <div id="bg-image">
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
-            <p id="subtitle">{subtitle}</p>
+            <p id="subtitle">{subtitle} Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a>!</p>
             <Grid celled={false}>
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
