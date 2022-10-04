@@ -155,7 +155,7 @@ function App() {
       <div id="bg-image">
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
-            <p id="subtitle">{subtitle} Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a>!</p>
+            <p id="subtitle">{subtitle} <br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a>!</p>
             <Grid celled={false}>
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
