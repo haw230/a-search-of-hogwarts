@@ -74,11 +74,9 @@ function App() {
     setSubtitle(subtitle);
   }, [subtitle]);
 
-  const submit = () => {
+  const submit = (s='') => {
     let books = getBooks(checklist.current);
-    let search = searchTerm;
-    console.log(12345)
-    console.log(searchTerm)
+    let search = s || searchTerm;
 
     if ('URLSearchParams' in window) {
       const url = new URL(window.location);
@@ -91,7 +89,7 @@ function App() {
       setLoading(false);
       return;
     }
-    if (searchTerm.length < 3) {
+    if (search.length < 3) {
       setSubtitle("Please try a longer search term.");
       setLoading(false);
       return;
@@ -135,7 +133,7 @@ function App() {
       setPage(page + 1);
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#search-chunk").offset().top
-      }, 1000);
+      }, 1500);
     })
       .catch(error => {
         // setSubtitle("Error!!!");
@@ -160,6 +158,9 @@ function App() {
     let params = new URLSearchParams(search);
     if (params.get('search') !== null) {
       setSearchTerm(params.get('search'));
+      setLoading(true);
+      setOccurenceLoading(true);
+      submit(params.get('search'));
     }
   }, []);
 
