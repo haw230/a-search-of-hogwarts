@@ -58,7 +58,8 @@ function App() {
     setRerenderchild(1 + rerenderChild);
   }
   
-  const searchTerm = useRef("");
+  const [searchTerm, setSearchTerm] = useState("");
+  
   const [loading, setLoading] = useState(false);
   let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
   const [rerenderChild, setRerenderchild] = useState(0);
@@ -74,80 +75,93 @@ function App() {
   }, [subtitle]);
 
   const submit = () => {
-    if (loading) {
-      let books = getBooks(checklist.current);
-      let search = searchTerm.current;
+    let books = getBooks(checklist.current);
+    let search = searchTerm;
+    console.log(12345)
+    console.log(searchTerm)
 
-      if (books.every(book => book === false)) {
-        setSubtitle("Please select at least one book.");
-        setLoading(false);
-        return;
-      }
-      if (searchTerm.current.length < 3) {
-        setSubtitle("Please try a longer search term.");
-        setLoading(false);
-        return;
-      }
+    if ('URLSearchParams' in window) {
+      const url = new URL(window.location);
+      url.searchParams.set('search', search);
+      window.history.pushState(null, '', url.toString());
+  }
 
-      if (subtitle !== "Search the full text of your favorite books.") {
-        setSubtitle("Search the full text of your favorite books.");
-      }
+    if (books.every(book => book === false)) {
+      setSubtitle("Please select at least one book.");
+      setLoading(false);
+      return;
+    }
+    if (searchTerm.length < 3) {
+      setSubtitle("Please try a longer search term.");
+      setLoading(false);
+      return;
+    }
 
-      if (setOccurenceLoading) {
-        axios.post(`${API}/api/count`, {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-          data: {
-            search,  // words to search for
-          }
-        }).then((response) => {
-          setOccurenceLoading(false);
-          setOccurenceData(response.data);
-        })
-          .catch(err => {
-            setSubtitle("Error for Occurences");
-            console.log(err);
-            setLoading(false);
-          });
-      }
+    if (subtitle !== "Search the full text of your favorite books.") {
+      setSubtitle("Search the full text of your favorite books.");
+    }
 
-      axios.post(`${API}/api/search`, {
+    if (setOccurenceLoading) {
+      axios.post(`${API}/api/count`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
         data: {
-          books,  // checked books
           search,  // words to search for
-          page,  // pagination
         }
       }).then((response) => {
-        setLoading(false);
-        setResult(response.data.found);
-        setPage(page + 1);
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#search-chunk").offset().top
-        }, 1000);
+        setOccurenceLoading(false);
+        setOccurenceData(response.data);
       })
-        .catch(error => {
-          // setSubtitle("Error!!!");
-          if (error.response) {
-            // Request made and server responded
-            setSubtitle(JSON.stringify(error.response.data));
-            // setSubtitle(JSON.stringify(error.response.status));
-            // setSubtitle(JSON.stringify(error.response.headers));
-          } else if (error.request) {
-            // The request was made but no response was received
-            console.log(error.request)
-            setSubtitle(JSON.stringify(error.request));
-          } else {
-            // Something happened in setting up the request that triggered an Error
-            setSubtitle(JSON.stringify('Error', error.message));
-          }
+        .catch(err => {
+          setSubtitle("Error for Occurences");
+          console.log(err);
           setLoading(false);
         });
     }
+
+    axios.post(`${API}/api/search`, {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+      data: {
+        books,  // checked books
+        search,  // words to search for
+        page,  // pagination
+      }
+    }).then((response) => {
+      setLoading(false);
+      setResult(response.data.found);
+      setPage(page + 1);
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#search-chunk").offset().top
+      }, 1000);
+    })
+      .catch(error => {
+        // setSubtitle("Error!!!");
+        if (error.response) {
+          // Request made and server responded
+          setSubtitle(JSON.stringify(error.response.data));
+          // setSubtitle(JSON.stringify(error.response.status));
+          // setSubtitle(JSON.stringify(error.response.headers));
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.log(error.request)
+          setSubtitle(JSON.stringify(error.request));
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          setSubtitle(JSON.stringify('Error', error.message));
+        }
+        setLoading(false);
+      });
   }
+  useEffect(() => {
+    let search = window.location.search;
+    let params = new URLSearchParams(search);
+    if (params.get('search') !== null) {
+      setSearchTerm(params.get('search'));
+    }
+  }, []);
 
   return (
     <React.Fragment>
@@ -173,8 +187,9 @@ function App() {
                   }
                 }
                   onChange={(event, data) => {
-                    searchTerm.current = data.value
+                    setSearchTerm(data.value);
                   }}
+                  value={searchTerm}
                   onKeyPress={event => {
                     if (event.key !== 'Enter') {
                       return;
@@ -239,7 +254,7 @@ function App() {
               dataLength={result.length}
               next={() => {
                 let books = getBooks(checklist.current);
-                let search = searchTerm.current;
+                let search = searchTerm;
                 axios.post(`${API}/api/search`, {
                   header: {
                     "Access-Control-Allow-Origin": "*",
