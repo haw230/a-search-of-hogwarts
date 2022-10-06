@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header } from 'semantic-ui-react';
+import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Message } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
@@ -65,7 +65,8 @@ function App() {
   let page = 1;
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false)
-  const [occurence_loading, setOccurenceLoading] = useState(false)
+  const [occurence_loading, setOccurenceLoading] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
 
@@ -244,6 +245,20 @@ function App() {
         {result.length > 0 ? (
           <div className="results">
             <div id="search-chunk"></div>
+            <div style={{paddingBottom: '20px'}} >
+              <Button
+                className="centred"
+                style={{ backgroundColor: 'white' }}
+                onClick={() => {
+                  navigator.clipboard.writeText(window.location.href);
+                  setShowCopied(true);
+                  setTimeout(() => setShowCopied(false), 1000);
+                }}>
+                  <Icon name='share alternate' />
+                    Share Search
+              </Button>
+              <Message color='green' hidden={!showCopied}>Copied to clipboard!</Message>
+            </div>
             <InfiniteScroll
               style={{z_index: -10, overflow: "visible"}}
               dataLength={result.length}
@@ -272,16 +287,15 @@ function App() {
                 onClose={() => setOpen(false)}
                 onOpen={() => setOpen(true)}
                 open={open}
-                trigger={<div>
+                trigger={
                   <Grid>
                     <Grid.Column textAlign="center">
                       <Button className="centred" style={{backgroundColor: 'white'}}  loading={occurence_loading}>
-                      <Icon name='list alternate' /> Show All Occurences 
-
+                      <Icon name='list alternate' />
+                        Show All Occurences 
                       </Button>
                     </Grid.Column>
-                  </Grid>
-                </div>}
+                  </Grid>}
               >
                 <Modal.Content>
                   <Modal.Description>
