@@ -138,11 +138,7 @@ def get_counts() -> Dict[str, str]:
     :param search (str): search term
     """
     data = request.json["data"]
-    search_words: List[str] = [
-        word.lower() for word in data["search"].split()
-        if word not in STOPWORDS
-    ]
-
+    search_words = [cleanse(word) for word in data["search"].split() if word.lower() not in STOPWORDS]
     result: List[dict] = []
     for book in books_data.keys():
         book_count: Dict[str, int] = { book: 0 }

@@ -40,7 +40,6 @@ function App() {
   
   const update = (book) => {
     checklist.current.set(book, !checklist.current.get(book));
-    // console.log(checklist.current);
   }
 
   const checkAll = () => {
