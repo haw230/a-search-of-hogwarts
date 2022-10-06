@@ -252,7 +252,7 @@ function App() {
                 onClick={() => {
                   navigator.clipboard.writeText(window.location.href);
                   setShowCopied(true);
-                  setTimeout(() => setShowCopied(false), 1000);
+                  setTimeout(() => setShowCopied(false), 3000);
                 }}>
                   <Icon name='share alternate' />
                     Share Search
