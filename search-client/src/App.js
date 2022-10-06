@@ -62,7 +62,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
   const [rerenderChild, setRerenderchild] = useState(0);
-  const [page, setPage] = useState(1);  // keep track of pages
+  let page = 1;
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false)
   const [occurence_loading, setOccurenceLoading] = useState(false)
@@ -73,10 +73,9 @@ function App() {
     setSubtitle(subtitle);
   }, [subtitle]);
 
-  const submit = (s='') => {
+  const submit = (s='',p=null) => {
     let books = getBooks(checklist.current);
     let search = s || searchTerm;
-
     if ('URLSearchParams' in window) {
       const url = new URL(window.location);
       url.searchParams.set('search', search);
@@ -116,7 +115,9 @@ function App() {
           setLoading(false);
         });
     }
-
+    if (p !== null) {
+      page = p;
+    }
     axios.post(`${API}/api/search`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -129,10 +130,10 @@ function App() {
     }).then((response) => {
       setLoading(false);
       setResult(response.data.found);
-      setPage(page + 1);
+      page += 1;
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#search-chunk").offset().top
-      }, 1500);
+      }, 1000);
     })
       .catch(error => {
         // setSubtitle("Error!!!");
@@ -179,10 +180,7 @@ function App() {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
                       setOccurenceLoading(true);
-                      submit();
-                      if (page !== 1) {
-                        setPage(1);
-                      }
+                      submit('', 1);
                     }
                   }
                 }
@@ -196,10 +194,7 @@ function App() {
                     }
                     setLoading(true);
                     setOccurenceLoading(true);
-                    submit();
-                    if (page !== 1) {
-                      setPage(1);
-                    }
+                    submit('', 1);
                   }}
                   placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
@@ -266,7 +261,7 @@ function App() {
                   }
                 }).then((response) => {
                   setResult(result.concat(response.data.found));
-                  setPage(page + 1);
+                  page += 1;
                 })
               }}
               loader={<h4>Loading...</h4>}
