@@ -90,10 +90,10 @@ def get_search_results() -> Dict[str, str]:
         }
 
     checked = data["books"]
-    if len(checked) != 7:
-        return {
-            "found": [{"text": "", "book": "Make sure you have an array of seven booleans!"}],
-        }
+    # if len(checked) != 7:
+    #     return {
+    #         "found": [{"text": "", "book": "Make sure you have an array of seven booleans!"}],
+    #     }
 
     to_skip = (int(data["page"]) - 1) * 20
     count = 0
