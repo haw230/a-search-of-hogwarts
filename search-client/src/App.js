@@ -31,7 +31,7 @@ function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
     const [temp, setTemp] = useState(1);  // trigger rerender
     return (
-      <Checkbox dfsdf={rerenderChild.toString()} checked={checklist.current.get(book)} onClick={() => {
+      <Checkbox checked={checklist.current.get(book)} onClick={() => {
         update(book);
         setTemp(temp + 1);
       }} label={book} />
@@ -205,7 +205,7 @@ function App() {
             <Grid className="grid-thing" celled={false} stackable={true}>
               <Grid.Row>
                 <Grid.Column width={4}>
-                  <CheckBoxBook book={"The Sorcerer's Stone"} rerenderChild={rerenderChild} />
+                  <CheckBoxBook book={"The Philosopher's Stone"} rerenderChild={rerenderChild} />
                 </Grid.Column>
                 <Grid.Column width={4}>
                   <CheckBoxBook book={"The Chamber of Secrets"} rerenderChild={rerenderChild} />
