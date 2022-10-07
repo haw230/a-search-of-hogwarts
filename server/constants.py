@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-STOPWORDS = {'a', 'the', 'an', 'it'}
+STOPWORDS = {'a', 'the', 'an'}
 PUNCTUATION = {',', '\'', '\"', '.', '?', '!', '-'}
 BOOKS = [
     "Book 1 - The Philosopher's Stone.txt",
