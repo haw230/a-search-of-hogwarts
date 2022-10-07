@@ -10,7 +10,7 @@ import './App.css';
 const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
 const API = "https://1100h19.pythonanywhere.com"
 const checked = new Map(Object.entries({
-  "The Sorcerer's Stone": true,
+  "The Philosopher's Stone": true,
   "The Chamber of Secrets": true,
   "The Prisoner of Azkaban": true,
   "The Goblet of Fire": true,
