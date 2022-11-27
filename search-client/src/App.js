@@ -26,6 +26,7 @@ const getBooks = checklist => {
   }
   return arr;
 }
+let page = 1;
 
 function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
@@ -62,7 +63,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
   const [rerenderChild, setRerenderchild] = useState(0);
-  let page = 1;
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false)
   const [occurence_loading, setOccurenceLoading] = useState(false);
@@ -181,7 +181,7 @@ function App() {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
                       setOccurenceLoading(true);
-                      submit('', 1);
+                      submit('', page);
                     }
                   }
                 }
@@ -195,7 +195,7 @@ function App() {
                     }
                     setLoading(true);
                     setOccurenceLoading(true);
-                    submit('', 1);
+                    submit('', page);
                   }}
                   placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
@@ -263,6 +263,7 @@ function App() {
               style={{z_index: -10, overflow: "visible"}}
               dataLength={result.length}
               next={() => {
+                console.log(page);
                 let books = getBooks(checklist.current);
                 let search = searchTerm;
                 axios.post(`${API}/api/search`, {
@@ -277,6 +278,7 @@ function App() {
                 }).then((response) => {
                   setResult(result.concat(response.data.found));
                   page += 1;
+                  console.log(page);
                 })
               }}
               loader={<h4>Loading...</h4>}
