@@ -181,7 +181,7 @@ function App() {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
                       setOccurenceLoading(true);
-                      submit('', page);
+                      submit('', 0);
                     }
                   }
                 }
@@ -195,7 +195,7 @@ function App() {
                     }
                     setLoading(true);
                     setOccurenceLoading(true);
-                    submit('', page);
+                    submit('', 0);
                   }}
                   placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
