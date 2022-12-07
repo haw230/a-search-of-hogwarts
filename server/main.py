@@ -127,6 +127,9 @@ def get_search_results() -> Dict[str, str]:
         return {
             "found": result + [{"text": "", "book": "No More Occurences Found"}],
         }
+    return {
+        "found": result + [{"text": "", "book": "No More Occurences Found"}],
+    }
 
 
 @application.route('/api/count', methods=['POST'])
