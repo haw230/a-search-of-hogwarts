@@ -294,7 +294,7 @@ function App() {
                     <Grid.Column textAlign="center">
                       <Button className="centred" style={{backgroundColor: 'white'}}  loading={occurence_loading}>
                       <Icon name='list alternate' />
-                        Show All Occurences 
+                        Show All Occurrences 
                       </Button>
                     </Grid.Column>
                   </Grid>}
