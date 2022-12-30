@@ -273,7 +273,7 @@ function App() {
                   data: {
                     books,  // checked books
                     search,  // words to search for
-                    page,  // pagination
+                    page: page + 1,  // + 1 because page 0 is already loaded
                   }
                 }).then((response) => {
                   setResult(result.concat(response.data.found));
