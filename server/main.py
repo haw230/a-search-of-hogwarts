@@ -28,7 +28,7 @@ def template_regex(string: str) -> str:
     """
     Wrap given string around with the regex for searching logic.
     """
-    return fr'(‘|\-|\n|“| |\.)({string})(’s|\-|\n|!| |\.|”|\?|,|’|s)'
+    return fr'(‘|\-|\n|“| |\.)({re.escape(string)})(’s|\-|\n|!| |\.|”|\?|,|’|s)'
 
 
 def bold_text(result: List[str], search_words: List[str]) -> None:
