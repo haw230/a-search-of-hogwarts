@@ -28,7 +28,7 @@ def template_regex(string: str) -> str:
     """
     Wrap given string around with the regex for searching logic.
     """
-    return fr'(‘|\-|\n|“| |\.)({string})(’s|\-|\n|!| |\.|”|\?|,|’)'
+    return fr'(‘|\-|\n|“| |\.)({re.escape(string)})(’s|\-|\n|!| |\.|”|\?|,|’|s)'
 
 
 def bold_text(result: List[str], search_words: List[str]) -> None:
@@ -90,10 +90,10 @@ def get_search_results() -> Dict[str, str]:
         }
 
     checked = data["books"]
-    if len(checked) != 7:
-        return {
-            "found": [{"text": "", "book": "Make sure you have an array of seven booleans!"}],
-        }
+    # if len(checked) != 7:
+    #     return {
+    #         "found": [{"text": "", "book": "Make sure you have an array of seven booleans!"}],
+    #     }
 
     to_skip = (int(data["page"]) - 1) * 20
     count = 0
@@ -127,6 +127,9 @@ def get_search_results() -> Dict[str, str]:
         return {
             "found": result + [{"text": "", "book": "No More Occurences Found"}],
         }
+    return {
+        "found": result + [{"text": "", "book": "No More Occurences Found"}],
+    }
 
 
 @application.route('/api/count', methods=['POST'])
@@ -138,11 +141,7 @@ def get_counts() -> Dict[str, str]:
     :param search (str): search term
     """
     data = request.json["data"]
-    search_words: List[str] = [
-        word.lower() for word in data["search"].split()
-        if word not in STOPWORDS
-    ]
-
+    search_words = [cleanse(word) for word in data["search"].split() if word.lower() not in STOPWORDS]
     result: List[dict] = []
     for book in books_data.keys():
         book_count: Dict[str, int] = { book: 0 }

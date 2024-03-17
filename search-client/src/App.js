@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header } from 'semantic-ui-react';
+import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Message } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
@@ -10,7 +10,7 @@ import './App.css';
 const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
 const API = "https://1100h19.pythonanywhere.com"
 const checked = new Map(Object.entries({
-  "The Sorcerer's Stone": true,
+  "The Philosopher's Stone": true,
   "The Chamber of Secrets": true,
   "The Prisoner of Azkaban": true,
   "The Goblet of Fire": true,
@@ -26,12 +26,13 @@ const getBooks = checklist => {
   }
   return arr;
 }
+let page = 1;
 
 function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
     const [temp, setTemp] = useState(1);  // trigger rerender
     return (
-      <Checkbox dfsdf={rerenderChild.toString()} checked={checklist.current.get(book)} onClick={() => {
+      <Checkbox checked={checklist.current.get(book)} onClick={() => {
         update(book);
         setTemp(temp + 1);
       }} label={book} />
@@ -40,7 +41,6 @@ function App() {
   
   const update = (book) => {
     checklist.current.set(book, !checklist.current.get(book));
-    // console.log(checklist.current);
   }
 
   const checkAll = () => {
@@ -58,14 +58,15 @@ function App() {
     setRerenderchild(1 + rerenderChild);
   }
   
-  const searchTerm = useRef("");
+  const [searchTerm, setSearchTerm] = useState("");
+  
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
+  let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
   const [rerenderChild, setRerenderchild] = useState(0);
-  const [page, setPage] = useState(1);  // keep track of pages
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false)
-  const [occurence_loading, setOccurenceLoading] = useState(false)
+  const [occurence_loading, setOccurenceLoading] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
 
@@ -73,16 +74,21 @@ function App() {
     setSubtitle(subtitle);
   }, [subtitle]);
 
-  if (loading) {
+  const submit = (s='',p=null) => {
     let books = getBooks(checklist.current);
-    let search = searchTerm.current;
+    let search = s || searchTerm;
+    if ('URLSearchParams' in window) {
+      const url = new URL(window.location);
+      url.searchParams.set('search', search);
+      window.history.pushState(null, '', url.toString());
+  }
 
     if (books.every(book => book === false)) {
       setSubtitle("Please select at least one book.");
       setLoading(false);
       return;
     }
-    if (searchTerm.current.length < 3) {
+    if (search.length < 3) {
       setSubtitle("Please try a longer search term.");
       setLoading(false);
       return;
@@ -110,7 +116,9 @@ function App() {
           setLoading(false);
         });
     }
-
+    if (p !== null) {
+      page = p;
+    }
     axios.post(`${API}/api/search`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -123,7 +131,7 @@ function App() {
     }).then((response) => {
       setLoading(false);
       setResult(response.data.found);
-      setPage(page + 1);
+      page += 1;
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#search-chunk").offset().top
       }, 1000);
@@ -146,6 +154,16 @@ function App() {
         setLoading(false);
       });
   }
+  useEffect(() => {
+    let search = window.location.search;
+    let params = new URLSearchParams(search);
+    if (params.get('search') !== null) {
+      setSearchTerm(params.get('search'));
+      setLoading(true);
+      setOccurenceLoading(true);
+      submit(params.get('search'));
+    }
+  }, []);
 
   return (
     <React.Fragment>
@@ -153,7 +171,7 @@ function App() {
       <div id="bg-image">
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
-            <p id="subtitle">{subtitle} <br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a>!</p>
+            <p id="subtitle">{subtitle} <br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p>
             <Grid celled={false}>
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
@@ -163,24 +181,21 @@ function App() {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
                       setOccurenceLoading(true);
-                      if (page !== 1) {
-                        setPage(1);
-                      }
+                      submit('', 0);
                     }
                   }
                 }
                   onChange={(event, data) => {
-                    searchTerm.current = data.value
+                    setSearchTerm(data.value);
                   }}
+                  value={searchTerm}
                   onKeyPress={event => {
                     if (event.key !== 'Enter') {
                       return;
                     }
                     setLoading(true);
                     setOccurenceLoading(true);
-                    if (page !== 1) {
-                      setPage(1);
-                    }
+                    submit('', 0);
                   }}
                   placeholder={placeholders[Math.floor(Math.random() * placeholders.length)]} />
                 </Grid.Column>
@@ -190,7 +205,7 @@ function App() {
             <Grid className="grid-thing" celled={false} stackable={true}>
               <Grid.Row>
                 <Grid.Column width={4}>
-                  <CheckBoxBook book={"The Sorcerer's Stone"} rerenderChild={rerenderChild} />
+                  <CheckBoxBook book={"The Philosopher's Stone"} rerenderChild={rerenderChild} />
                 </Grid.Column>
                 <Grid.Column width={4}>
                   <CheckBoxBook book={"The Chamber of Secrets"} rerenderChild={rerenderChild} />
@@ -230,12 +245,27 @@ function App() {
         {result.length > 0 ? (
           <div className="results">
             <div id="search-chunk"></div>
+            <div style={{paddingBottom: '20px'}} >
+              <Button
+                className="centred"
+                style={{ backgroundColor: 'white' }}
+                onClick={() => {
+                  navigator.clipboard.writeText(window.location.href);
+                  setShowCopied(true);
+                  setTimeout(() => setShowCopied(false), 3000);
+                }}>
+                  <Icon name='share alternate' />
+                    Share Search
+              </Button>
+              <Message color='green' hidden={!showCopied}>Copied to clipboard!</Message>
+            </div>
             <InfiniteScroll
               style={{z_index: -10, overflow: "visible"}}
               dataLength={result.length}
               next={() => {
+                console.log(page);
                 let books = getBooks(checklist.current);
-                let search = searchTerm.current;
+                let search = searchTerm;
                 axios.post(`${API}/api/search`, {
                   header: {
                     "Access-Control-Allow-Origin": "*",
@@ -243,11 +273,12 @@ function App() {
                   data: {
                     books,  // checked books
                     search,  // words to search for
-                    page,  // pagination
+                    page: page + 1,  // + 1 because page 0 is already loaded
                   }
                 }).then((response) => {
                   setResult(result.concat(response.data.found));
-                  setPage(page + 1);
+                  page += 1;
+                  console.log(page);
                 })
               }}
               loader={<h4>Loading...</h4>}
@@ -258,16 +289,15 @@ function App() {
                 onClose={() => setOpen(false)}
                 onOpen={() => setOpen(true)}
                 open={open}
-                trigger={<div>
+                trigger={
                   <Grid>
                     <Grid.Column textAlign="center">
                       <Button className="centred" style={{backgroundColor: 'white'}}  loading={occurence_loading}>
-                      <Icon name='list alternate' /> Show All Occurences 
-
+                      <Icon name='list alternate' />
+                        Show All Occurrences 
                       </Button>
                     </Grid.Column>
-                  </Grid>
-                </div>}
+                  </Grid>}
               >
                 <Modal.Content>
                   <Modal.Description>
