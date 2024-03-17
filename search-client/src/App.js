@@ -61,7 +61,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of your favorite books.");
+  let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false)
