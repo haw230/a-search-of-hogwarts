@@ -9,4 +9,6 @@ background: '/img/site_background2.jpg'
 
 ---
 
-Message [u/pottersearch](https://www.reddit.com/user/pottersearch/) on Reddit
+Message [u/pottersearch](https://www.reddit.com/user/pottersearch/) on Reddit.
+
+Join the official Potter Search Discord: https://discord.gg/Cm58qYrX
