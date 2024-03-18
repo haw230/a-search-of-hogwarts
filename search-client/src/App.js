@@ -179,12 +179,17 @@ function App() {
               name='blog'
               href='/blog/index.html'
               target='_blank'
+            />
+          <MenuItem
+            name='Official Discord'
+            href='https://discord.gg/Cm58qYrX'
+            target='_blank'
           />
         </Menu>
       </Segment>
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
-            <p id="subtitle">{subtitle}<br/> Join Potter Search's official <a href="https://discord.gg/Cm58qYrX">Discord community</a>. <br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p>
+            <p id="subtitle">{subtitle}<br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p>
             <Grid celled={false}>
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
