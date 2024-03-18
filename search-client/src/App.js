@@ -168,7 +168,7 @@ function App() {
   return (
     <React.Fragment>
       <p>Search the full text of your favorite Harry Potter books.</p>
-      <div id="bg-image">
+      <div id="bg-image" aria-label="Harry Potter search background image">
       <Segment inverted>
         <Menu inverted>
           <MenuItem
