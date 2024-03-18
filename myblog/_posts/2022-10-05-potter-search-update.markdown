@@ -7,12 +7,6 @@ background: '/img/site_background2.jpg'
 
 ---
 
-**What is Potter Search?**
-
-Potter Search (https://potter-search.com/) is a website that lets you search through the text of all 7 Harry Potter books.
-
-**The New Update**
-
 You can share your searches now!
 
 For example, https://www.potter-search.com/?search=harry%27s+face will take you to Potter Search and automatically search "Harry's face."
