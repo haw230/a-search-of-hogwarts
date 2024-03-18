@@ -4,4 +4,5 @@
 
 layout: home
 background: '/img/site_background2.jpg'
+comments: true
 ---

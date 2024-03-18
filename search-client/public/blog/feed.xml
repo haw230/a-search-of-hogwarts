@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-17T18:51:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">A Year in Potter Search (2023)</title><link href="http://localhost:4000/potter/search/2023/12/23/a-year-in-potter-search-2023.html" rel="alternate" type="text/html" title="A Year in Potter Search (2023)" /><published>2023-12-23T16:15:55-08:00</published><updated>2023-12-23T16:15:55-08:00</updated><id>http://localhost:4000/potter/search/2023/12/23/a-year-in-potter-search-2023</id><content type="html" xml:base="http://localhost:4000/potter/search/2023/12/23/a-year-in-potter-search-2023.html"><![CDATA[<p><strong>What is Potter Search?</strong></p>
-
-<p>Potter Search (https://potter-search.com/) is a website that lets you search through the text of all 7 Harry Potter books.</p>
-
-<p><strong>The New Update</strong></p>
-
-<p>You can share your searches now!</p>
-
-<p>For example, https://www.potter-search.com/?search=harry%27s+face will take you to Potter Search and automatically search “Harry’s face.”</p>
-
-<p>Each time you make a search on Potter Search, the URL will update and you just have to copy it to share it.</p>
-
-<p>More examples - taking some of the searches suggested by this <a href="https://www.reddit.com/r/HPfanfiction/comments/jcl4jo/i_made_a_tool_for_searching_the_7_harry_potter/g937mkw/">comment</a>:</p>
-
-<p>“Greater good” Dumbledore - turns out, all the occurrences of the phrase “greater good” are in DH, and are either directly related to Dumbledore’s past w/ Grindelwald and not the present, or are Aberforth still being upset about said past</p>
-
-<p>https://www.potter-search.com/?search=Greater+good</p>
-
-<p>Lemon drop addict Dumbledore - not true, Dumbledore appears to only once offer a lemon drop to someone. Other occurrences are when they are (or were) the password for his office.</p>
-
-<p>https://www.potter-search.com/?search=lemon+drop</p>
-
-<p>Harry my boy, my boy Harry, my boy, etc… - Said by Wood (after they win a Quidditch match), Trelawney, and Hagrid. Never Dumbledore. At least, never with the two words adjacent to each other like that.</p>
-
-<p>https://www.potter-search.com/?search=my+boy</p>
-
-<p>This makes searches easier to share!</p>
-
-<p><strong>What’s Next</strong></p>
-
-<p>I’ve been dedicating more time to improving Potter Search. The next major task will be adding other texts to the tool and making the searching better (for example, using quotes to directly match something). I would also be open to any suggestions!</p>
-
-<p><strong>Search Term Stats</strong></p>
-
-<p>This post wasn’t super visible so I’ll link it: https://www.reddit.com/r/HarryPotterBooks/comments/xu3png/some_search_term_stats_from_potter_search/</p>
-
-<p>I took some of the Potter Search data and did a quick analysis of what people were searching.
-Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.com/">Potter Search</a> data.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-03-17T20:28:05-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">A Year in Potter Search (2023)</title><link href="http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html" rel="alternate" type="text/html" title="A Year in Potter Search (2023)" /><published>2023-12-23T16:15:55-08:00</published><updated>2023-12-23T16:15:55-08:00</updated><id>http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html"><![CDATA[<p>Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.com/">Potter Search</a> data.</p>
 
 <p><strong>Quick Facts</strong></p>
 
@@ -146,13 +109,30 @@ Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.
 
 <p>Users from Brazil spend on average 3 minutes 35 seconds on Potter Search (the longest of any country), but these users count for 1.6% of Potter Search’s users.</p>
 
-<p>Comment if there’s any other data or statistic that you would like to see! Happy holidays and see you all in 2024!</p>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[What is Potter Search?]]></summary></entry><entry><title type="html">Potter Search Update</title><link href="http://localhost:4000/potter/search/2022/10/05/potter-search-update.html" rel="alternate" type="text/html" title="Potter Search Update" /><published>2022-10-05T17:15:55-07:00</published><updated>2022-10-05T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2022/10/05/potter-search-update</id><content type="html" xml:base="http://localhost:4000/potter/search/2022/10/05/potter-search-update.html"><![CDATA[<p><strong>What is Potter Search?</strong></p>
+<p>Comment if there’s any other data or statistic that you would like to see! Happy holidays and see you all in 2024!</p>
 
-<p>Potter Search (https://potter-search.com/) is a website that lets you search through the text of all 7 Harry Potter books.</p>
+<script id="dsq-count-scr" src="//pottersearch.disqus.com/count.js" async=""></script>
 
-<p><strong>The New Update</strong></p>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://pottersearch.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
 
-<p>You can share your searches now!</p>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[Hey folks, excited to wrap up 2023 with some Potter Search data.]]></summary></entry><entry><title type="html">Potter Search Update</title><link href="http://localhost:4000/blog/potter/search/2022/10/05/potter-search-update.html" rel="alternate" type="text/html" title="Potter Search Update" /><published>2022-10-05T17:15:55-07:00</published><updated>2022-10-05T17:15:55-07:00</updated><id>http://localhost:4000/blog/potter/search/2022/10/05/potter-search-update</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2022/10/05/potter-search-update.html"><![CDATA[<p>You can share your searches now!</p>
 
 <p>For example, https://www.potter-search.com/?search=harry%27s+face will take you to Potter Search and automatically search “Harry’s face.”</p>
 
@@ -182,7 +162,30 @@ Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.
 
 <p>This post wasn’t super visible so I’ll link it: https://www.reddit.com/r/HarryPotterBooks/comments/xu3png/some_search_term_stats_from_potter_search/</p>
 
-<p>I took some of the Potter Search data and did a quick analysis of what people were searching.</p>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[What is Potter Search?]]></summary></entry><entry><title type="html">Some Search Stats from Potter Search (2022)</title><link href="http://localhost:4000/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html" rel="alternate" type="text/html" title="Some Search Stats from Potter Search (2022)" /><published>2022-10-02T17:15:55-07:00</published><updated>2022-10-02T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2022/10/02/some-search-stats-from-potter-search-2022</id><content type="html" xml:base="http://localhost:4000/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html"><![CDATA[<p>Hey folks, we’re just two weeks away from the 2nd birthday of <a href="https://potter-search.com/">Potter Search</a> (a website for searching all 7 Harry Potter books at once), and I decided to compile some stats as a sort of celebration. A few months back I decided to collect some search term data since it’s pretty interesting to see what people are searching with Potter Search.</p>
+<p>I took some of the Potter Search data and did a quick analysis of what people were searching.</p>
+
+<script id="dsq-count-scr" src="//pottersearch.disqus.com/count.js" async=""></script>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://pottersearch.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[You can share your searches now!]]></summary></entry><entry><title type="html">Some Search Stats from Potter Search (2022)</title><link href="http://localhost:4000/blog/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html" rel="alternate" type="text/html" title="Some Search Stats from Potter Search (2022)" /><published>2022-10-02T17:15:55-07:00</published><updated>2022-10-02T17:15:55-07:00</updated><id>http://localhost:4000/blog/potter/search/2022/10/02/some-search-stats-from-potter-search-2022</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html"><![CDATA[<p>Hey folks, we’re just two weeks away from the 2nd birthday of <a href="https://potter-search.com/">Potter Search</a> (a website for searching all 7 Harry Potter books at once), and I decided to compile some stats as a sort of celebration. A few months back I decided to collect some search term data since it’s pretty interesting to see what people are searching with Potter Search.</p>
 
 <p>Search term has been collected from March 3rd, 2022 to now (October 2, 2022). It’s been 7 months. Other user data was collected by Google Analytics since the beginning (October 15, 2020)</p>
 
@@ -322,7 +325,30 @@ Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.
   </li>
 </ol>
 
-<p>Comment if there’s any other data or statistic that you woud like to see!</p>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[Hey folks, we’re just two weeks away from the 2nd birthday of Potter Search (a website for searching all 7 Harry Potter books at once), and I decided to compile some stats as a sort of celebration. A few months back I decided to collect some search term data since it’s pretty interesting to see what people are searching with Potter Search.]]></summary></entry><entry><title type="html">A website for searching all seven Harry Potter books!</title><link href="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html" rel="alternate" type="text/html" title="A website for searching all seven Harry Potter books!" /><published>2020-10-17T17:15:55-07:00</published><updated>2020-10-17T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search</id><content type="html" xml:base="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html"><![CDATA[<p><a href="https://www.potter-search.com/">potter-search.com</a></p>
+<p>Comment if there’s any other data or statistic that you woud like to see!</p>
+
+<script id="dsq-count-scr" src="//pottersearch.disqus.com/count.js" async=""></script>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://pottersearch.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[Hey folks, we’re just two weeks away from the 2nd birthday of Potter Search (a website for searching all 7 Harry Potter books at once), and I decided to compile some stats as a sort of celebration. A few months back I decided to collect some search term data since it’s pretty interesting to see what people are searching with Potter Search.]]></summary></entry><entry><title type="html">A website for searching all seven Harry Potter books!</title><link href="http://localhost:4000/blog/potter/search/2020/10/17/welcome-to-potter-search.html" rel="alternate" type="text/html" title="A website for searching all seven Harry Potter books!" /><published>2020-10-17T17:15:55-07:00</published><updated>2020-10-17T17:15:55-07:00</updated><id>http://localhost:4000/blog/potter/search/2020/10/17/welcome-to-potter-search</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2020/10/17/welcome-to-potter-search.html"><![CDATA[<p><a href="https://www.potter-search.com/">potter-search.com</a></p>
 
 <p>I made this for a side project and hopefully it will help book discussions around the community! The inspiration for this tool came when I wanted to find the scene where Harry sees Snape’s memories, and Snapes shows Dumbledore his Patronus. It hits hard every time.</p>
 
@@ -353,4 +379,27 @@ Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.
   <li>
     <p><a href="https://www.potter-search.com/?search=Lemon+drop">Lemon drop</a></p>
   </li>
-</ul>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[potter-search.com]]></summary></entry></feed>
+</ul>
+
+<script id="dsq-count-scr" src="//pottersearch.disqus.com/count.js" async=""></script>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://pottersearch.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[potter-search.com]]></summary></entry></feed>
