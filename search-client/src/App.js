@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Message } from 'semantic-ui-react';
+import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Message, MenuItem, Menu, Segment } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
@@ -169,6 +169,19 @@ function App() {
     <React.Fragment>
       <p>Search the full text of your favorite Harry Potter books.</p>
       <div id="bg-image">
+      <Segment inverted>
+        <Menu inverted>
+          <MenuItem
+              name='home'
+              href='https://wwww.potter-search.com'
+          />
+          <MenuItem
+              name='blog'
+              href='/blog/index.html'
+              target='_blank'
+          />
+        </Menu>
+      </Segment>
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
             <p id="subtitle">{subtitle} <br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p>
