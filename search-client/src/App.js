@@ -94,8 +94,8 @@ function App() {
       return;
     }
 
-    if (subtitle !== "Search the full text of your favorite books.") {
-      setSubtitle("Search the full text of your favorite books.");
+    if (subtitle !== "Search the full text of the Harry Potter books.") {
+      setSubtitle("Search the full text of the Harry Potter books.");
     }
 
     if (setOccurenceLoading) {
@@ -167,7 +167,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <p>Search the full text of your favorite Harry Potter books.</p>
+      <p>Search the full text of all the Harry Potter books by J.K. Rowling.</p>
       <div id="bg-image" aria-label="Harry Potter search background image">
       <Segment inverted>
         <Menu inverted>
