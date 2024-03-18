@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-17T17:54:46-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">A website for searching all seven Harry Potter books!</title><link href="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html" rel="alternate" type="text/html" title="A website for searching all seven Harry Potter books!" /><published>2020-10-17T17:15:55-07:00</published><updated>2020-10-17T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search</id><content type="html" xml:base="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html"><![CDATA[<p><a href="https://www.potter-search.com/">potter-search.com</a></p>
+
+<p>I made this for a side project and hopefully it will help book discussions around the community! The inspiration for this tool came when I wanted to find the scene where Harry sees Snape’s memories, and Snapes shows Dumbledore his Patronus. It hits hard every time.</p>
+
+<p>Some fun search terms:</p>
+
+<ul>
+  <li>
+    <p>Uranus (just to see some fun scenes)</p>
+  </li>
+  <li>
+    <p>Pocketed it (apparently Stephen Fry, the narrator for the audio books, had trouble pronouncing “pocketed it” so J.K. Rowling made sure to include the phrase in every book to troll him)</p>
+  </li>
+  <li>
+    <p>Slimy Slytherins (ron never says this)</p>
+  </li>
+  <li>
+    <p>Pretty much any spell (lumos, expelliarmus etc)</p>
+  </li>
+  <li>
+    <p>The ghosts (Fat Friar, Peeves)</p>
+  </li>
+  <li>
+    <p>Greater good (never mentioned until Deathly Hallows!)</p>
+  </li>
+  <li>
+    <p>My boy Harry (Dumbledore never says this!)</p>
+  </li>
+  <li>
+    <p>Lemon drop</p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[potter-search.com]]></summary></entry></feed>
