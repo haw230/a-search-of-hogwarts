@@ -1,4 +1,328 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-17T17:54:46-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">A website for searching all seven Harry Potter books!</title><link href="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html" rel="alternate" type="text/html" title="A website for searching all seven Harry Potter books!" /><published>2020-10-17T17:15:55-07:00</published><updated>2020-10-17T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search</id><content type="html" xml:base="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html"><![CDATA[<p><a href="https://www.potter-search.com/">potter-search.com</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-17T18:51:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">A Year in Potter Search (2023)</title><link href="http://localhost:4000/potter/search/2023/12/23/a-year-in-potter-search-2023.html" rel="alternate" type="text/html" title="A Year in Potter Search (2023)" /><published>2023-12-23T16:15:55-08:00</published><updated>2023-12-23T16:15:55-08:00</updated><id>http://localhost:4000/potter/search/2023/12/23/a-year-in-potter-search-2023</id><content type="html" xml:base="http://localhost:4000/potter/search/2023/12/23/a-year-in-potter-search-2023.html"><![CDATA[<p><strong>What is Potter Search?</strong></p>
+
+<p>Potter Search (https://potter-search.com/) is a website that lets you search through the text of all 7 Harry Potter books.</p>
+
+<p><strong>The New Update</strong></p>
+
+<p>You can share your searches now!</p>
+
+<p>For example, https://www.potter-search.com/?search=harry%27s+face will take you to Potter Search and automatically search “Harry’s face.”</p>
+
+<p>Each time you make a search on Potter Search, the URL will update and you just have to copy it to share it.</p>
+
+<p>More examples - taking some of the searches suggested by this <a href="https://www.reddit.com/r/HPfanfiction/comments/jcl4jo/i_made_a_tool_for_searching_the_7_harry_potter/g937mkw/">comment</a>:</p>
+
+<p>“Greater good” Dumbledore - turns out, all the occurrences of the phrase “greater good” are in DH, and are either directly related to Dumbledore’s past w/ Grindelwald and not the present, or are Aberforth still being upset about said past</p>
+
+<p>https://www.potter-search.com/?search=Greater+good</p>
+
+<p>Lemon drop addict Dumbledore - not true, Dumbledore appears to only once offer a lemon drop to someone. Other occurrences are when they are (or were) the password for his office.</p>
+
+<p>https://www.potter-search.com/?search=lemon+drop</p>
+
+<p>Harry my boy, my boy Harry, my boy, etc… - Said by Wood (after they win a Quidditch match), Trelawney, and Hagrid. Never Dumbledore. At least, never with the two words adjacent to each other like that.</p>
+
+<p>https://www.potter-search.com/?search=my+boy</p>
+
+<p>This makes searches easier to share!</p>
+
+<p><strong>What’s Next</strong></p>
+
+<p>I’ve been dedicating more time to improving Potter Search. The next major task will be adding other texts to the tool and making the searching better (for example, using quotes to directly match something). I would also be open to any suggestions!</p>
+
+<p><strong>Search Term Stats</strong></p>
+
+<p>This post wasn’t super visible so I’ll link it: https://www.reddit.com/r/HarryPotterBooks/comments/xu3png/some_search_term_stats_from_potter_search/</p>
+
+<p>I took some of the Potter Search data and did a quick analysis of what people were searching.
+Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.com/">Potter Search</a> data.</p>
+
+<p><strong>Quick Facts</strong></p>
+
+<ul>
+  <li>
+    <p>There’s been <strong>329,342  queries</strong> this year.</p>
+  </li>
+  <li>
+    <p>At the time of this writing, there were <strong>6.7k unique users this year</strong> and <strong>272 unique users on Potter Search in the past week</strong>. The single most users in a single day was May 16 with 169 users on that day.</p>
+  </li>
+  <li>
+    <p>The average user spends around 1 minute 24 seconds on Potter Search.</p>
+  </li>
+  <li>
+    <p>People sometime randomly search links (to iTunes or other websites) in the Potter Search search box.</p>
+  </li>
+</ul>
+
+<p><strong>Top 10 Most Searched Terms</strong></p>
+
+<ol>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=harry">harry</a>: 8028</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=snape">snape</a>: 4795</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=hermione">hermione</a>: 2910</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=you">you</a>: 2876</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=sirius">sirius</a>: 2625</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=dumbledore">dumbledore</a>: 2496</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=malfoy">malfoy</a>: 2479</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=and">and</a>: 2408</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=ron">ron</a>: 2217</p>
+  </li>
+  <li>
+    <p><a href="https://www.potter-search.com/?search=said">said</a>: 1942</p>
+  </li>
+</ol>
+
+<p><strong>10 Longest Search Terms</strong></p>
+
+<ol>
+  <li>
+    <p>hhdhhjhfghvfykxtjhfdhggdg🙈😎😳😳😍🇺🇸🇺🇸🇺🇸🇺🇸🇺🇸🇺🇸: 1</p>
+  </li>
+  <li>
+    <p>human-““then-i-don’t-want-to-be-human!”: 1</p>
+  </li>
+  <li>
+    <p>onethousandmagicalherbsandfungi: 1</p>
+  </li>
+  <li>
+    <p>bellatrixaaaaaaaaaaaaaaaaaaaaaa: 1</p>
+  </li>
+  <li>
+    <p>onerror=javascript:alert(1): 3</p>
+  </li>
+  <li>
+    <p>he-who-must-not-be-named: 6</p>
+  </li>
+  <li>
+    <p>conjrationconjuration: 1</p>
+  </li>
+  <li>
+    <p>ten-thousand-galleon: 1</p>
+  </li>
+  <li>
+    <p>self-transfiguration: 1</p>
+  </li>
+  <li>
+    <p>katie,leanne,seamus: 3</p>
+  </li>
+</ol>
+
+<p><strong>Potter Search User Geography</strong></p>
+
+<ol>
+  <li>
+    <p>USA: 47%</p>
+  </li>
+  <li>
+    <p>UK: 13%</p>
+  </li>
+  <li>
+    <p>Canada: 4%</p>
+  </li>
+  <li>
+    <p>Norway: 4%</p>
+  </li>
+  <li>
+    <p>India: 2.5%</p>
+  </li>
+</ol>
+
+<p>Users from Brazil spend on average 3 minutes 35 seconds on Potter Search (the longest of any country), but these users count for 1.6% of Potter Search’s users.</p>
+
+<p>Comment if there’s any other data or statistic that you would like to see! Happy holidays and see you all in 2024!</p>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[What is Potter Search?]]></summary></entry><entry><title type="html">Potter Search Update</title><link href="http://localhost:4000/potter/search/2022/10/05/potter-search-update.html" rel="alternate" type="text/html" title="Potter Search Update" /><published>2022-10-05T17:15:55-07:00</published><updated>2022-10-05T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2022/10/05/potter-search-update</id><content type="html" xml:base="http://localhost:4000/potter/search/2022/10/05/potter-search-update.html"><![CDATA[<p><strong>What is Potter Search?</strong></p>
+
+<p>Potter Search (https://potter-search.com/) is a website that lets you search through the text of all 7 Harry Potter books.</p>
+
+<p><strong>The New Update</strong></p>
+
+<p>You can share your searches now!</p>
+
+<p>For example, https://www.potter-search.com/?search=harry%27s+face will take you to Potter Search and automatically search “Harry’s face.”</p>
+
+<p>Each time you make a search on Potter Search, the URL will update and you just have to copy it to share it.</p>
+
+<p>More examples - taking some of the searches suggested by this <a href="https://www.reddit.com/r/HPfanfiction/comments/jcl4jo/i_made_a_tool_for_searching_the_7_harry_potter/g937mkw/">comment</a>:</p>
+
+<p>“Greater good” Dumbledore - turns out, all the occurrences of the phrase “greater good” are in DH, and are either directly related to Dumbledore’s past w/ Grindelwald and not the present, or are Aberforth still being upset about said past</p>
+
+<p>https://www.potter-search.com/?search=Greater+good</p>
+
+<p>Lemon drop addict Dumbledore - not true, Dumbledore appears to only once offer a lemon drop to someone. Other occurrences are when they are (or were) the password for his office.</p>
+
+<p>https://www.potter-search.com/?search=lemon+drop</p>
+
+<p>Harry my boy, my boy Harry, my boy, etc… - Said by Wood (after they win a Quidditch match), Trelawney, and Hagrid. Never Dumbledore. At least, never with the two words adjacent to each other like that.</p>
+
+<p>https://www.potter-search.com/?search=my+boy</p>
+
+<p>This makes searches easier to share!</p>
+
+<p><strong>What’s Next</strong></p>
+
+<p>I’ve been dedicating more time to improving Potter Search. The next major task will be adding other texts to the tool and making the searching better (for example, using quotes to directly match something). I would also be open to any suggestions!</p>
+
+<p><strong>Search Term Stats</strong></p>
+
+<p>This post wasn’t super visible so I’ll link it: https://www.reddit.com/r/HarryPotterBooks/comments/xu3png/some_search_term_stats_from_potter_search/</p>
+
+<p>I took some of the Potter Search data and did a quick analysis of what people were searching.</p>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[What is Potter Search?]]></summary></entry><entry><title type="html">Some Search Stats from Potter Search (2022)</title><link href="http://localhost:4000/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html" rel="alternate" type="text/html" title="Some Search Stats from Potter Search (2022)" /><published>2022-10-02T17:15:55-07:00</published><updated>2022-10-02T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2022/10/02/some-search-stats-from-potter-search-2022</id><content type="html" xml:base="http://localhost:4000/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html"><![CDATA[<p>Hey folks, we’re just two weeks away from the 2nd birthday of <a href="https://potter-search.com/">Potter Search</a> (a website for searching all 7 Harry Potter books at once), and I decided to compile some stats as a sort of celebration. A few months back I decided to collect some search term data since it’s pretty interesting to see what people are searching with Potter Search.</p>
+
+<p>Search term has been collected from March 3rd, 2022 to now (October 2, 2022). It’s been 7 months. Other user data was collected by Google Analytics since the beginning (October 15, 2020)</p>
+
+<p><strong>Quick Facts</strong></p>
+
+<ul>
+  <li>There’s been <strong>81,864 queries</strong> in the last 7 months.</li>
+  <li>There’s been <strong>over 7000 Potter Search users</strong> since its launch. The most users in a single day was over 1,100 users (this was very early on when the Reddit posts were first posted).</li>
+  <li>At the time of this writing, there were <strong>123 unique users on Potter Search in the past week</strong>.</li>
+  <li>The average user spends just over a minute on Potter Search.</li>
+  <li><strong>People have tried to hack Potter Search!</strong> There’s <a href="https://www.w3schools.com/sql/sql_injection.asp">SQL injection attacks</a> (luckily, Potter Search does not use SQL), and Python code pasted into the search bar.</li>
+</ul>
+
+<p><strong>Top 10 Most Searched Terms</strong></p>
+
+<ol>
+  <li>
+    <p>snape: 1162</p>
+  </li>
+  <li>
+    <p>harry: 1115</p>
+  </li>
+  <li>
+    <p>hermione: 1015</p>
+  </li>
+  <li>
+    <p>you: 860</p>
+  </li>
+  <li>
+    <p>and: 672</p>
+  </li>
+  <li>
+    <p>sirius: 651</p>
+  </li>
+  <li>
+    <p>said: 461</p>
+  </li>
+  <li>
+    <p>time: 442</p>
+  </li>
+  <li>
+    <p>ron: 437</p>
+  </li>
+  <li>
+    <p>malfoy: 415</p>
+  </li>
+</ol>
+
+<p>Here is a paste with the top 100: https://pastebin.com/9fSe36Xj</p>
+
+<p><strong>10 of the Least Searched Terms (there’s a lot of words only searched once)</strong></p>
+
+<ol>
+  <li>mission: 1</li>
+  <li>codswallop: 1</li>
+  <li>lonely: 1</li>
+  <li>crabb: 1</li>
+  <li>haired: 1</li>
+  <li>fetching: 1</li>
+  <li>comely: 1</li>
+  <li>muscle: 1</li>
+  <li>talentless: 1</li>
+  <li>inject: 1</li>
+</ol>
+
+<p>Here are 1000 of the words that were only searched once: https://pastebin.com/i0zdpXUY</p>
+
+<p><strong>10 Longest Search Terms</strong></p>
+
+<ol>
+  <li>
+    <p>onethousandmagicalherbsandfungi: 1</p>
+  </li>
+  <li>
+    <p>he-who-must-not-be-named: 1</p>
+  </li>
+  <li>
+    <p>katie,leanne,seamus: 3</p>
+  </li>
+  <li>
+    <p>fifty-year-younger: 1</p>
+  </li>
+  <li>
+    <p>missunderstanding: 3</p>
+  </li>
+  <li>
+    <p>unsuperfluousness: 3</p>
+  </li>
+  <li>
+    <p>attention-seeking: 4</p>
+  </li>
+  <li>
+    <p>surreptitiousness: 3</p>
+  </li>
+  <li>
+    <p>entrail-expelling: 1</p>
+  </li>
+  <li>
+    <p>misunderstanding: 9</p>
+  </li>
+</ol>
+
+<p>Here are 1000 of the longest search terms: https://pastebin.com/FGwLycY6</p>
+
+<p><strong>Potter Search User Geography</strong></p>
+
+<ol>
+  <li>
+    <p>USA: 42%</p>
+  </li>
+  <li>
+    <p>Canada: 15%</p>
+  </li>
+  <li>
+    <p>UK: 10%</p>
+  </li>
+  <li>
+    <p>India: 3.5%</p>
+  </li>
+  <li>
+    <p>Australia: 3%</p>
+  </li>
+  <li>
+    <p>Germany: ~2%</p>
+  </li>
+  <li>
+    <p>Netherlands: ~1.5%</p>
+  </li>
+  <li>
+    <p>Seychelles ~1.5%</p>
+  </li>
+  <li>
+    <p>Singapore: ~1.3%</p>
+  </li>
+  <li>
+    <p>Poland: ~1.3%</p>
+  </li>
+</ol>
+
+<p>Comment if there’s any other data or statistic that you woud like to see!</p>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[Hey folks, we’re just two weeks away from the 2nd birthday of Potter Search (a website for searching all 7 Harry Potter books at once), and I decided to compile some stats as a sort of celebration. A few months back I decided to collect some search term data since it’s pretty interesting to see what people are searching with Potter Search.]]></summary></entry><entry><title type="html">A website for searching all seven Harry Potter books!</title><link href="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html" rel="alternate" type="text/html" title="A website for searching all seven Harry Potter books!" /><published>2020-10-17T17:15:55-07:00</published><updated>2020-10-17T17:15:55-07:00</updated><id>http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search</id><content type="html" xml:base="http://localhost:4000/potter/search/2020/10/17/welcome-to-potter-search.html"><![CDATA[<p><a href="https://www.potter-search.com/">potter-search.com</a></p>
 
 <p>I made this for a side project and hopefully it will help book discussions around the community! The inspiration for this tool came when I wanted to find the scene where Harry sees Snape’s memories, and Snapes shows Dumbledore his Patronus. It hits hard every time.</p>
 
@@ -6,27 +330,27 @@
 
 <ul>
   <li>
-    <p>Uranus (just to see some fun scenes)</p>
+    <p><a href="https://www.potter-search.com/?search=uranus">Uranus</a> (just to see some fun scenes)</p>
   </li>
   <li>
-    <p>Pocketed it (apparently Stephen Fry, the narrator for the audio books, had trouble pronouncing “pocketed it” so J.K. Rowling made sure to include the phrase in every book to troll him)</p>
+    <p><a href="https://www.potter-search.com/?search=pocketed+it">Pocketed it</a> (apparently Stephen Fry, the narrator for the audio books, had trouble pronouncing “pocketed it” so J.K. Rowling made sure to include the phrase in every book to troll him)</p>
   </li>
   <li>
-    <p>Slimy Slytherins (ron never says this)</p>
+    <p><a href="https://www.potter-search.com/?search=Slimy+Slytherins">Slimy Slytherins</a> (ron never says this)</p>
   </li>
   <li>
-    <p>Pretty much any spell (lumos, expelliarmus etc)</p>
+    <p>Pretty much any spell (<a href="https://www.potter-search.com/?search=lumos">lumos</a>, <a href="https://www.potter-search.com/?search=expelliarmus">expelliarmus</a> etc)</p>
   </li>
   <li>
-    <p>The ghosts (Fat Friar, Peeves)</p>
+    <p>The ghosts (<a href="https://www.potter-search.com/?search=Fat+Friar">Fat Friar</a>, <a href="https://www.potter-search.com/?search=Peeves">Peeves</a>)</p>
   </li>
   <li>
-    <p>Greater good (never mentioned until Deathly Hallows!)</p>
+    <p><a href="https://www.potter-search.com/?search=Greater+good">Greater good</a> (never mentioned until Deathly Hallows!)</p>
   </li>
   <li>
-    <p>My boy Harry (Dumbledore never says this!)</p>
+    <p><a href="https://www.potter-search.com/?search=My+boy+Harry">My boy Harry</a> (Dumbledore never says this!)</p>
   </li>
   <li>
-    <p>Lemon drop</p>
+    <p><a href="https://www.potter-search.com/?search=Lemon+drop">Lemon drop</a></p>
   </li>
 </ul>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[potter-search.com]]></summary></entry></feed>
