@@ -75,15 +75,18 @@
   z-index: 1;
 }
 
-#bg-image {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover !important;
-  position: absolute;
-  background: url('./img/site_background2.jpg') no-repeat center center;
+@media (min-width: 800px) {
+  #bg-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    position: absolute;
+    background: url('./img/site_background2.jpg') no-repeat center center;
+  }
 }
+
 
 .results {
   overflow: hidden;
