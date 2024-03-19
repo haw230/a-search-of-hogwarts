@@ -32,10 +32,10 @@ function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
     const [temp, setTemp] = useState(1);  // trigger rerender
     return (
-      <Checkbox checked={checklist.current.get(book)} onClick={() => {
+      <Checkbox label={book} aria-label={book} checked={checklist.current.get(book)} onClick={() => {
         update(book);
         setTemp(temp + 1);
-      }} label={book} />
+      }} />
     )
   };
   
