@@ -248,11 +248,11 @@ function App() {
               </Grid.Row>
             </Grid>
             <div className="button-div">
-              <Button className="those-buttons" style={{backgroundColor: 'white'}} onClick={checkAll}>
+              <Button arial-label="Check All" className="those-buttons" style={{backgroundColor: 'white'}} onClick={checkAll}>
                 <Icon name='plus square outline' />
                 Check All
               </Button>
-              <Button className="those-buttons" style={{backgroundColor: 'white'}} onClick={checkNone}>
+              <Button arial-label="Ucheck All" className="those-buttons" style={{backgroundColor: 'white'}} onClick={checkNone}>
                 <Icon name='minus square outline' />
                 Uncheck All
               </Button>
@@ -265,6 +265,7 @@ function App() {
             <div id="search-chunk"></div>
             <div style={{paddingBottom: '20px'}} >
               <Button
+                arial-label="Share Search"
                 className="centred"
                 style={{ backgroundColor: 'white' }}
                 onClick={() => {
@@ -281,7 +282,6 @@ function App() {
               style={{z_index: -10, overflow: "visible"}}
               dataLength={result.length}
               next={() => {
-                console.log(page);
                 let books = getBooks(checklist.current);
                 let search = searchTerm;
                 axios.post(`${API}/api/search`, {
@@ -310,7 +310,7 @@ function App() {
                 trigger={
                   <Grid>
                     <Grid.Column textAlign="center">
-                      <Button className="centred" style={{backgroundColor: 'white'}}  loading={occurence_loading}>
+                      <Button arial-label="Show All Occurrences" className="centred" style={{backgroundColor: 'white'}}  loading={occurence_loading}>
                       <Icon name='list alternate' />
                         Show All Occurrences 
                       </Button>
@@ -326,7 +326,7 @@ function App() {
                   </Modal.Description>
                 </Modal.Content>
                 <Modal.Actions>
-                  <Button color='black' onClick={() => setOpen(false)}>
+                  <Button arial-label="Exit" color='black' onClick={() => setOpen(false)}>
                     Exit
                   </Button>
                 </Modal.Actions>
