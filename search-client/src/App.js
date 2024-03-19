@@ -209,7 +209,7 @@ function App() {
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
                 <Grid.Column width={12}>
-                <Input loading={loading} fluid={true} size={"large"} action={loading ? {} :
+                <Input aria-label={"Search"} loading={loading} fluid={true} size={"large"} action={loading ? {} :
                   {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
