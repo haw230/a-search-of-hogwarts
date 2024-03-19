@@ -2,11 +2,8 @@ import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Message, MenuItem, Menu, Segment } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import * as $ from 'jquery';
-
-import 'semantic-ui-css/semantic.min.css';
-import './App.css';
-
+import $ from 'jquery/dist/jquery.min';
+import './App.css'
 const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
 const API = "https://1100h19.pythonanywhere.com"
 const checked = new Map(Object.entries({
@@ -67,12 +64,20 @@ function App() {
   const [open, setOpen] = useState(false)
   const [occurence_loading, setOccurenceLoading] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
-  const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
+  const [occurence_data, setOccurenceData] = useState({ occurences: [], search: "" });
+  const [isCssLoaded, setCssLoaded] = useState(false);
+
   const checklist = useRef(checked);
 
   useEffect(() => {
     setSubtitle(subtitle);
   }, [subtitle]);
+
+  useEffect(() => {
+    import('semantic-ui-css/semantic.min.css').then(() => {
+      setCssLoaded(true);
+    });
+  }, []);
 
   const submit = useCallback((s = '', p = null) => {
     let books = getBooks(checklist.current);
@@ -164,7 +169,9 @@ function App() {
       submit(params.get('search'));
     }
   }, [submit]);
-
+  if (!isCssLoaded) {
+    return <div>Loading...</div>;
+  }
   return (
     <React.Fragment>
       <p>Search the full text of all the Harry Potter books by J.K. Rowling.</p>
