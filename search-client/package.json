@@ -31,5 +31,6 @@
       "not dead",
       "not op_mini all"
     ]
-  }
+  },
+  "exports": "./src/index.js"
 }

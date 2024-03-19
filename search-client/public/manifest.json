@@ -1,6 +1,6 @@
 {
   "short_name": "Potter Search",
-  "name": "Search all Harry Potter books.",
+  "name": "Search through the full text of all Harry Potter books by J.K. Rowling.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,11 +11,6 @@
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
