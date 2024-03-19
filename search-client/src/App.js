@@ -76,7 +76,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   
   const [loading, setLoading] = useState(false);
-  let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
+  // let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false);
@@ -84,10 +84,10 @@ function App() {
   const [showCopied, setShowCopied] = useState(false);
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
-  console.log(open);
-  useEffect(() => {
-    setSubtitle(subtitle);
-  }, [subtitle]);
+
+  // useEffect(() => {
+  //   setSubtitle(subtitle);
+  // }, [subtitle]);
 
   const submit = useCallback((s = '', p = null) => {
     let books = getBooks(checklist.current);
@@ -99,19 +99,19 @@ function App() {
     }
 
     if (books.every(book => book === false)) {
-      setSubtitle("Please select at least one book.");
+      // setSubtitle("Please select at least one book.");
       setLoading(false);
       return;
     }
     if (search.length < 3) {
-      setSubtitle("Please try a longer search term.");
+      // setSubtitle("Please try a longer search term.");
       setLoading(false);
       return;
     }
 
-    if (subtitle !== "Search the full text of the Harry Potter books.") {
-      setSubtitle("Search the full text of the Harry Potter books.");
-    }
+    // if (subtitle !== "Search the full text of the Harry Potter books.") {
+    //   setSubtitle("Search the full text of the Harry Potter books.");
+    // }
 
     if (setOccurenceLoading) {
       axios.post(`${API}/api/count`, {
@@ -126,7 +126,7 @@ function App() {
         setOccurenceData(response.data);
       })
         .catch(err => {
-          setSubtitle("Error for Occurences");
+          // setSubtitle("Error for Occurences");
           console.log(err);
           setLoading(false);
         });
@@ -155,20 +155,20 @@ function App() {
         // setSubtitle("Error!!!");
         if (error.response) {
           // Request made and server responded
-          setSubtitle(JSON.stringify(error.response.data));
+          // setSubtitle(JSON.stringify(error.response.data));
           // setSubtitle(JSON.stringify(error.response.status));
           // setSubtitle(JSON.stringify(error.response.headers));
         } else if (error.request) {
           // The request was made but no response was received
           console.log(error.request)
-          setSubtitle(JSON.stringify(error.request));
+          // setSubtitle(JSON.stringify(error.request));
         } else {
           // Something happened in setting up the request that triggered an Error
-          setSubtitle(JSON.stringify('Error', error.message));
+          // setSubtitle(JSON.stringify('Error', error.message));
         }
         setLoading(false);
       });
-  }, [searchTerm, subtitle]);
+  }, [searchTerm]);
   useEffect(() => {
     let search = window.location.search;
     let params = new URLSearchParams(search);
@@ -204,7 +204,7 @@ function App() {
       </Segment>
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
-            <p id="subtitle">{subtitle}<br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p>
+            {/* <p id="subtitle">{subtitle}<br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p> */}
             <Grid celled={false}>
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
