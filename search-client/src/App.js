@@ -4,7 +4,22 @@ import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import * as $ from 'jquery';
 
-import 'semantic-ui-css/semantic.min.css';
+import 'semantic-ui-css/components/grid.min.css';
+import 'semantic-ui-css/components/reset.min.css';
+import 'semantic-ui-css/components/input.min.css';
+import 'semantic-ui-css/components/site.min.css';
+import 'semantic-ui-css/components/checkbox.min.css';
+import 'semantic-ui-css/components/button.min.css';
+import 'semantic-ui-css/components/icon.min.css';
+import 'semantic-ui-css/components/card.min.css';
+import 'semantic-ui-css/components/dimmer.min.css';
+import 'semantic-ui-css/components/transition.min.css';
+import 'semantic-ui-css/components/modal.min.css';
+import 'semantic-ui-css/components/header.min.css';
+import 'semantic-ui-css/components/message.min.css';
+import 'semantic-ui-css/components/menu.min.css';
+import 'semantic-ui-css/components/segment.min.css';
+
 import './App.css';
 
 const placeholders = ["he greeted death...", "always...", "uranus...", "what is right...", "nitwit...", "expelliarmus...", "lumos..."];
@@ -64,12 +79,12 @@ function App() {
   let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [result, setResult] = useState([]);
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const [occurence_loading, setOccurenceLoading] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
-
+  console.log(open);
   useEffect(() => {
     setSubtitle(subtitle);
   }, [subtitle]);

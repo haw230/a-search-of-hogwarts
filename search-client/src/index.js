@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'; // Import createRoot
 import './index.css';
 import App from './App';
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(
+root.render(
   <React.Fragment>
     <App />
-  </React.Fragment>,
-  document.getElementById('root')
+  </React.Fragment>
 );
-
