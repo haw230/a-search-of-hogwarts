@@ -70,8 +70,7 @@
   width: 980px;
   height: 400px;
   max-height: calc(100vh - 10px);
-  background: #222222;
-  background: rgba(34, 34, 34, 0.75);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
 
