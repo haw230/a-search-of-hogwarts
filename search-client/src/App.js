@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { Grid, Input, Checkbox, Button, Icon, Card, Modal, Header, Message, MenuItem, Menu, Segment } from 'semantic-ui-react';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
@@ -74,14 +74,14 @@ function App() {
     setSubtitle(subtitle);
   }, [subtitle]);
 
-  const submit = (s='',p=null) => {
+  const submit = useCallback((s = '', p = null) => {
     let books = getBooks(checklist.current);
     let search = s || searchTerm;
     if ('URLSearchParams' in window) {
       const url = new URL(window.location);
       url.searchParams.set('search', search);
       window.history.pushState(null, '', url.toString());
-  }
+    }
 
     if (books.every(book => book === false)) {
       setSubtitle("Please select at least one book.");
@@ -153,7 +153,7 @@ function App() {
         }
         setLoading(false);
       });
-  }
+  }, [searchTerm, subtitle]);
   useEffect(() => {
     let search = window.location.search;
     let params = new URLSearchParams(search);
@@ -163,7 +163,7 @@ function App() {
       setOccurenceLoading(true);
       submit(params.get('search'));
     }
-  }, []);
+  }, [submit]);
 
   return (
     <React.Fragment>
