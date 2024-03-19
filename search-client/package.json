@@ -32,5 +32,8 @@
       "not op_mini all"
     ]
   },
-  "exports": "./src/index.js"
+  "exports": "./src/index.js",
+  "devDependencies": {
+    "eslint-config-react-app": "^7.0.1"
+  }
 }
