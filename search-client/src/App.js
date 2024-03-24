@@ -43,6 +43,21 @@ const getBooks = checklist => {
 }
 let page = 1;
 
+function isElementInView(elem) {
+  var $elem = $(elem);
+  var $window = $(window);
+
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+
+  // Element is in view if its bottom is greater than the window's top
+  // and its top is less than the window's bottom
+  return elemBottom >= docViewTop && elemTop <= docViewBottom;
+}
+
 function App() {
   const CheckBoxBook = ({ book, rerenderChild }) => {
     const [temp, setTemp] = useState(1);  // trigger rerender
@@ -84,10 +99,17 @@ function App() {
   const [showCopied, setShowCopied] = useState(false);
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
-
+  const functionRef = useRef();
   useEffect(() => {
     setSubtitle(subtitle);
   }, [subtitle]);
+  useEffect(() => {
+    if ($("#search-chunk").offset() !== undefined && !isElementInView("#search-chunk")) {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#search-chunk").offset().top
+      }, 700);
+    }
+  }, [result]);
 
   const submit = useCallback((s = '', p = null) => {
     let books = getBooks(checklist.current);
@@ -105,7 +127,6 @@ function App() {
       const newUrlString = url.toString().replace("LIST_OF_IDS_PLACEHOLDER", query_param_books.join(','));
       window.history.pushState(null, '', newUrlString);
     }
-
     if (books.every(book => book === false)) {
       setSubtitle("Please select at least one book.");
       setLoading(false);
@@ -120,25 +141,23 @@ function App() {
     if (subtitle !== "Search the full text of the Harry Potter books.") {
       setSubtitle("Search the full text of the Harry Potter books.");
     }
-
-    if (setOccurenceLoading) {
-      axios.post(`${API}/api/count`, {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-        data: {
-          search,  // words to search for
-        }
-      }).then((response) => {
-        setOccurenceLoading(false);
-        setOccurenceData(response.data);
-      })
-        .catch(err => {
-          setSubtitle("Error for Occurences");
-          console.log(err);
-          setLoading(false);
-        });
-    }
+    axios.post(`${API}/api/count`, {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+      data: {
+        search,  // words to search for
+      }
+    }).then((response) => {
+      setOccurenceLoading(false);
+      setOccurenceData(response.data);
+    })
+      .catch(err => {
+        setSubtitle("Error for Occurences");
+        console.log(err);
+        setLoading(false);
+      });
+    
     if (p !== null) {
       page = p;
     }
@@ -155,9 +174,6 @@ function App() {
       setLoading(false);
       setResult(response.data.found);
       page += 1;
-      $([document.documentElement, document.body]).animate({
-        scrollTop: $("#search-chunk").offset().top
-      }, 700);
     })
       .catch(error => {
         setSubtitle("Error!!!");
@@ -177,6 +193,9 @@ function App() {
         setLoading(false);
       });
   }, [searchTerm, subtitle]);
+  functionRef.current = (searchString) => {
+    submit(searchString, 0);
+  }
   useEffect(() => {
     let search = window.location.search;
     let params = new URLSearchParams(search);
@@ -196,9 +215,11 @@ function App() {
       setSearchTerm(params.get('search'));
       setLoading(true);
       setOccurenceLoading(true);
-      submit(params.get('search'), 0);
+      if (functionRef.current) {
+        functionRef.current(params.get('search'));
+      }
     }
-  }, [submit]);
+  }, []);
 
   return (
     <React.Fragment>
@@ -229,7 +250,7 @@ function App() {
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
                 <Grid.Column width={12}>
-                <Input aria-label={"Search"} loading={loading} fluid={true} size={"large"} action={loading ? {} :
+                <Input id="search-box" aria-label={"Search"} loading={loading} fluid={true} size={"large"} action={loading ? {} :
                   {
                     icon: 'search', onClick: (event, data) => {
                       setLoading(true);
@@ -300,6 +321,7 @@ function App() {
             <div id="search-chunk"></div>
             <div style={{paddingBottom: '20px'}} >
               <Button
+                id="shareSearchButton"
                 arial-label="Share Search"
                 className="centred"
                 style={{ backgroundColor: 'white' }}
