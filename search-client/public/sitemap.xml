@@ -30,9 +30,15 @@
       <changefreq>never</changefreq>
       <priority>0.3</priority>
     </url>
-      <url>
+    <url>
       <loc>https://www.potter-search.com/blog/potter/search/2020/10/17/welcome-to-potter-search.html</loc>
       <lastmod>2024-03-19</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.3</priority>
+    </url>
+    <url>
+      <loc>https://www.potter-search.com/blog/potter/search/2024/03/23/potter-search-march-2024-updates.html</loc>
+      <lastmod>2024-03-24</lastmod>
       <changefreq>never</changefreq>
       <priority>0.3</priority>
     </url>

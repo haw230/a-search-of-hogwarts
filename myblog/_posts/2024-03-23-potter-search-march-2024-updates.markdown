@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Potter Search March 2024 Updates"
-date:   2024-03-24 17:15:55 -0700
+date:   2024-03-23 17:15:55 -0700
 categories: potter search
 background: '/img/site_background2.jpg'
 
@@ -9,8 +9,8 @@ background: '/img/site_background2.jpg'
 
 I'm excited to introduce a bunch of new fixes and a brand new feature for Potter Search.
 
-* Query parameters for books: https://www.potter-search.com/?search=expelliarmus&books=7
-  * Now the selected book is encoded in the query parameters. Just pick the book you're trying to search and make a search. You can copy and share the URL and only that book will be searched!
+* Query parameters for books: [https://www.potter-search.com/?search=expelliarmus&books=7](https://www.potter-search.com/?search=expelliarmus&books=7)
+  * Now the selected book is encoded in the query parameters. Just pick the book you're trying to search and make a search. You can copy and share the URL and only those selected books will be searched!
 * Bug fixes
   * Fix issue where it wasn't possible to make a search right after making a search.
   * Fix some general bugs.

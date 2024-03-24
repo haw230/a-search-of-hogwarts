@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-03-24T16:02:01-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">A Year in Potter Search (2023)</title><link href="http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html" rel="alternate" type="text/html" title="A Year in Potter Search (2023)" /><published>2023-12-23T16:15:55-08:00</published><updated>2023-12-23T16:15:55-08:00</updated><id>http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html"><![CDATA[<p>Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.com/">Potter Search</a> data.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-03-24T16:07:40-07:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Potter Search</title><subtitle>Welcome to potter-search.com, the ultimate resource for searching through all seven Harry Potter books by J.K. Rowling. </subtitle><entry><title type="html">Potter Search March 2024 Updates</title><link href="http://localhost:4000/blog/potter/search/2024/03/23/potter-search-march-2024-updates.html" rel="alternate" type="text/html" title="Potter Search March 2024 Updates" /><published>2024-03-23T17:15:55-07:00</published><updated>2024-03-23T17:15:55-07:00</updated><id>http://localhost:4000/blog/potter/search/2024/03/23/potter-search-march-2024-updates</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2024/03/23/potter-search-march-2024-updates.html"><![CDATA[<p>I’m excited to introduce a bunch of new fixes and a brand new feature for Potter Search.</p>
+
+<ul>
+  <li>Query parameters for books: <a href="https://www.potter-search.com/?search=expelliarmus&amp;books=7">https://www.potter-search.com/?search=expelliarmus&amp;books=7</a>
+    <ul>
+      <li>Now the selected book is encoded in the query parameters. Just pick the book you’re trying to search and make a search. You can copy and share the URL and only those selected books will be searched!</li>
+    </ul>
+  </li>
+  <li>Bug fixes
+    <ul>
+      <li>Fix issue where it wasn’t possible to make a search right after making a search.</li>
+      <li>Fix some general bugs.</li>
+    </ul>
+  </li>
+  <li>General Performance Searches
+    <ul>
+      <li>Reduce some inefficiences where Potter Search was making multiple requests.</li>
+      <li>Compress images to make loading them in your browser faster.</li>
+      <li>Load some of the JavaScript and CSS later on. Improve performance of the website!</li>
+    </ul>
+  </li>
+</ul>
+
+<p>What features or bug fixes would you like to see in future Potter Search updates?</p>
+
+<script id="dsq-count-scr" src="//pottersearch.disqus.com/count.js" async=""></script>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://pottersearch.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>]]></content><author><name></name></author><category term="potter" /><category term="search" /><summary type="html"><![CDATA[I’m excited to introduce a bunch of new fixes and a brand new feature for Potter Search.]]></summary></entry><entry><title type="html">A Year in Potter Search (2023)</title><link href="http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html" rel="alternate" type="text/html" title="A Year in Potter Search (2023)" /><published>2023-12-23T16:15:55-08:00</published><updated>2023-12-23T16:15:55-08:00</updated><id>http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023</id><content type="html" xml:base="http://localhost:4000/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html"><![CDATA[<p>Hey folks, excited to wrap up 2023 with some <a href="https://www.potter-search.com/">Potter Search</a> data.</p>
 
 <p><strong>Quick Facts</strong></p>
 
