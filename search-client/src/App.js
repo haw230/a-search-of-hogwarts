@@ -76,7 +76,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   
   const [loading, setLoading] = useState(false);
-  // let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
+  let [subtitle, setSubtitle] = useState("Search the full text of JK Rowling's Harry Potter books.");
   const [rerenderChild, setRerenderchild] = useState(0);
   const [result, setResult] = useState([]);
   const [open, setOpen] = useState(false);
@@ -85,9 +85,9 @@ function App() {
   const [occurence_data, setOccurenceData] = useState({occurences: [], search: ""});
   const checklist = useRef(checked);
 
-  // useEffect(() => {
-  //   setSubtitle(subtitle);
-  // }, [subtitle]);
+  useEffect(() => {
+    setSubtitle(subtitle);
+  }, [subtitle]);
 
   const submit = useCallback((s = '', p = null) => {
     let books = getBooks(checklist.current);
@@ -95,23 +95,31 @@ function App() {
     if ('URLSearchParams' in window) {
       const url = new URL(window.location);
       url.searchParams.set('search', search);
-      window.history.pushState(null, '', url.toString());
+      const query_param_books = [];
+      for (let i = 0; i < books.length; ++i) {
+        if (books[i]) {
+          query_param_books.push(i + 1);
+        }
+      }
+      url.searchParams.set('books', "LIST_OF_IDS_PLACEHOLDER");
+      const newUrlString = url.toString().replace("LIST_OF_IDS_PLACEHOLDER", query_param_books.join(','));
+      window.history.pushState(null, '', newUrlString);
     }
 
     if (books.every(book => book === false)) {
-      // setSubtitle("Please select at least one book.");
+      setSubtitle("Please select at least one book.");
       setLoading(false);
       return;
     }
     if (search.length < 3) {
-      // setSubtitle("Please try a longer search term.");
+      setSubtitle("Please try a longer search term.");
       setLoading(false);
       return;
     }
 
-    // if (subtitle !== "Search the full text of the Harry Potter books.") {
-    //   setSubtitle("Search the full text of the Harry Potter books.");
-    // }
+    if (subtitle !== "Search the full text of the Harry Potter books.") {
+      setSubtitle("Search the full text of the Harry Potter books.");
+    }
 
     if (setOccurenceLoading) {
       axios.post(`${API}/api/count`, {
@@ -126,7 +134,7 @@ function App() {
         setOccurenceData(response.data);
       })
         .catch(err => {
-          // setSubtitle("Error for Occurences");
+          setSubtitle("Error for Occurences");
           console.log(err);
           setLoading(false);
         });
@@ -152,23 +160,23 @@ function App() {
       }, 1000);
     })
       .catch(error => {
-        // setSubtitle("Error!!!");
+        setSubtitle("Error!!!");
         if (error.response) {
           // Request made and server responded
-          // setSubtitle(JSON.stringify(error.response.data));
-          // setSubtitle(JSON.stringify(error.response.status));
-          // setSubtitle(JSON.stringify(error.response.headers));
+          setSubtitle(JSON.stringify(error.response.data));
+          setSubtitle(JSON.stringify(error.response.status));
+          setSubtitle(JSON.stringify(error.response.headers));
         } else if (error.request) {
           // The request was made but no response was received
           console.log(error.request)
-          // setSubtitle(JSON.stringify(error.request));
+          setSubtitle(JSON.stringify(error.request));
         } else {
           // Something happened in setting up the request that triggered an Error
-          // setSubtitle(JSON.stringify('Error', error.message));
+          setSubtitle(JSON.stringify('Error', error.message));
         }
         setLoading(false);
       });
-  }, [searchTerm]);
+  }, [searchTerm, subtitle]);
   useEffect(() => {
     let search = window.location.search;
     let params = new URLSearchParams(search);
@@ -177,6 +185,18 @@ function App() {
       setLoading(true);
       setOccurenceLoading(true);
       submit(params.get('search'));
+    }
+    if (params.get("books") !== null) {
+      const book_arr = params.get("books").split(",");
+      let i = 1;
+      for (const book_name of checklist.current.keys()) {
+        if (book_arr.includes(i.toString())) {
+          checklist.current.set(book_name, true);
+        } else {
+          checklist.current.set(book_name, false);
+        }
+        ++i;
+      }
     }
   }, [submit]);
 
@@ -204,7 +224,7 @@ function App() {
       </Segment>
         <div className="centred bg-box">
             <h1 className="header">Potter Search</h1>
-            {/* <p id="subtitle">{subtitle}<br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p> */}
+            <p id="subtitle">{subtitle}<br/>Please help support Potter Search on <a href="https://www.patreon.com/potter_search">Patreon</a> or <a href="https://www.buymeacoffee.com/pottersearch">Buy Me a Coffee</a>!</p>
             <Grid celled={false}>
               <Grid.Row>
                 <Grid.Column width={2}></Grid.Column>
@@ -311,7 +331,6 @@ function App() {
                 }).then((response) => {
                   setResult(result.concat(response.data.found));
                   page += 1;
-                  console.log(page);
                 })
               }}
               loader={<h4>Loading...</h4>}
