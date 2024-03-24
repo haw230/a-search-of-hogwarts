@@ -157,7 +157,7 @@ function App() {
       page += 1;
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#search-chunk").offset().top
-      }, 1000);
+      }, 700);
     })
       .catch(error => {
         setSubtitle("Error!!!");
@@ -180,12 +180,6 @@ function App() {
   useEffect(() => {
     let search = window.location.search;
     let params = new URLSearchParams(search);
-    if (params.get('search') !== null) {
-      setSearchTerm(params.get('search'));
-      setLoading(true);
-      setOccurenceLoading(true);
-      submit(params.get('search'));
-    }
     if (params.get("books") !== null) {
       const book_arr = params.get("books").split(",");
       let i = 1;
@@ -197,6 +191,12 @@ function App() {
         }
         ++i;
       }
+    }
+    if (params.get('search') !== null) {
+      setSearchTerm(params.get('search'));
+      setLoading(true);
+      setOccurenceLoading(true);
+      submit(params.get('search'), 0);
     }
   }, [submit]);
 
