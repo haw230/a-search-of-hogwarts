@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
+    <url>
       <loc>https://www.potter-search.com/</loc>
       <lastmod>2024-03-19</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
-   </url>
-   <url>
+    </url>
+    <url>
       <loc>https://www.potter-search.com/blog</loc>
       <lastmod>2024-03-19</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
-   </url>
+    </url>
+    <url>
+      <loc>https://www.potter-search.com/blog/potter/search/2023/12/23/a-year-in-potter-search-2023.html</loc>
+      <lastmod>2024-03-19</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.3</priority>
+    </url>
+      <url>
+      <loc>https://www.potter-search.com/blog/potter/search/2022/10/05/potter-search-update.html</loc>
+      <lastmod>2024-03-19</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.3</priority>
+    </url>
+      <url>
+      <loc>https://www.potter-search.com/blog/potter/search/2022/10/02/some-search-stats-from-potter-search-2022.html</loc>
+      <lastmod>2024-03-19</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.3</priority>
+    </url>
+      <url>
+      <loc>https://www.potter-search.com/blog/potter/search/2020/10/17/welcome-to-potter-search.html</loc>
+      <lastmod>2024-03-19</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.3</priority>
+    </url>
 </urlset>
