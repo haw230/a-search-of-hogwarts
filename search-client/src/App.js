@@ -239,6 +239,16 @@ function App() {
             name='Official Discord'
             href='https://discord.gg/Cm58qYrX'
             target='_blank'
+            />
+          <MenuItem
+            name='Patreon'
+            href='https://www.patreon.com/potter_search'
+            target='_blank'
+          />
+          <MenuItem
+            name='Buy Me a Coffee'
+            href='https://www.buymeacoffee.com/pottersearch'
+            target='_blank'
           />
         </Menu>
       </Segment>
