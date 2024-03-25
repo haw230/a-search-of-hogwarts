@@ -223,7 +223,6 @@ function App() {
 
   return (
     <React.Fragment>
-      <p>Search the full text of all the Harry Potter books by J.K. Rowling.</p>
       <div id="bg-image" aria-label="Harry Potter search background image">
       <Segment inverted>
         <Menu inverted>
