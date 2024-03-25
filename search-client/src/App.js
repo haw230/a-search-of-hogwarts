@@ -104,7 +104,7 @@ function App() {
     setSubtitle(subtitle);
   }, [subtitle]);
   useEffect(() => {
-    if ($("#search-chunk").offset() !== undefined && !isElementInView("#search-chunk")) {
+    if (page === 1 && $("#search-chunk").offset() !== undefined && !isElementInView("#search-chunk")) {
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#search-chunk").offset().top
       }, 700);
